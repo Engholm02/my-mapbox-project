@@ -14,28 +14,46 @@
     body, html { margin:0; padding:0; height:100%; }
     #map { position:absolute; top:0; bottom:0; width:100%; }
 
-    /* Override default top-left control container for full-width up to 980px */
+    /* Top-left control container: full-width up to 980px with 24px top margin */
     .mapboxgl-ctrl-top-left {
-      top: 10px;
+      top: 24px;
       left: 50% !important;
       transform: translateX(-50%);
       width: 100%;
       max-width: 980px;
       display: flex;
+      align-items: flex-start; /* align children to top */
       justify-content: space-between;
       padding: 0 10px;
       box-sizing: border-box;
       z-index: 2;
     }
 
-    /* Make search input flex-grow */
+    /* Remove margins on control elements */
+    .mapboxgl-ctrl-group,
+    .mapboxgl-ctrl-group button,
+    .mapboxgl-ctrl-geocoder {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* Fixed height for geocoder container */
     .mapboxgl-ctrl-geocoder {
       flex: 1;
-      margin-right: 10px;
+      height: 40px;
+      box-sizing: border-box;
     }
-    /* Ensure input itself spans full width of its container */
+    /* Input spans full height */
     .mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--input {
       width: 100%;
+      height: 100%;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    /* Suggestions box */
+    .mapboxgl-ctrl-geocoder .suggestions {
+      margin: 0;
+      box-sizing: border-box;
     }
   </style>
 </head>
