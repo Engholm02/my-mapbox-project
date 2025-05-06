@@ -143,15 +143,15 @@
       }, labelLayerId);
 
       // Load and add points
-      fetch('data/105107108.geojson')
+      fetch('data/botilbud1_geocoded.geojson')
         .then(res => res.json())
         .then(geojson => {
           pointsData = geojson;
-          map.addSource('105107108', { type: 'geojson', data: geojson });
+          map.addSource('botilbud1_geocoded', { type: 'geojson', data: geojson });
           map.addLayer({
-            id: '105107108-layer',
+            id: 'botilbud1_geocoded-layer',
             type: 'circle',
-            source: '105107108',
+            source: 'botilbud1_geocoded',
             
             paint: {
               'circle-radius': ['case', ['boolean', ['feature-state','highlight'], false], 12, 6],
@@ -189,9 +189,9 @@
       });
 
           // Cursor & popups
-          map.on('mouseenter', '105107108-layer', () => map.getCanvas().style.cursor = 'pointer');
-          map.on('mouseleave', '105107108-layer', () => map.getCanvas().style.cursor = '');
-          map.on('click', '105107108-layer', e => {
+          map.on('mouseenter', 'botilbud1_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
+          map.on('mouseleave', 'botilbud1_geocoded-layer', () => map.getCanvas().style.cursor = '');
+          map.on('click', 'botilbud1_geocoded-layer', e => {
             const coords = e.features[0].geometry.coordinates.slice();
             const props = e.features[0].properties;
             let html = '<dl style="margin:0;">';
@@ -205,10 +205,10 @@
           // Highlight on geocoder result
           let highlightId = null;
           geocoder.on('result', ev => {
-            if (highlightId !== null) map.setFeatureState({ source:'105107108', id: highlightId }, { highlight: false });
+            if (highlightId !== null) map.setFeatureState({ source:'botilbud1_geocoded', id: highlightId }, { highlight: false });
             const match = pointsData.features.find(f => f.properties.Navn === ev.result.place_name);
             highlightId = match.id;
-            map.setFeatureState({ source:'105107108', id: highlightId }, { highlight: true });
+            map.setFeatureState({ source:'botilbud1_geocoded', id: highlightId }, { highlight: true });
             map.flyTo({ center: ev.result.center, zoom: 12 });
           });
         });
