@@ -4,8 +4,8 @@ const fs  = require('fs');
 const path = require('path');
 
 // 1. File paths
-const IN  = path.join(__dirname, 'data', 'botilbud1_geocoded.csv');
-const OUT = path.join(__dirname, 'data', 'botilbud1_geocoded.geojson');
+const IN  = path.join(__dirname, 'data', 'botilbud2_geocoded.csv');
+const OUT = path.join(__dirname, 'data', 'botilbud2_geocoded.geojson');
 
 (async () => {
   // 2. Read CSV → array of objects (keys from your headers)
@@ -15,8 +15,8 @@ const OUT = path.join(__dirname, 'data', 'botilbud1_geocoded.geojson');
   const geojson = {
     type: 'FeatureCollection',
     features: rows.map((r, i) => {
-      const lat = parseFloat(r.Latitude);
-      const lon = parseFloat(r.Longitude);
+      const lat = parseFloat(r.latitude);
+      const lon = parseFloat(r.longitude);
       return {
         type: 'Feature',
         id: i,

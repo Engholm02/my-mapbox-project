@@ -96,6 +96,7 @@
     });
     map.addControl(new mapboxgl.NavigationControl(), 'top-left');
     let pointsData;
+    let pointsData2;
 
     // Add geocoder control in same top-left container
     const geocoder = new MapboxGeocoder({
@@ -176,6 +177,55 @@
           map.on('click', 'botilbud1_geocoded-layer', e => {
             const coords = e.features[0].geometry.coordinates.slice();
             const feature = e.features[0];
+            const props = { ...feature.properties, id: feature.id };
+            let html = '<dl style="margin:0;">';
+            for (const k in props) {
+              let value = props[k];
+              if (typeof value === 'object' && value !== null) {
+                value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+              }
+              html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+            }
+            html += '</dl>';
+            new mapboxgl.Popup({ offset: 15 })
+              .setLngLat(coords)
+              .setHTML(html)
+              .addTo(map);
+          });
+
+          // Add botilbud2_geocoded source and layer
+          map.addSource('botilbud2_geocoded', {
+            type: 'geojson',
+            data: 'data/botilbud2_geocoded.geojson'
+          });
+          map.addLayer({
+            id: 'botilbud2_geocoded-layer',
+            type: 'circle',
+            source: 'botilbud2_geocoded',
+            paint: {
+              'circle-radius': ['case', ['boolean', ['feature-state','highlight'], false], 12, 6],
+              'circle-color': '#00008b'
+            }
+          });
+
+          // Load botilbud2 data for popups/highlight
+          fetch('data/botilbud2_geocoded.geojson')
+            .then(res => {
+              if (!res.ok) throw new Error(`Failed to load botilbud2: ${res.status}`);
+              return res.json();
+            })
+            .then(geojson => {
+              console.log('Loaded botilbud2_geocoded.geojson', geojson);
+              pointsData2 = geojson;
+            })
+            .catch(err => console.error('Error loading botilbud2_geocoded.geojson:', err));
+
+          // Cursor & popups for botilbud2
+          map.on('mouseenter', 'botilbud2_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
+          map.on('mouseleave', 'botilbud2_geocoded-layer', () => map.getCanvas().style.cursor = '');
+          map.on('click', 'botilbud2_geocoded-layer', e => {
+            const feature = e.features[0];
+            const coords = feature.geometry.coordinates.slice();
             const props = { ...feature.properties, id: feature.id };
             let html = '<dl style="margin:0;">';
             for (const k in props) {
