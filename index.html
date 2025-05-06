@@ -193,13 +193,21 @@
           map.on('mouseleave', 'botilbud1_geocoded-layer', () => map.getCanvas().style.cursor = '');
           map.on('click', 'botilbud1_geocoded-layer', e => {
             const coords = e.features[0].geometry.coordinates.slice();
-            const props = e.features[0].properties;
+            const feature = e.features[0];
+            const props = { ...feature.properties, id: feature.id };
             let html = '<dl style="margin:0;">';
             for (const k in props) {
-              html += `<dt style="font-weight:bold;">${k}</dt><dd>${String(props[k]).replace(/\n/g, '<br>')}</dd>`;
+              let value = props[k];
+              if (typeof value === 'object' && value !== null) {
+                value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+              }
+              html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
             }
             html += '</dl>';
-            new mapboxgl.Popup({ offset: 15 }).setLngLat(coords).setHTML(html).addTo(map);
+            new mapboxgl.Popup({ offset: 15 })
+              .setLngLat(coords)
+              .setHTML(html)
+              .addTo(map);
           });
 
           // Highlight on geocoder result
