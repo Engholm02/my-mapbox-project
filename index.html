@@ -97,6 +97,7 @@
     map.addControl(new mapboxgl.NavigationControl(), 'top-left');
     let pointsData;
     let pointsData2;
+    let pointsData3;
 
     // Add geocoder control in same top-left container
     const geocoder = new MapboxGeocoder({
@@ -242,6 +243,64 @@
               .addTo(map);
           });
 
+          // Add boliga_geocoded source and layer
+          map.addSource('boliga_geocoded', {
+            type: 'geojson',
+            data: 'data/boliga_geocoded.geojson'
+          });
+          map.addLayer({
+            id: 'boliga_geocoded-layer',
+            type: 'circle',
+            source: 'boliga_geocoded',
+            paint: {
+              'circle-radius': [
+                'interpolate',
+                ['linear'],
+                ['zoom'],
+                6, 3,
+                12, 6
+              ],
+              'circle-color': 'rgba(24, 172, 96, 0.5)'
+            }
+          });
+
+          // Load boliga data for popups/highlight
+          fetch('data/boliga_geocoded.geojson')
+            .then(res => {
+              if (!res.ok) throw new Error(`Failed to load boliga: ${res.status}`);
+              return res.json();
+            })
+            .then(geojson => {
+              console.log('Loaded boliga_geocoded.geojson', geojson);
+              pointsData3 = geojson;
+            })
+            .catch(err => console.error('Error loading boliga_geocoded.geojson:', err));
+
+          // Cursor & popups for boliga
+          map.on('mouseenter', 'boliga_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
+          map.on('mouseleave', 'boliga_geocoded-layer', () => map.getCanvas().style.cursor = '');
+          map.on('click', 'boliga_geocoded-layer', e => {
+            const feature = e.features[0];
+            const coords = feature.geometry.coordinates.slice();
+            const props = { ...feature.properties, id: feature.id };
+            let html = '<dl style="margin:0;">';
+            for (const k in props) {
+              let value = props[k];
+              if (typeof value === 'object' && value !== null) {
+                value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+              }
+              html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+            }
+            html += '</dl>';
+            new mapboxgl.Popup({ offset: 15 })
+              .setLngLat(coords)
+              .setHTML(html)
+              .addTo(map);
+          });
+
+          // Bring botilbud layers to top
+          map.moveLayer('botilbud2_geocoded-layer');
+          map.moveLayer('botilbud1_geocoded-layer');
           // Highlight on geocoder result
           let highlightId = null;
           geocoder.on('result', ev => {
