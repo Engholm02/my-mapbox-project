@@ -104,6 +104,7 @@
       marker: false,
       zoom: 12,
       localGeocoder: query => {
+        if (!pointsData) return [];
         const term = query.trim().toLowerCase();
         return pointsData.features
           .filter(f => f.properties.Navn.toLowerCase().includes(term))
@@ -142,22 +143,32 @@
         }
       }, labelLayerId);
 
-      // Load and add points
+      // Add botilbud1_geocoded source and layer
+      map.addSource('botilbud1_geocoded', {
+        type: 'geojson',
+        data: 'data/botilbud1_geocoded.geojson'
+      });
+      map.addLayer({
+        id: 'botilbud1_geocoded-layer',
+        type: 'circle',
+        source: 'botilbud1_geocoded',
+        paint: {
+          'circle-radius': ['case', ['boolean', ['feature-state','highlight'], false], 12, 6],
+          'circle-color': ['case', ['boolean', ['feature-state','highlight'], false], '#ff5200', '#007cbf']
+        }
+      });
+
+      // Load geojson data into pointsData for geocoder and feature-state logic
       fetch('data/botilbud1_geocoded.geojson')
-        .then(res => res.json())
+        .then(res => {
+          if (!res.ok) throw new Error(`Failed to load geojson: ${res.status}`);
+          return res.json();
+        })
         .then(geojson => {
+          console.log('Loaded botilbud1_geocoded.geojson', geojson);
           pointsData = geojson;
-          map.addSource('botilbud1_geocoded', { type: 'geojson', data: geojson });
-          map.addLayer({
-            id: 'botilbud1_geocoded-layer',
-            type: 'circle',
-            source: 'botilbud1_geocoded',
-            
-            paint: {
-              'circle-radius': ['case', ['boolean', ['feature-state','highlight'], false], 12, 6],
-              'circle-color': ['case', ['boolean', ['feature-state','highlight'], false], '#ff5200', '#007cbf']
-            }
-          });
+        })
+        .catch(err => console.error('Error loading botilbud1_geocoded.geojson:', err));
 
       // ▼ samvær layer (dark-blue)
       map.addSource('104', {
@@ -220,7 +231,6 @@
             map.flyTo({ center: ev.result.center, zoom: 12 });
           });
         });
-    });
   </script>
 </body>
 </html>
