@@ -14,18 +14,22 @@ const OUT = path.join(__dirname, 'data', 'botilbud1_geocoded.geojson');
   // 3. Build GeoJSON with ALL properties
   const geojson = {
     type: 'FeatureCollection',
-    features: rows.map((r, i) => ({
-      type: 'Feature',
-      id: i,
-      properties: { ...r },         // ← include every column
-      geometry: {
-        type: 'Point',
-        coordinates: [
-          parseFloat(r.Longitude),
-          parseFloat(r.Latitude)
-        ]
-      }
-    }))
+    features: rows.map((r, i) => {
+      const lat = parseFloat(r.Latitude);
+      const lon = parseFloat(r.Longitude);
+      return {
+        type: 'Feature',
+        id: i,
+        properties: { ...r },
+        geometry: {
+          type: 'Point',
+          coordinates: [
+            isNaN(lon)  ? null : lon,
+            isNaN(lat)  ? null : lat
+          ]
+        }
+      };
+    })
   };
 
   // 4. Write out the .geojson
