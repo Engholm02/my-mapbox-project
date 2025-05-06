@@ -95,6 +95,7 @@
       bearing: 0
     });
     map.addControl(new mapboxgl.NavigationControl(), 'top-left');
+    let pointsData;
 
     // Add geocoder control in same top-left container
     const geocoder = new MapboxGeocoder({
@@ -117,7 +118,6 @@
     map.on('error', e => console.error('Map error:', e.error && e.error.message));
 
     // Once map loads, add 3D buildings and points
-    let pointsData;
     map.on('load', () => {
       // 3D buildings
       const layers = map.getStyle().layers;
@@ -154,7 +154,7 @@
         source: 'botilbud1_geocoded',
         paint: {
           'circle-radius': ['case', ['boolean', ['feature-state','highlight'], false], 12, 6],
-          'circle-color': ['case', ['boolean', ['feature-state','highlight'], false], '#ff5200', '#007cbf']
+          'circle-color': '#007cbf'
         }
       });
 
@@ -169,35 +169,6 @@
           pointsData = geojson;
         })
         .catch(err => console.error('Error loading botilbud1_geocoded.geojson:', err));
-
-      // ▼ samvær layer (dark-blue)
-      map.addSource('104', {
-        type: 'geojson',
-        data: 'data/104.geojson'
-      });
-      map.addLayer({
-        id: '104-layer',
-        type: 'circle',
-        source: '104',
-        paint: {
-          'circle-radius': 6,
-          'circle-color': '#00008B'
-        }
-      });
-
-      // popups for samvær
-      map.on('mouseenter', '104-layer', () => map.getCanvas().style.cursor = 'pointer');
-      map.on('mouseleave', '104-layer', () => map.getCanvas().style.cursor = '');
-      map.on('click', '104-layer', (e) => {
-        const coords = e.features[0].geometry.coordinates.slice();
-        const props  = e.features[0].properties;
-        let html = '<dl style="margin:0;">';
-        for (const k in props) {
-          html += `<dt style="font-weight:bold;">${k}</dt><dd>${String(props[k]).replace(/\\n/g,'<br>')}</dd>`;
-        }
-        html += '</dl>';
-        new mapboxgl.Popup({ offset:15 }).setLngLat(coords).setHTML(html).addTo(map);
-      });
 
           // Cursor & popups
           map.on('mouseenter', 'botilbud1_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
