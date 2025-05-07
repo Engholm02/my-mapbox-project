@@ -98,6 +98,7 @@
     let pointsData;
     let pointsData2;
     let pointsData3;
+    let pointsData4;
 
     // Add geocoder control in same top-left container
     const geocoder = new MapboxGeocoder({
@@ -260,7 +261,7 @@
                 6, 3,
                 12, 6
               ],
-              'circle-color': 'rgba(24, 172, 96, 0.5)'
+              'circle-color': 'rgba(24, 172, 96, 0.6)'
             }
           });
 
@@ -301,6 +302,65 @@
           // Bring botilbud layers to top
           map.moveLayer('botilbud2_geocoded-layer');
           map.moveLayer('botilbud1_geocoded-layer');
+
+          // Add ejendomstorvet_geocoded source and layer (topmost)
+          map.addSource('ejendomstorvet_geocoded', {
+            type: 'geojson',
+            data: 'data/ejendomstorvet_geocoded.geojson'
+          });
+          map.addLayer({
+            id: 'ejendomstorvet_geocoded-layer',
+            type: 'circle',
+            source: 'ejendomstorvet_geocoded',
+            paint: {
+              'circle-radius': [
+                'interpolate',
+                ['linear'],
+                ['zoom'],
+                6, 3,
+                12, 6
+              ],
+              'circle-color': 'rgba(241, 136, 8, 0.6)'
+            }
+          });
+
+          // Load ejendomstorvet data for popups/highlight
+          fetch('data/ejendomstorvet_geocoded.geojson')
+            .then(res => {
+              if (!res.ok) throw new Error(`Failed to load ejendomstorvet: ${res.status}`);
+              return res.json();
+            })
+            .then(geojson => {
+              console.log('Loaded ejendomstorvet_geocoded.geojson', geojson);
+              pointsData4 = geojson;
+            })
+            .catch(err => console.error('Error loading ejendomstorvet_geocoded.geojson:', err));
+
+          // Cursor & popups for ejendomstorvet
+          map.on('mouseenter', 'ejendomstorvet_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
+          map.on('mouseleave', 'ejendomstorvet_geocoded-layer', () => map.getCanvas().style.cursor = '');
+          map.on('click', 'ejendomstorvet_geocoded-layer', e => {
+            const feature = e.features[0];
+            const coords = feature.geometry.coordinates.slice();
+            const props = { ...feature.properties, id: feature.id };
+            let html = '<dl style="margin:0;">';
+            for (const k in props) {
+              let value = props[k];
+              if (typeof value === 'object' && value !== null) {
+                value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+              }
+              html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+            }
+            html += '</dl>';
+            new mapboxgl.Popup({ offset: 15 })
+              .setLngLat(coords)
+              .setHTML(html)
+              .addTo(map);
+          });
+
+          // Move ejendomstorvet layer below boliga layer (bottommost)
+          map.moveLayer('ejendomstorvet_geocoded-layer', 'boliga_geocoded-layer');
+
           // Highlight on geocoder result
           let highlightId = null;
           geocoder.on('result', ev => {
