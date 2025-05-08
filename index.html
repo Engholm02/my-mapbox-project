@@ -70,6 +70,41 @@
     .mapboxgl-popup-content dl { margin:0; }
     .mapboxgl-popup-content dt { font-weight:bold; margin-top:6px; }
     .mapboxgl-popup-content dd { margin:0 0 6px 8px; }
+
+    /* Centered modal-style popup override */
+    .mapboxgl-popup {
+      position: fixed !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      width: 400px !important;
+      max-width: 90vw !important;
+      z-index: 1000;
+    }
+
+    .mapboxgl-popup-content {
+      max-height: 80vh;
+      overflow-y: auto;
+      padding: 24px;
+    }
+
+    /* Hide the little arrow tip */
+    .mapboxgl-popup-tip {
+      display: none;
+    }
+
+    /* Larger close button */
+    .mapboxgl-popup-close-button {
+      width: 32px;
+      height: 32px;
+      font-size: 24px;
+    }
+
+    /* Override unwanted Mapbox anchor-top transform */
+    .mapboxgl-popup.mapboxgl-popup-anchor-top {
+      transform: translate(-50%, -50%) !important;
+      max-width: 400px !important;
+    }
   </style>
 </head>
 <body>
