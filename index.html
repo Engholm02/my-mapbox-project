@@ -418,6 +418,19 @@
             map.setFeatureState({ source:'botilbud1_geocoded', id: highlightId }, { highlight: true });
             map.flyTo({ center: ev.result.center, zoom: 12 });
           });
+
+          // Dropdown kommune filter
+          const kommuneDropdown = document.getElementById('filter-kommune');
+          if (kommuneDropdown) {
+            kommuneDropdown.addEventListener('change', function () {
+              const selectedKommune = this.value;
+              if (selectedKommune === '') {
+                map.setFilter('boliga_geocoded-layer', null); // Vis alle
+              } else {
+                map.setFilter('boliga_geocoded-layer', ['==', ['get', 'kommune'], selectedKommune]);
+              }
+            });
+          }
         });
 
         // Toggle visibility for Boliga and Ejendomstorvet layers via external buttons
