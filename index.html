@@ -439,22 +439,24 @@
           'ejendomstorvet_geocoded-layer': true
         };
 
-        const toggleLayers = [
-          { buttonId: 'toggle-boliga', layerId: 'boliga_geocoded-layer' },
-          { buttonId: '-toggle-ejendomstorvet', layerId: 'ejendomstorvet_geocoded-layer' }
-        ];
+        function handleToggleClick(id) {
+          const layerId = id === 'toggle-boliga' ? 'boliga_geocoded-layer' : 'ejendomstorvet_geocoded-layer';
+          layerVisibility[layerId] = !layerVisibility[layerId];
+          map.setLayoutProperty(layerId, 'visibility', layerVisibility[layerId] ? 'visible' : 'none');
+        }
 
-        toggleLayers.forEach(({ buttonId, layerId }) => {
-          const button = document.getElementById(buttonId);
-          if (button) {
-            button.addEventListener('click', () => {
-              layerVisibility[layerId] = !layerVisibility[layerId];
-              map.setLayoutProperty(
-                layerId,
-                'visibility',
-                layerVisibility[layerId] ? 'visible' : 'none'
-              );
-            });
+        ['toggle-boliga', 'toggle-ejendomstorvet'].forEach((id) => {
+          const btn = document.getElementById(id);
+          if (btn) {
+            btn.addEventListener('click', () => handleToggleClick(id));
+          }
+        });
+
+        // Event delegation fallback (in case elements were not present at load)
+        document.addEventListener('click', (e) => {
+          const target = e.target.closest('#toggle-boliga, #toggle-ejendomstorvet');
+          if (target) {
+            handleToggleClick(target.id);
           }
         });
   </script>
