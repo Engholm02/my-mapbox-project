@@ -131,6 +131,26 @@
 
   <!-- Layer toggle and kommune filter handlers -->
   <script>
+    // Listen for postMessage events from Webflow and handle actions
+    window.addEventListener('message', function(event) {
+      const { action, value } = event.data;
+
+      if (action === 'toggle-boliga') {
+        handleToggleClick('toggle-boliga');
+      }
+
+      if (action === 'toggle-ejendomstorvet') {
+        handleToggleClick('toggle-ejendomstorvet');
+      }
+
+      if (action === 'filter-kommune') {
+        if (value === '') {
+          map.setFilter('boliga_geocoded-layer', null);
+        } else {
+          map.setFilter('boliga_geocoded-layer', ['==', ['get', 'kommune'], value]);
+        }
+      }
+    });
     window.addEventListener('DOMContentLoaded', () => {
       const layerVisibility = {
         'boliga_geocoded-layer': true,
