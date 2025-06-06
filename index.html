@@ -262,13 +262,19 @@
         }
       }, labelLayerId);
 
-      // Dynamisk indlæsning af nye datalag
-      const tilbudstyper = ['104', '105', '107', '108', '108-s', '108a'];
+      // Dynamisk indlæsning af nye datalag med farver per type
+      const tilbudstyper = {
+        '104': '#0d39a8',
+        '105': '#45a0fc',
+        '107': '#b74cff',
+        '108': '#ff43e6',
+        '108-s': '#ff43e6',
+        '108a': '#f44'
+      };
 
-      tilbudstyper.forEach(type => {
+      Object.entries(tilbudstyper).forEach(([type, color]) => {
         const sourceId = `${type}_geocoded`;
         const layerId = `${type}_geocoded-layer`;
-        const color = '#007cbf'; // Samme farve til alle, kan tilpasses per type
 
         map.addSource(sourceId, {
           type: 'geojson',
@@ -333,7 +339,7 @@
                 6, 3,
                 12, 6
               ],
-              'circle-color': 'rgba(24, 172, 96, 0.6)'
+              'circle-color': '#23bb08'
             }
           });
 
@@ -392,7 +398,7 @@
                 6, 3,
                 12, 6
               ],
-              'circle-color': 'rgba(241, 136, 8, 0.6)'
+              'circle-color': '#ff9d25'
             }
           });
 
