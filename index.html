@@ -129,6 +129,54 @@
   <!-- Mapbox Geocoder plugin JS -->
   <script src="https://api.tiles.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
 
+  <!-- Layer toggle and kommune filter handlers -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const layerVisibility = {
+        'boliga_geocoded-layer': true,
+        'ejendomstorvet_geocoded-layer': true
+      };
+
+      function handleToggleClick(id) {
+        const layerId = id === 'toggle-boliga' ? 'boliga_geocoded-layer' : 'ejendomstorvet_geocoded-layer';
+        layerVisibility[layerId] = !layerVisibility[layerId];
+        map.setLayoutProperty(layerId, 'visibility', layerVisibility[layerId] ? 'visible' : 'none');
+
+        // Vis/skjul checkmark grafik
+        const button = document.getElementById(id);
+        if (button) {
+          const checked = button.querySelector('.checked');
+          const unchecked = button.querySelector('.unchecked');
+          if (checked && unchecked) {
+            checked.style.display = layerVisibility[layerId] ? 'block' : 'none';
+            unchecked.style.display = layerVisibility[layerId] ? 'none' : 'block';
+          }
+        }
+      }
+
+      // Klik-handling på knapperne
+      document.addEventListener('click', (e) => {
+        const target = e.target.closest('#toggle-boliga, #toggle-ejendomstorvet');
+        if (target) {
+          handleToggleClick(target.id);
+        }
+      });
+
+      // Kommune-dropdown filtrering
+      const kommuneDropdown = document.getElementById('filter-kommune');
+      if (kommuneDropdown) {
+        kommuneDropdown.addEventListener('change', function () {
+          const selectedKommune = this.value;
+          if (selectedKommune === '') {
+            map.setFilter('boliga_geocoded-layer', null);
+          } else {
+            map.setFilter('boliga_geocoded-layer', ['==', ['get', 'kommune'], selectedKommune]);
+          }
+        });
+      }
+    });
+  </script>
+
   <script>
     // Mapbox public token with styles:read and tilesets:read
     mapboxgl.accessToken = 'pk.eyJ1Ijoia2FydGFnbyIsImEiOiJjbWEzeW1wNmowMWpqMmlzNGs3Y3B0eWdrIn0.oDybv3cDzWQ0sjd9eVBzKw';
