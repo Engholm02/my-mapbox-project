@@ -419,6 +419,23 @@
             map.flyTo({ center: ev.result.center, zoom: 12 });
           });
         });
+
+        // Toggle visibility for Boliga and Ejendomstorvet layers via external buttons
+        const toggleLayers = [
+          { buttonId: 'toggle-boliga', layerId: 'boliga_geocoded-layer' },
+          { buttonId: '-toggle-ejendomstorvet', layerId: 'ejendomstorvet_geocoded-layer' }
+        ];
+
+        toggleLayers.forEach(({ buttonId, layerId }) => {
+          let visible = true;
+          const button = document.getElementById(buttonId);
+          if (button) {
+            button.addEventListener('click', () => {
+              visible = !visible;
+              map.setLayoutProperty(layerId, 'visibility', visible ? 'visible' : 'none');
+            });
+          }
+        });
   </script>
 </body>
 </html>
