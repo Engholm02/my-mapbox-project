@@ -4,8 +4,8 @@ const fs  = require('fs');
 const path = require('path');
 
 // 1. File paths
-const IN  = path.join(__dirname, 'data', 'boliga_geocoded.csv');
-const OUT = path.join(__dirname, 'data', 'boliga_geocoded.geojson');
+const IN  = path.join(__dirname, 'data', '104.csv');
+const OUT = path.join(__dirname, 'data', '104.geojson');
 
 (async () => {
   // 2. Read CSV → array of objects (keys from your headers)

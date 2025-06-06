@@ -131,7 +131,7 @@
 
   <!-- Layer toggle and kommune filter handlers -->
   <script>
-    // Listen for postMessage events from Webflow and handle actions
+    // Lyt efter postMessage events og håndter kun kommune-filter og to toggle-knapper
     window.addEventListener('message', function(event) {
       const { action, value } = event.data;
 
@@ -262,103 +262,59 @@
         }
       }, labelLayerId);
 
-      // Add botilbud1_geocoded source and layer
-      map.addSource('botilbud1_geocoded', {
-        type: 'geojson',
-        data: 'data/botilbud1_geocoded.geojson'
+      // Dynamisk indlæsning af nye datalag
+      const tilbudstyper = ['104', '105', '107', '108', '108-s', '108a'];
+
+      tilbudstyper.forEach(type => {
+        const sourceId = `${type}_geocoded`;
+        const layerId = `${type}_geocoded-layer`;
+        const color = '#007cbf'; // Samme farve til alle, kan tilpasses per type
+
+        map.addSource(sourceId, {
+          type: 'geojson',
+          data: `data/${sourceId}.geojson`
+        });
+
+        map.addLayer({
+          id: layerId,
+          type: 'circle',
+          source: sourceId,
+          paint: {
+            'circle-radius': ['case', ['boolean', ['feature-state','highlight'], false], 12, 6],
+            'circle-color': color
+          }
+        });
+
+        // Hent data til geocoder og popup (valgfrit, afhænger af behov)
+        fetch(`data/${sourceId}.geojson`)
+          .then(res => res.ok ? res.json() : Promise.reject(`Fejl ved hentning af ${sourceId}`))
+          .then(geojson => {
+            console.log(`Loaded ${sourceId}`, geojson);
+          })
+          .catch(err => console.error(err));
+
+        // Hover-effekt og popup
+        map.on('mouseenter', layerId, () => map.getCanvas().style.cursor = 'pointer');
+        map.on('mouseleave', layerId, () => map.getCanvas().style.cursor = '');
+        map.on('click', layerId, e => {
+          const feature = e.features[0];
+          const coords = feature.geometry.coordinates.slice();
+          const props = { ...feature.properties };
+          let html = '<dl style="margin:0;">';
+          for (const k in props) {
+            let value = props[k];
+            if (typeof value === 'object' && value !== null) {
+              value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+            }
+            html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+          }
+          html += '</dl>';
+          new mapboxgl.Popup({ offset: 15 })
+            .setLngLat(coords)
+            .setHTML(html)
+            .addTo(map);
+        });
       });
-      map.addLayer({
-        id: 'botilbud1_geocoded-layer',
-        type: 'circle',
-        source: 'botilbud1_geocoded',
-        paint: {
-          'circle-radius': ['case', ['boolean', ['feature-state','highlight'], false], 12, 6],
-          'circle-color': '#007cbf'
-        }
-      });
-
-      // Load geojson data into pointsData for geocoder and feature-state logic
-      fetch('data/botilbud1_geocoded.geojson')
-        .then(res => {
-          if (!res.ok) throw new Error(`Failed to load geojson: ${res.status}`);
-          return res.json();
-        })
-        .then(geojson => {
-          console.log('Loaded botilbud1_geocoded.geojson', geojson);
-          pointsData = geojson;
-        })
-        .catch(err => console.error('Error loading botilbud1_geocoded.geojson:', err));
-
-          // Cursor & popups
-          map.on('mouseenter', 'botilbud1_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
-          map.on('mouseleave', 'botilbud1_geocoded-layer', () => map.getCanvas().style.cursor = '');
-          map.on('click', 'botilbud1_geocoded-layer', e => {
-            const coords = e.features[0].geometry.coordinates.slice();
-            const feature = e.features[0];
-            const props = { ...feature.properties, id: feature.id };
-            let html = '<dl style="margin:0;">';
-            for (const k in props) {
-              let value = props[k];
-              if (typeof value === 'object' && value !== null) {
-                value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
-              }
-              html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
-            }
-            html += '</dl>';
-            new mapboxgl.Popup({ offset: 15 })
-              .setLngLat(coords)
-              .setHTML(html)
-              .addTo(map);
-          });
-
-          // Add botilbud2_geocoded source and layer
-          map.addSource('botilbud2_geocoded', {
-            type: 'geojson',
-            data: 'data/botilbud2_geocoded.geojson'
-          });
-          map.addLayer({
-            id: 'botilbud2_geocoded-layer',
-            type: 'circle',
-            source: 'botilbud2_geocoded',
-            paint: {
-              'circle-radius': ['case', ['boolean', ['feature-state','highlight'], false], 12, 6],
-              'circle-color': '#00008b'
-            }
-          });
-
-          // Load botilbud2 data for popups/highlight
-          fetch('data/botilbud2_geocoded.geojson')
-            .then(res => {
-              if (!res.ok) throw new Error(`Failed to load botilbud2: ${res.status}`);
-              return res.json();
-            })
-            .then(geojson => {
-              console.log('Loaded botilbud2_geocoded.geojson', geojson);
-              pointsData2 = geojson;
-            })
-            .catch(err => console.error('Error loading botilbud2_geocoded.geojson:', err));
-
-          // Cursor & popups for botilbud2
-          map.on('mouseenter', 'botilbud2_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
-          map.on('mouseleave', 'botilbud2_geocoded-layer', () => map.getCanvas().style.cursor = '');
-          map.on('click', 'botilbud2_geocoded-layer', e => {
-            const feature = e.features[0];
-            const coords = feature.geometry.coordinates.slice();
-            const props = { ...feature.properties, id: feature.id };
-            let html = '<dl style="margin:0;">';
-            for (const k in props) {
-              let value = props[k];
-              if (typeof value === 'object' && value !== null) {
-                value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
-              }
-              html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
-            }
-            html += '</dl>';
-            new mapboxgl.Popup({ offset: 15 })
-              .setLngLat(coords)
-              .setHTML(html)
-              .addTo(map);
-          });
 
           // Add boliga_geocoded source and layer
           map.addSource('boliga_geocoded', {
