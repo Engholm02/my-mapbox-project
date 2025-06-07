@@ -154,15 +154,30 @@
     window.addEventListener('DOMContentLoaded', () => {
       const layerVisibility = {
         'boliga_geocoded-layer': true,
-        'ejendomstorvet_geocoded-layer': true
+        'ejendomstorvet_geocoded-layer': true,
+        '104_geocoded-layer': true,
+        '105_geocoded-layer': true,
+        '107_geocoded-layer': true,
+        '108_geocoded-layer': true,
+        '108a_geocoded-layer': true
       };
 
       function handleToggleClick(id) {
-        const layerId = id === 'toggle-boliga' ? 'boliga_geocoded-layer' : 'ejendomstorvet_geocoded-layer';
+        const idMap = {
+          'toggle-boliga': 'boliga_geocoded-layer',
+          'toggle-ejendomstorvet': 'ejendomstorvet_geocoded-layer',
+          'toggle-104': '104_geocoded-layer',
+          'toggle-105': '105_geocoded-layer',
+          'toggle-107': '107_geocoded-layer',
+          'toggle-108': '108_geocoded-layer',
+          'toggle-108a': '108a_geocoded-layer'
+        };
+        const layerId = idMap[id];
+        if (!layerId) return;
+
         layerVisibility[layerId] = !layerVisibility[layerId];
         map.setLayoutProperty(layerId, 'visibility', layerVisibility[layerId] ? 'visible' : 'none');
 
-        // Vis/skjul checkmark grafik
         const button = document.getElementById(id);
         if (button) {
           const checked = button.querySelector('.checked');
@@ -175,8 +190,16 @@
       }
 
       // Klik-handling på knapperne
+      ['toggle-boliga', 'toggle-ejendomstorvet', 'toggle-104', 'toggle-105', 'toggle-107', 'toggle-108', 'toggle-108a'].forEach((id) => {
+        const btn = document.getElementById(id);
+        if (btn) {
+          btn.addEventListener('click', () => handleToggleClick(id));
+        }
+      });
+
+      // Event delegation fallback (in case elements were not present at load)
       document.addEventListener('click', (e) => {
-        const target = e.target.closest('#toggle-boliga, #toggle-ejendomstorvet');
+        const target = e.target.closest('#toggle-boliga, #toggle-ejendomstorvet, #toggle-104, #toggle-105, #toggle-107, #toggle-108, #toggle-108a');
         if (target) {
           handleToggleClick(target.id);
         }
@@ -278,7 +301,7 @@
 
         map.addSource(sourceId, {
           type: 'geojson',
-          data: `data/${sourceId}.geojson`
+          data: `data/${type}.geojson`
         });
 
         map.addLayer({
@@ -292,10 +315,10 @@
         });
 
         // Hent data til geocoder og popup (valgfrit, afhænger af behov)
-        fetch(`data/${sourceId}.geojson`)
-          .then(res => res.ok ? res.json() : Promise.reject(`Fejl ved hentning af ${sourceId}`))
+        fetch(`data/${type}.geojson`)
+          .then(res => res.ok ? res.json() : Promise.reject(`Fejl ved hentning af ${type}`))
           .then(geojson => {
-            console.log(`Loaded ${sourceId}`, geojson);
+            console.log(`Loaded ${type}`, geojson);
           })
           .catch(err => console.error(err));
 
@@ -464,31 +487,7 @@
         });
 
         // Toggle visibility for Boliga and Ejendomstorvet layers via external buttons
-        const layerVisibility = {
-          'boliga_geocoded-layer': true,
-          'ejendomstorvet_geocoded-layer': true
-        };
-
-        function handleToggleClick(id) {
-          const layerId = id === 'toggle-boliga' ? 'boliga_geocoded-layer' : 'ejendomstorvet_geocoded-layer';
-          layerVisibility[layerId] = !layerVisibility[layerId];
-          map.setLayoutProperty(layerId, 'visibility', layerVisibility[layerId] ? 'visible' : 'none');
-        }
-
-        ['toggle-boliga', 'toggle-ejendomstorvet'].forEach((id) => {
-          const btn = document.getElementById(id);
-          if (btn) {
-            btn.addEventListener('click', () => handleToggleClick(id));
-          }
-        });
-
-        // Event delegation fallback (in case elements were not present at load)
-        document.addEventListener('click', (e) => {
-          const target = e.target.closest('#toggle-boliga, #toggle-ejendomstorvet');
-          if (target) {
-            handleToggleClick(target.id);
-          }
-        });
+        // (now handled above with expanded layerVisibility and handleToggleClick)
   </script>
 </body>
 </html>
