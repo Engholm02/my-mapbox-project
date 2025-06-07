@@ -152,30 +152,20 @@
       });
     }
 
-    // Lyt efter postMessage events og håndter filter og toggles samlet
+    // Lyt efter postMessage events og håndter filter og toggles samlet (NY STRUKTUR)
     window.addEventListener('message', function(event) {
-      const { action, value } = event.data;
+      const data = event.data;
 
-      const toggleIds = [
-        'toggle-boliga',
-        'toggle-ejendomstorvet',
-        'toggle-104',
-        'toggle-105',
-        'toggle-107',
-        'toggle-108',
-        'toggle-108a'
-      ];
+      if (!data || typeof data !== 'object') return;
 
-      if (toggleIds.includes(action)) {
-        handleToggleClick(action);
+      if (data.type === 'toggle-layer') {
+        handleToggleClick('toggle-' + data.layer);
       }
 
-      if (action === 'filter-kommune') {
-        applyFilterToAllLayers('kommune', value);
-      }
-
-      if (action === 'filter-by') {
-        applyFilterToAllLayers('by', value);
+      if (data.type === 'filter') {
+        const property = data.filterType;
+        const value = data.value;
+        applyFilterToAllLayers(property, value);
       }
     });
     window.addEventListener('DOMContentLoaded', () => {
