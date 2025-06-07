@@ -424,9 +424,6 @@
               .addTo(map);
           });
 
-          // Bring botilbud layers to top
-          map.moveLayer('botilbud2_geocoded-layer');
-          map.moveLayer('botilbud1_geocoded-layer');
 
           // Add ejendomstorvet_geocoded source and layer (topmost)
           map.addSource('ejendomstorvet_geocoded', {
@@ -498,18 +495,49 @@
             map.flyTo({ center: ev.result.center, zoom: 12 });
           });
 
-          // Dropdown kommune filter
-          const kommuneDropdown = document.getElementById('filter-kommune');
-          if (kommuneDropdown) {
-            kommuneDropdown.addEventListener('change', function () {
-              const selectedKommune = this.value;
-              applyFilterToAllLayers('kommune', selectedKommune);
-            });
-          }
-        });
+        // (moved kommuneDropdown and event handlers to DOMContentLoaded above)
+      });
 
         // Toggle visibility for Boliga and Ejendomstorvet layers via external buttons
         // (now handled above with expanded layerVisibility and handleToggleClick)
+  </script>
+</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const iframe = document.querySelector('iframe.map-iframe');
+      if (!iframe || !iframe.contentWindow) return;
+
+      // Toggle-knapper
+      [
+        'toggle-boliga',
+        'toggle-ejendomstorvet',
+        'toggle-104',
+        'toggle-105',
+        'toggle-107',
+        'toggle-108',
+        'toggle-108a'
+      ].forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+
+        el.addEventListener('click', () => {
+          iframe.contentWindow.postMessage({ action: id }, '*');
+        });
+      });
+
+      // Dropdowns: kommune og by
+      ['filter-kommune', 'filter-by'].forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+
+        el.addEventListener('change', (e) => {
+          iframe.contentWindow.postMessage({
+            action: id,
+            value: e.target.value
+          }, '*');
+        });
+      });
+    });
   </script>
 </body>
 </html>
