@@ -379,9 +379,10 @@
                 6, 3,
                 12, 6
               ],
-              'circle-color': '#23bb08'
+              'circle-color': '#23bb08',
+              'circle-opacity': 0.2
             }
-          });
+          }, labelLayerId);
 
           // Load boliga data for popups/highlight
           fetch('data/boliga_geocoded.geojson')
@@ -438,9 +439,10 @@
                 6, 3,
                 12, 6
               ],
-              'circle-color': '#ff9d25'
+              'circle-color': '#ff9d25',
+              'circle-opacity': 0.2
             }
-          });
+          }, labelLayerId);
 
           // Load ejendomstorvet data for popups/highlight
           fetch('data/ejendomstorvet_geocoded.geojson')
@@ -476,8 +478,9 @@
               .addTo(map);
           });
 
-          // Move ejendomstorvet layer below boliga layer (bottommost)
-          map.moveLayer('ejendomstorvet_geocoded-layer', 'boliga_geocoded-layer');
+          // Move both layers below labelLayerId (so they appear just below labels)
+          map.moveLayer('ejendomstorvet_geocoded-layer', labelLayerId);
+          map.moveLayer('boliga_geocoded-layer', labelLayerId);
 
           // Highlight on geocoder result
           let highlightId = null;
