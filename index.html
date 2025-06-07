@@ -150,6 +150,14 @@
           map.setFilter('boliga_geocoded-layer', ['==', ['get', 'kommune'], value]);
         }
       }
+
+      if (action === 'filter-by') {
+        if (value === '') {
+          map.setFilter('boliga_geocoded-layer', null);
+        } else {
+          map.setFilter('boliga_geocoded-layer', ['==', ['get', 'by'], value]);
+        }
+      }
     });
     window.addEventListener('DOMContentLoaded', () => {
       const layerVisibility = {
