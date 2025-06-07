@@ -37,8 +37,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.023147,
+          56.550093
         ]
       }
     },
@@ -78,8 +78,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.869234,
+          56.806212
         ]
       }
     },
@@ -119,8 +119,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.180312,
+          55.463495
         ]
       }
     },
@@ -160,8 +160,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.471271,
+          55.487277
         ]
       }
     },
@@ -201,8 +201,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.912231,
+          55.754685
         ]
       }
     },
@@ -242,8 +242,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.856369,
+          55.755345
         ]
       }
     },
@@ -283,8 +283,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.143114,
+          55.476531
         ]
       }
     },
@@ -324,8 +324,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.237487,
+          56.004949
         ]
       }
     },
@@ -365,8 +365,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.599915,
+          55.63199
         ]
       }
     },
@@ -406,8 +406,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.870615,
+          54.783896
         ]
       }
     },
@@ -447,8 +447,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.485243,
+          56.904531
         ]
       }
     },
@@ -488,8 +488,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.206485,
+          56.16025
         ]
       }
     },
@@ -529,8 +529,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.93383,
+          55.083821
         ]
       }
     },
@@ -570,8 +570,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.932946,
+          57.04603
         ]
       }
     },
@@ -611,8 +611,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.209409,
+          56.161259
         ]
       }
     },
@@ -649,13 +649,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -693,8 +687,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.013211,
+          57.445587
         ]
       }
     },
@@ -734,8 +728,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.352162,
+          55.990218
         ]
       }
     },
@@ -775,8 +769,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.839046,
+          55.869344
         ]
       }
     },
@@ -813,13 +807,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -857,8 +845,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.526782,
+          55.181845
         ]
       }
     },
@@ -898,8 +886,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.118052,
+          56.174416
         ]
       }
     },
@@ -939,8 +927,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.781673,
+          54.922757
         ]
       }
     },
@@ -980,8 +968,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.461499,
+          55.238481
         ]
       }
     },
@@ -1021,8 +1009,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.532909,
+          56.161601
         ]
       }
     },
@@ -1062,8 +1050,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.381456,
+          55.397876
         ]
       }
     },
@@ -1103,8 +1091,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.404226,
+          55.0623
         ]
       }
     },
@@ -1144,8 +1132,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.775107,
+          55.325836
         ]
       }
     },
@@ -1185,8 +1173,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.147769,
+          55.438735
         ]
       }
     },
@@ -1226,8 +1214,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.890361,
+          57.044336
         ]
       }
     },
@@ -1267,8 +1255,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.360437,
+          55.422787
         ]
       }
     },
@@ -1308,8 +1296,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.851994,
+          55.869852
         ]
       }
     },
@@ -1349,8 +1337,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.507025,
+          55.752284
         ]
       }
     },
@@ -1390,8 +1378,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.007373,
+          55.632916
         ]
       }
     },
@@ -1431,8 +1419,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.535305,
+          55.702709
         ]
       }
     },
@@ -1472,8 +1460,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.908293,
+          54.999608
         ]
       }
     },
@@ -1510,13 +1498,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -1554,8 +1536,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.183907,
+          56.200727
         ]
       }
     },
@@ -1595,8 +1577,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.559507,
+          55.707093
         ]
       }
     },
@@ -1636,8 +1618,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.996585,
+          55.892201
         ]
       }
     },
@@ -1677,8 +1659,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.485701,
+          57.088338
         ]
       }
     },
@@ -1718,8 +1700,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.206789,
+          56.178204
         ]
       }
     },
@@ -1759,8 +1741,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.81308,
+          55.860466
         ]
       }
     },
@@ -1800,8 +1782,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.607835,
+          55.648636
         ]
       }
     },
@@ -1841,8 +1823,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.607835,
+          55.648636
         ]
       }
     },
@@ -1882,8 +1864,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.288408,
+          56.769093
         ]
       }
     },
@@ -1923,8 +1905,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.180607,
+          55.463169
         ]
       }
     },
@@ -1964,8 +1946,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.427322,
+          55.745915
         ]
       }
     },
@@ -2005,8 +1987,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.16867,
+          55.453535
         ]
       }
     },
@@ -2046,8 +2028,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.237487,
+          56.004949
         ]
       }
     },
@@ -2087,8 +2069,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.578846,
+          55.464413
         ]
       }
     },
@@ -2128,8 +2110,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.927941,
+          56.035952
         ]
       }
     },
@@ -2166,13 +2148,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -2210,8 +2186,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.541565,
+          55.71795
         ]
       }
     },
@@ -2251,8 +2227,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.578177,
+          55.464298
         ]
       }
     },
@@ -2292,8 +2268,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.007373,
+          55.632916
         ]
       }
     },
@@ -2333,8 +2309,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.428828,
+          56.749505
         ]
       }
     },
@@ -2374,8 +2350,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.53071,
+          57.436054
         ]
       }
     },
@@ -2415,8 +2391,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.150432,
+          55.678995
         ]
       }
     },
@@ -2456,8 +2432,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.294345,
+          55.499682
         ]
       }
     },
@@ -2497,8 +2473,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.05463,
+          55.844091
         ]
       }
     },
@@ -2538,8 +2514,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.803729,
+          55.43119
         ]
       }
     },
@@ -2579,8 +2555,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.763796,
+          55.258484
         ]
       }
     },
@@ -2620,8 +2596,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.102977,
+          55.955188
         ]
       }
     },
@@ -2661,8 +2637,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.157208,
+          57.163724
         ]
       }
     },
@@ -2702,8 +2678,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.502102,
+          55.777314
         ]
       }
     },
@@ -2743,8 +2719,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.020917,
+          57.115004
         ]
       }
     },
@@ -2781,13 +2757,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -2825,8 +2795,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.93383,
+          55.083821
         ]
       }
     },
@@ -2866,8 +2836,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.248467,
+          56.961377
         ]
       }
     },
@@ -2907,8 +2877,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.530589,
+          55.992646
         ]
       }
     },
@@ -2948,8 +2918,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.782609,
+          55.31583
         ]
       }
     },
@@ -2989,8 +2959,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.373703,
+          56.433336
         ]
       }
     },
@@ -3030,8 +3000,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.664335,
+          57.231222
         ]
       }
     },
@@ -3068,13 +3038,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "0,83 %",
         "Ejendomsomkostninger_vs_omsætning": "6,73 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -3112,8 +3076,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.15552,
+          56.444
         ]
       }
     },
@@ -3153,8 +3117,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.200166,
+          56.119768
         ]
       }
     },
@@ -3194,8 +3158,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.247655,
+          55.653045
         ]
       }
     },
@@ -3235,8 +3199,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.669705,
+          56.356471
         ]
       }
     },
@@ -3276,8 +3240,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.75994,
+          55.583282
         ]
       }
     },
@@ -3317,8 +3281,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.832157,
+          55.871305
         ]
       }
     },
@@ -3355,13 +3319,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -3399,8 +3357,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.161118,
+          54.832812
         ]
       }
     },
@@ -3440,8 +3398,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.85725,
+          55.499702
         ]
       }
     },
@@ -3481,8 +3439,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.40177,
+          55.736427
         ]
       }
     },
@@ -3522,8 +3480,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.534423,
+          55.714396
         ]
       }
     },
@@ -3563,8 +3521,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.21164,
+          56.148136
         ]
       }
     },
@@ -3604,8 +3562,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.562742,
+          55.716362
         ]
       }
     },
@@ -3645,8 +3603,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.496668,
+          56.806349
         ]
       }
     },
@@ -3686,8 +3644,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.3521,
+          55.410706
         ]
       }
     },
@@ -3727,8 +3685,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.237487,
+          56.004949
         ]
       }
     },
@@ -3768,8 +3726,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.049859,
+          56.152598
         ]
       }
     },
@@ -3809,8 +3767,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.607248,
+          55.660467
         ]
       }
     },
@@ -3850,8 +3808,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.594746,
+          55.217543
         ]
       }
     },
@@ -3891,8 +3849,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.534423,
+          55.714396
         ]
       }
     },
@@ -3932,8 +3890,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.237487,
+          56.004949
         ]
       }
     },
@@ -3973,8 +3931,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.352955,
+          55.402047
         ]
       }
     },
@@ -4014,8 +3972,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.871228,
+          54.766962
         ]
       }
     },
@@ -4055,8 +4013,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.486194,
+          55.493776
         ]
       }
     },
@@ -4096,8 +4054,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.794531,
+          54.903941
         ]
       }
     },
@@ -4137,8 +4095,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.289694,
+          55.581404
         ]
       }
     },
@@ -4178,8 +4136,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.473713,
+          55.810891
         ]
       }
     },
@@ -4219,8 +4177,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.050064,
+          56.463401
         ]
       }
     },
@@ -4260,8 +4218,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.607835,
+          55.648636
         ]
       }
     },
@@ -4301,8 +4259,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.498506,
+          55.702126
         ]
       }
     },
@@ -4339,13 +4297,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -4383,8 +4335,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.015656,
+          57.056693
         ]
       }
     },
@@ -4424,8 +4376,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.337815,
+          55.41039
         ]
       }
     },
@@ -4465,8 +4417,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.559507,
+          55.707093
         ]
       }
     },
@@ -4506,8 +4458,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.535305,
+          55.702709
         ]
       }
     },
@@ -4547,8 +4499,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.513059,
+          55.766592
         ]
       }
     },
@@ -4588,8 +4540,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.16867,
+          55.453535
         ]
       }
     },
@@ -4629,8 +4581,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.500939,
+          55.770318
         ]
       }
     },
@@ -4670,8 +4622,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.473277,
+          55.234357
         ]
       }
     },
@@ -4711,8 +4663,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.356041,
+          57.13518
         ]
       }
     },
@@ -4752,8 +4704,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.920552,
+          57.049331
         ]
       }
     },
@@ -4793,8 +4745,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          14.730273,
+          55.094347
         ]
       }
     },
@@ -4834,8 +4786,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.507361,
+          55.752392
         ]
       }
     },
@@ -4875,8 +4827,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.391768,
+          55.391612
         ]
       }
     },
@@ -4916,8 +4868,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.951575,
+          57.270017
         ]
       }
     },
@@ -4957,8 +4909,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.493441,
+          55.955238
         ]
       }
     },
@@ -4998,8 +4950,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.306329,
+          55.685294
         ]
       }
     },
@@ -5039,8 +4991,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.905273,
+          55.60114
         ]
       }
     },
@@ -5080,8 +5032,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.23877,
+          55.1052
         ]
       }
     },
@@ -5121,8 +5073,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.9371736,
+          57.036132
         ]
       }
     },
@@ -5162,8 +5114,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.859034,
+          55.631178
         ]
       }
     },
@@ -5203,8 +5155,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.40769,
+          55.259606
         ]
       }
     },
@@ -5244,8 +5196,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.398836,
+          55.664632
         ]
       }
     },
@@ -5285,8 +5237,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.908293,
+          54.999608
         ]
       }
     },
@@ -5326,8 +5278,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.026767,
+          57.115205
         ]
       }
     },
@@ -5367,8 +5319,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.457844,
+          55.283104
         ]
       }
     },
@@ -5408,8 +5360,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.038532,
+          55.114924
         ]
       }
     },
@@ -5449,8 +5401,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.407855,
+          55.666608
         ]
       }
     },
@@ -5490,8 +5442,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.454745,
+          55.721111
         ]
       }
     },
@@ -5531,8 +5483,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.407855,
+          55.666608
         ]
       }
     },
@@ -5572,8 +5524,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.068561,
+          55.834891
         ]
       }
     },
@@ -5610,13 +5562,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -5654,8 +5600,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.956611,
+          57.258183
         ]
       }
     },
@@ -5695,8 +5641,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.361883,
+          55.423398
         ]
       }
     },
@@ -5736,8 +5682,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.120821,
+          55.67878
         ]
       }
     },
@@ -5777,8 +5723,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.509259,
+          55.752496
         ]
       }
     },
@@ -5818,8 +5764,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.450765,
+          55.759582
         ]
       }
     },
@@ -5859,8 +5805,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.508188,
+          55.752753
         ]
       }
     },
@@ -5900,8 +5846,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.588494,
+          55.829355
         ]
       }
     },
@@ -5941,8 +5887,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.734254,
+          55.923583
         ]
       }
     },
@@ -5982,8 +5928,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.484111,
+          55.623439
         ]
       }
     },
@@ -6023,8 +5969,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.675353,
+          54.924148
         ]
       }
     },
@@ -6064,8 +6010,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.420622,
+          55.039535
         ]
       }
     },
@@ -6102,13 +6048,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "0,57 %",
         "Ejendomsomkostninger_vs_omsætning": "7,17 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -6146,8 +6086,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.347806,
+          55.982564
         ]
       }
     },
@@ -6187,8 +6127,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.360549,
+          55.654455
         ]
       }
     },
@@ -6228,8 +6168,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.161323,
+          55.848361
         ]
       }
     },
@@ -6269,8 +6209,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.717838,
+          55.563955
         ]
       }
     },
@@ -6310,8 +6250,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.501261,
+          55.528633
         ]
       }
     },
@@ -6351,8 +6291,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.960726,
+          55.413716
         ]
       }
     },
@@ -6392,8 +6332,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.403962,
+          55.74371
         ]
       }
     },
@@ -6433,8 +6373,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.488831,
+          55.495117
         ]
       }
     },
@@ -6474,8 +6414,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.39284,
+          55.508949
         ]
       }
     },
@@ -6515,8 +6455,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.523598,
+          56.649963
         ]
       }
     },
@@ -6553,13 +6493,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -6597,8 +6531,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.289694,
+          55.581404
         ]
       }
     },
@@ -6638,8 +6572,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.503415,
+          55.757583
         ]
       }
     },
@@ -6679,8 +6613,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.420468,
+          55.037038
         ]
       }
     },
@@ -6720,8 +6654,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.643195,
+          55.388973
         ]
       }
     },
@@ -6761,8 +6695,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.618224,
+          56.648066
         ]
       }
     },
@@ -6802,8 +6736,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.534423,
+          55.714396
         ]
       }
     },
@@ -6840,13 +6774,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -6884,8 +6812,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.420622,
+          55.039535
         ]
       }
     },
@@ -6925,8 +6853,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.202372,
+          56.113947
         ]
       }
     },
@@ -6966,8 +6894,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.470364,
+          56.301652
         ]
       }
     },
@@ -7007,8 +6935,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.094419,
+          55.685438
         ]
       }
     },
@@ -7045,13 +6973,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -7089,8 +7011,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.83762,
+          55.842493
         ]
       }
     },
@@ -7130,8 +7052,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.857442,
+          56.801524
         ]
       }
     },
@@ -7171,8 +7093,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.420622,
+          55.039535
         ]
       }
     },
@@ -7212,8 +7134,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.534755,
+          56.181151
         ]
       }
     },
@@ -7253,8 +7175,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.144476,
+          56.106963
         ]
       }
     },
@@ -7294,8 +7216,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.858653,
+          56.254913
         ]
       }
     },
@@ -7335,8 +7257,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.400167,
+          55.717522
         ]
       }
     },
@@ -7376,8 +7298,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.066239,
+          55.695567
         ]
       }
     },
@@ -7417,8 +7339,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.899198,
+          55.021544
         ]
       }
     },
@@ -7458,8 +7380,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.144366,
+          56.147704
         ]
       }
     },
@@ -7499,8 +7421,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.423303,
+          56.74848
         ]
       }
     },
@@ -7540,8 +7462,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.385756,
+          54.695092
         ]
       }
     },
@@ -7581,8 +7503,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.960954,
+          57.026356
         ]
       }
     },
@@ -7622,8 +7544,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.637814,
+          55.653236
         ]
       }
     },
@@ -7663,8 +7585,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.954912,
+          54.58858
         ]
       }
     },
@@ -7704,8 +7626,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.482413,
+          55.797902
         ]
       }
     },
@@ -7745,8 +7667,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.761769,
+          54.929679
         ]
       }
     },
@@ -7786,8 +7708,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.464048,
+          55.846114
         ]
       }
     },
@@ -7827,8 +7749,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.37409,
+          55.673907
         ]
       }
     },
@@ -7868,8 +7790,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.975707,
+          55.494195
         ]
       }
     },
@@ -7909,8 +7831,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.029162,
+          56.460485
         ]
       }
     },
@@ -7950,8 +7872,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.549443,
+          55.206699
         ]
       }
     },
@@ -7991,8 +7913,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.202823,
+          55.319931
         ]
       }
     },
@@ -8029,13 +7951,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -8073,8 +7989,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          14.730273,
+          55.094347
         ]
       }
     },
@@ -8114,8 +8030,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.074229,
+          55.928062
         ]
       }
     },
@@ -8155,8 +8071,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.539929,
+          55.54117
         ]
       }
     },
@@ -8196,8 +8112,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.686152,
+          55.092065
         ]
       }
     },
@@ -8237,8 +8153,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.662128,
+          55.593618
         ]
       }
     },
@@ -8278,8 +8194,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.283881,
+          57.162516
         ]
       }
     },
@@ -8319,8 +8235,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.923966,
+          56.159471
         ]
       }
     },
@@ -8357,13 +8273,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -8401,8 +8311,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.963818,
+          57.083561
         ]
       }
     },
@@ -8442,8 +8352,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.969349,
+          55.316995
         ]
       }
     },
@@ -8483,8 +8393,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.557364,
+          56.241525
         ]
       }
     },
@@ -8524,8 +8434,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.964634,
+          56.131635
         ]
       }
     },
@@ -8565,8 +8475,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.246524,
+          56.960556
         ]
       }
     },
@@ -8606,8 +8516,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.246524,
+          56.960556
         ]
       }
     },
@@ -8647,8 +8557,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.358933,
+          56.837666
         ]
       }
     },
@@ -8688,8 +8598,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.05647,
+          55.843947
         ]
       }
     },
@@ -8729,8 +8639,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.510923,
+          55.752637
         ]
       }
     },
@@ -8770,8 +8680,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.038532,
+          55.114924
         ]
       }
     },
@@ -8808,13 +8718,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "0,51 %",
         "Ejendomsomkostninger_vs_omsætning": "4,63 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -8852,8 +8756,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.419967,
+          55.629592
         ]
       }
     },
@@ -8893,8 +8797,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.432554,
+          55.623361
         ]
       }
     },
@@ -8934,8 +8838,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.549443,
+          55.206699
         ]
       }
     },
@@ -8975,8 +8879,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.276387,
+          54.86452
         ]
       }
     },
@@ -9016,8 +8920,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.046354,
+          56.461886
         ]
       }
     },
@@ -9057,8 +8961,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.419047,
+          55.494704
         ]
       }
     },
@@ -9098,8 +9002,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.373306,
+          56.43079
         ]
       }
     },
@@ -9136,13 +9040,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -9180,8 +9078,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.530897,
+          55.70208
         ]
       }
     },
@@ -9221,8 +9119,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.408817,
+          55.745796
         ]
       }
     },
@@ -9262,8 +9160,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.032322,
+          57.114839
         ]
       }
     },
@@ -9303,8 +9201,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.239424,
+          55.103489
         ]
       }
     },
@@ -9344,8 +9242,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.246524,
+          56.960556
         ]
       }
     },
@@ -9385,8 +9283,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.534423,
+          55.714396
         ]
       }
     },
@@ -9426,8 +9324,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.534423,
+          55.714396
         ]
       }
     },
@@ -9467,8 +9365,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.496935,
+          55.754973
         ]
       }
     },
@@ -9505,13 +9403,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -9549,8 +9441,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.928437,
+          56.159918
         ]
       }
     },
@@ -9590,8 +9482,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.044478,
+          55.289819
         ]
       }
     },
@@ -9631,8 +9523,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.501261,
+          55.528633
         ]
       }
     },
@@ -9672,8 +9564,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.31224,
+          56.526389
         ]
       }
     },
@@ -9713,8 +9605,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.153846,
+          55.42126
         ]
       }
     },
@@ -9754,8 +9646,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.942873,
+          57.029567
         ]
       }
     },
@@ -9792,13 +9684,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -9836,8 +9722,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.547482,
+          55.678395
         ]
       }
     },
@@ -9877,8 +9763,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.526198,
+          54.711106
         ]
       }
     },
@@ -9918,8 +9804,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.939429,
+          57.278673
         ]
       }
     },
@@ -9959,8 +9845,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.500631,
+          55.600631
         ]
       }
     },
@@ -10000,8 +9886,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.526198,
+          54.711106
         ]
       }
     },
@@ -10038,13 +9924,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -10079,13 +9959,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -10123,8 +9997,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.581068,
+          55.712928
         ]
       }
     },
@@ -10161,13 +10035,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -10205,8 +10073,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.856369,
+          55.755345
         ]
       }
     },
@@ -10246,8 +10114,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.440193,
+          56.445123
         ]
       }
     },
@@ -10287,8 +10155,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.503415,
+          55.757583
         ]
       }
     },
@@ -10328,8 +10196,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.515352,
+          55.699834
         ]
       }
     },
@@ -10369,8 +10237,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.062501,
+          55.631105
         ]
       }
     },
@@ -10410,8 +10278,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.81308,
+          55.860466
         ]
       }
     },
@@ -10451,8 +10319,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.009954,
+          57.454943
         ]
       }
     },
@@ -10492,8 +10360,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.887006,
+          57.021258
         ]
       }
     },
@@ -10533,8 +10401,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.296289,
+          56.514977
         ]
       }
     },
@@ -10574,8 +10442,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.160939,
+          55.792055
         ]
       }
     },
@@ -10615,8 +10483,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.658922,
+          55.92783
         ]
       }
     },
@@ -10656,8 +10524,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.791904,
+          56.637226
         ]
       }
     },
@@ -10697,8 +10565,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.291712,
+          55.927672
         ]
       }
     },
@@ -10738,8 +10606,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.024064,
+          57.114409
         ]
       }
     },
@@ -10779,8 +10647,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.496027,
+          57.431084
         ]
       }
     },
@@ -10820,8 +10688,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.071052,
+          56.473895
         ]
       }
     },
@@ -10858,13 +10726,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -10902,8 +10764,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.183907,
+          56.200727
         ]
       }
     },
@@ -10943,8 +10805,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          14.705223,
+          55.109895
         ]
       }
     },
@@ -10984,8 +10846,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.659178,
+          56.370336
         ]
       }
     },
@@ -11025,8 +10887,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.007373,
+          55.632916
         ]
       }
     },
@@ -11066,8 +10928,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.503415,
+          55.757583
         ]
       }
     },
@@ -11107,8 +10969,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.018153,
+          55.978783
         ]
       }
     },
@@ -11148,8 +11010,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.470364,
+          56.301652
         ]
       }
     },
@@ -11189,8 +11051,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.507025,
+          55.752284
         ]
       }
     },
@@ -11230,8 +11092,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.509539,
+          55.751703
         ]
       }
     },
@@ -11271,8 +11133,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.72814,
+          55.701105
         ]
       }
     },
@@ -11312,8 +11174,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.007373,
+          55.632916
         ]
       }
     },
@@ -11353,8 +11215,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.678142,
+          55.667287
         ]
       }
     },
@@ -11394,8 +11256,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.507361,
+          55.752392
         ]
       }
     },
@@ -11435,8 +11297,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.132325,
+          56.133867
         ]
       }
     },
@@ -11476,8 +11338,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.758913,
+          55.252503
         ]
       }
     },
@@ -11517,8 +11379,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.487729,
+          57.08865
         ]
       }
     },
@@ -11558,8 +11420,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.23877,
+          55.1052
         ]
       }
     },
@@ -11599,8 +11461,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.115215,
+          56.186294
         ]
       }
     },
@@ -11640,8 +11502,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.139959,
+          55.644402
         ]
       }
     },
@@ -11681,8 +11543,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.335304,
+          55.255291
         ]
       }
     },
@@ -11719,13 +11581,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -11763,8 +11619,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.407432,
+          56.444803
         ]
       }
     },
@@ -11804,8 +11660,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.939751,
+          57.269808
         ]
       }
     },
@@ -11845,8 +11701,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.915919,
+          55.513003
         ]
       }
     },
@@ -11883,13 +11739,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,88 %",
         "Ejendomsomkostninger_vs_omsætning": "15,95 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -11927,8 +11777,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.375725,
+          55.391388
         ]
       }
     },
@@ -11968,8 +11818,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.22562,
+          56.686075
         ]
       }
     },
@@ -12009,8 +11859,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.435934,
+          55.717688
         ]
       }
     },
@@ -12047,13 +11897,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -12088,13 +11932,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -12132,8 +11970,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.31224,
+          56.526389
         ]
       }
     },
@@ -12170,13 +12008,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -12214,8 +12046,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.210884,
+          56.150865
         ]
       }
     },
@@ -12255,8 +12087,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.007373,
+          55.632916
         ]
       }
     },
@@ -12296,8 +12128,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.771642,
+          55.325475
         ]
       }
     },
@@ -12337,8 +12169,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.283414,
+          54.996952
         ]
       }
     },
@@ -12378,8 +12210,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.914735,
+          55.268793
         ]
       }
     },
@@ -12419,8 +12251,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.314846,
+          55.93385
         ]
       }
     },
@@ -12460,8 +12292,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.607835,
+          55.648636
         ]
       }
     },
@@ -12501,8 +12333,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.176809,
+          55.480967
         ]
       }
     },
@@ -12542,8 +12374,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.182024,
+          55.857746
         ]
       }
     },
@@ -12580,13 +12412,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -12624,8 +12450,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.37409,
+          55.673907
         ]
       }
     },
@@ -12662,13 +12488,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -12706,8 +12526,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.544711,
+          56.16645
         ]
       }
     },
@@ -12747,8 +12567,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.760312,
+          55.207483
         ]
       }
     },
@@ -12788,8 +12608,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.783221,
+          55.256954
         ]
       }
     },
@@ -12829,8 +12649,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.398754,
+          55.652641
         ]
       }
     },
@@ -12870,8 +12690,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.458412,
+          55.375871
         ]
       }
     },
@@ -12911,8 +12731,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.458412,
+          55.375871
         ]
       }
     },
@@ -12952,8 +12772,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.180703,
+          55.463039
         ]
       }
     },
@@ -12993,8 +12813,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.163277,
+          55.445714
         ]
       }
     },
@@ -13034,8 +12854,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.243244,
+          56.94075
         ]
       }
     },
@@ -13075,8 +12895,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.491055,
+          55.558343
         ]
       }
     },
@@ -13116,8 +12936,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.371059,
+          55.39356
         ]
       }
     },
@@ -13157,8 +12977,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.069905,
+          55.837292
         ]
       }
     },
@@ -13195,13 +13015,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -13239,8 +13053,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.818013,
+          56.627559
         ]
       }
     },
@@ -13280,8 +13094,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.546877,
+          55.713453
         ]
       }
     },
@@ -13321,8 +13135,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.131028,
+          56.133804
         ]
       }
     },
@@ -13362,8 +13176,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.442237,
+          55.677641
         ]
       }
     },
@@ -13403,8 +13217,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.450961,
+          55.757341
         ]
       }
     },
@@ -13441,13 +13255,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -13485,8 +13293,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.72814,
+          55.701105
         ]
       }
     },
@@ -13526,8 +13334,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.013211,
+          57.445587
         ]
       }
     },
@@ -13567,8 +13375,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.534423,
+          55.714396
         ]
       }
     },
@@ -13608,8 +13416,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.17191,
+          56.308101
         ]
       }
     },
@@ -13649,8 +13457,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.158,
+          56.137704
         ]
       }
     },
@@ -13690,8 +13498,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.565596,
+          55.741826
         ]
       }
     },
@@ -13731,8 +13539,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.139959,
+          55.644402
         ]
       }
     },
@@ -13772,8 +13580,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.007373,
+          55.632916
         ]
       }
     },
@@ -13813,8 +13621,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.521757,
+          57.33529
         ]
       }
     },
@@ -13851,13 +13659,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -13895,8 +13697,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.044668,
+          56.474096
         ]
       }
     },
@@ -13936,8 +13738,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.999404,
+          57.256284
         ]
       }
     },
@@ -13977,8 +13779,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.992417,
+          56.647279
         ]
       }
     },
@@ -14018,8 +13820,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.559507,
+          55.707093
         ]
       }
     },
@@ -14059,8 +13861,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.49533,
+          55.228207
         ]
       }
     },
@@ -14100,8 +13902,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.237487,
+          56.004949
         ]
       }
     },
@@ -14141,8 +13943,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.530589,
+          55.992646
         ]
       }
     },
@@ -14182,8 +13984,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.501997,
+          54.775693
         ]
       }
     },
@@ -14223,8 +14025,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.016613,
+          55.593169
         ]
       }
     },
@@ -14264,8 +14066,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.517991,
+          57.323801
         ]
       }
     },
@@ -14305,8 +14107,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.618365,
+          55.067205
         ]
       }
     },
@@ -14346,8 +14148,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.463663,
+          55.846106
         ]
       }
     },
@@ -14387,8 +14189,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.534259,
+          55.174697
         ]
       }
     },
@@ -14428,8 +14230,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.608546,
+          55.64945
         ]
       }
     },
@@ -14469,8 +14271,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.237487,
+          56.004949
         ]
       }
     },
@@ -14510,8 +14312,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.409219,
+          55.983374
         ]
       }
     },
@@ -14551,8 +14353,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.50544,
+          55.635937
         ]
       }
     },
@@ -14592,8 +14394,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.839808,
+          55.690453
         ]
       }
     },
@@ -14630,13 +14432,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "0,65 %",
         "Ejendomsomkostninger_vs_omsætning": "3,51 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -14674,8 +14470,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.37409,
+          55.673907
         ]
       }
     },
@@ -14715,8 +14511,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.010479,
+          57.472022
         ]
       }
     },
@@ -14756,8 +14552,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.400167,
+          55.717522
         ]
       }
     },
@@ -14797,8 +14593,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.875186,
+          56.412312
         ]
       }
     },
@@ -14838,8 +14634,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.27989,
+          55.848599
         ]
       }
     },
@@ -14879,8 +14675,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.112153,
+          57.25706
         ]
       }
     },
@@ -14920,8 +14716,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.193898,
+          54.931411
         ]
       }
     },
@@ -14961,8 +14757,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.546877,
+          55.713453
         ]
       }
     },
@@ -15002,8 +14798,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.555896,
+          55.5614
         ]
       }
     },
@@ -15043,8 +14839,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          14.890427,
+          55.211644
         ]
       }
     },
@@ -15084,8 +14880,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.189212,
+          56.150879
         ]
       }
     },
@@ -15125,8 +14921,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.180582,
+          55.88513
         ]
       }
     },
@@ -15163,13 +14959,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,08 %",
         "Ejendomsomkostninger_vs_omsætning": "2,69 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -15207,8 +14997,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.796075,
+          55.335496
         ]
       }
     },
@@ -15248,8 +15038,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.4996109,
+          57.4356171
         ]
       }
     },
@@ -15289,8 +15079,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.475847,
+          56.914082
         ]
       }
     },
@@ -15330,8 +15120,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.655504,
+          55.674588
         ]
       }
     },
@@ -15371,8 +15161,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.760809,
+          55.198879
         ]
       }
     },
@@ -15412,8 +15202,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.360437,
+          55.422787
         ]
       }
     },
@@ -15453,8 +15243,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.404582,
+          55.813898
         ]
       }
     },
@@ -15494,8 +15284,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.495893,
+          55.765155
         ]
       }
     },
@@ -15535,8 +15325,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.342048,
+          55.316041
         ]
       }
     },
@@ -15576,8 +15366,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.068984,
+          56.675646
         ]
       }
     },
@@ -15617,8 +15407,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.934494,
+          55.082164
         ]
       }
     },
@@ -15658,8 +15448,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.239424,
+          55.103489
         ]
       }
     },
@@ -15696,13 +15486,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "0,6 %",
         "Ejendomsomkostninger_vs_omsætning": "6,8 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -15737,13 +15521,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -15781,8 +15559,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.522645,
+          55.684816
         ]
       }
     },
@@ -15822,8 +15600,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.515462,
+          55.740597
         ]
       }
     },
@@ -15863,8 +15641,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.159776,
+          55.791908
         ]
       }
     },
@@ -15904,8 +15682,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.578817,
+          55.063858
         ]
       }
     },
@@ -15945,8 +15723,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.551821,
+          55.863604
         ]
       }
     },
@@ -15986,8 +15764,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.0016,
+          57.447853
         ]
       }
     },
@@ -16027,8 +15805,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.531999,
+          55.701005
         ]
       }
     },
@@ -16068,8 +15846,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.577745,
+          56.511413
         ]
       }
     },
@@ -16106,13 +15884,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -16150,8 +15922,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.37599,
+          55.821107
         ]
       }
     },
@@ -16191,8 +15963,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.082056,
+          55.627831
         ]
       }
     },
@@ -16232,8 +16004,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.112153,
+          57.25706
         ]
       }
     },
@@ -16273,8 +16045,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.535305,
+          55.702709
         ]
       }
     },
@@ -16314,8 +16086,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.355755,
+          55.807593
         ]
       }
     },
@@ -16355,8 +16127,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.389938,
+          55.734779
         ]
       }
     },
@@ -16396,8 +16168,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.211558,
+          55.31493
         ]
       }
     },
@@ -16437,8 +16209,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.334752,
+          55.927524
         ]
       }
     },
@@ -16478,8 +16250,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.557622,
+          55.743691
         ]
       }
     },
@@ -16519,8 +16291,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.116786,
+          56.185645
         ]
       }
     },
@@ -16560,8 +16332,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.530897,
+          55.70208
         ]
       }
     },
@@ -16601,8 +16373,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.530897,
+          55.70208
         ]
       }
     },
@@ -16642,8 +16414,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.264563,
+          54.940369
         ]
       }
     },
@@ -16680,13 +16452,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -16724,8 +16490,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.696225,
+          56.956293
         ]
       }
     },
@@ -16765,8 +16531,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.071052,
+          56.473895
         ]
       }
     },
@@ -16806,8 +16572,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.25164,
+          55.92104
         ]
       }
     },
@@ -16847,8 +16613,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.288852,
+          55.251463
         ]
       }
     },
@@ -16888,8 +16654,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.487747,
+          56.698288
         ]
       }
     },
@@ -16929,8 +16695,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.672256,
+          56.370449
         ]
       }
     },
@@ -16970,8 +16736,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.576,
+          56.490662
         ]
       }
     },
@@ -17011,8 +16777,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.479095,
+          55.240598
         ]
       }
     },
@@ -17052,8 +16818,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.352955,
+          55.402047
         ]
       }
     },
@@ -17093,8 +16859,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.950167,
+          57.263103
         ]
       }
     },
@@ -17134,8 +16900,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.420644,
+          55.048336
         ]
       }
     },
@@ -17175,8 +16941,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.424274,
+          56.752339
         ]
       }
     },
@@ -17216,8 +16982,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.915848,
+          57.048656
         ]
       }
     },
@@ -17257,8 +17023,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.677461,
+          55.668158
         ]
       }
     },
@@ -17298,8 +17064,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.763928,
+          55.205509
         ]
       }
     },
@@ -17336,13 +17102,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "0,16 %",
         "Ejendomsomkostninger_vs_omsætning": "19,07 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -17380,8 +17140,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.734219,
+          54.930382
         ]
       }
     },
@@ -17421,8 +17181,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.470167,
+          55.7312
         ]
       }
     },
@@ -17462,8 +17222,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.429246,
+          55.663516
         ]
       }
     },
@@ -17503,8 +17263,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.450765,
+          55.759582
         ]
       }
     },
@@ -17544,8 +17304,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.455789,
+          55.850832
         ]
       }
     },
@@ -17585,8 +17345,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.607835,
+          55.648636
         ]
       }
     },
@@ -17626,8 +17386,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.239626,
+          55.567252
         ]
       }
     },
@@ -17667,8 +17427,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.246524,
+          56.960556
         ]
       }
     },
@@ -17708,8 +17468,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.358933,
+          56.837666
         ]
       }
     },
@@ -17749,8 +17509,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.629021,
+          54.803345
         ]
       }
     },
@@ -17790,8 +17550,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.039357,
+          56.465961
         ]
       }
     },
@@ -17831,8 +17591,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.504204,
+          56.160487
         ]
       }
     },
@@ -17872,8 +17632,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.473713,
+          55.810891
         ]
       }
     },
@@ -17913,8 +17673,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.53423,
+          55.511964
         ]
       }
     },
@@ -17954,8 +17714,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.9897856,
+          55.7124789
         ]
       }
     },
@@ -17995,8 +17755,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.147418,
+          56.132378
         ]
       }
     },
@@ -18036,8 +17796,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.10016,
+          56.059539
         ]
       }
     },
@@ -18077,8 +17837,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.454515,
+          55.369138
         ]
       }
     },
@@ -18118,8 +17878,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.739018,
+          56.582578
         ]
       }
     },
@@ -18159,8 +17919,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.536987,
+          55.228528
         ]
       }
     },
@@ -18200,8 +17960,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.682701,
+          55.668944
         ]
       }
     },
@@ -18241,8 +18001,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.673635,
+          55.658809
         ]
       }
     },
@@ -18282,8 +18042,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.452175,
+          55.42058
         ]
       }
     },
@@ -18323,8 +18083,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.593349,
+          55.656598
         ]
       }
     },
@@ -18364,8 +18124,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.334752,
+          55.927524
         ]
       }
     },
@@ -18405,8 +18165,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.49837,
+          55.501352
         ]
       }
     },
@@ -18446,8 +18206,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.235564,
+          55.256027
         ]
       }
     },
@@ -18487,8 +18247,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.522512,
+          55.332419
         ]
       }
     },
@@ -18528,8 +18288,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.534769,
+          55.671855
         ]
       }
     },
@@ -18569,8 +18329,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.941796,
+          57.283476
         ]
       }
     },
@@ -18610,8 +18370,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.218708,
+          57.273089
         ]
       }
     },
@@ -18651,8 +18411,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.761453,
+          55.589668
         ]
       }
     },
@@ -18692,8 +18452,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.750699,
+          55.051945
         ]
       }
     },
@@ -18733,8 +18493,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.551821,
+          55.863604
         ]
       }
     },
@@ -18774,8 +18534,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.546877,
+          55.713453
         ]
       }
     },
@@ -18815,8 +18575,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.145501,
+          56.125845
         ]
       }
     },
@@ -18856,8 +18616,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.875911,
+          55.462958
         ]
       }
     },
@@ -18897,8 +18657,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.536104,
+          56.165283
         ]
       }
     },
@@ -18935,13 +18695,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -18979,8 +18733,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.043668,
+          56.578332
         ]
       }
     },
@@ -19020,8 +18774,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.497094,
+          55.465112
         ]
       }
     },
@@ -19061,8 +18815,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.050898,
+          55.686905
         ]
       }
     },
@@ -19102,8 +18856,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.317555,
+          55.31856
         ]
       }
     },
@@ -19140,13 +18894,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -19184,8 +18932,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.182024,
+          55.857746
         ]
       }
     },
@@ -19225,8 +18973,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.139959,
+          55.644402
         ]
       }
     },
@@ -19266,8 +19014,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.139959,
+          55.644402
         ]
       }
     },
@@ -19307,8 +19055,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.398754,
+          55.403328
         ]
       }
     },
@@ -19348,8 +19096,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.760369,
+          56.175972
         ]
       }
     },
@@ -19389,8 +19137,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.527602,
+          55.705328
         ]
       }
     },
@@ -19430,8 +19178,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.45641,
+          57.053846
         ]
       }
     },
@@ -19471,8 +19219,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.485858,
+          57.089192
         ]
       }
     },
@@ -19512,8 +19260,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.396049,
+          55.615813
         ]
       }
     },
@@ -19553,8 +19301,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.007373,
+          55.632916
         ]
       }
     },
@@ -19594,8 +19342,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.637005,
+          56.333929
         ]
       }
     },
@@ -19635,8 +19383,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.266986,
+          55.930208
         ]
       }
     },
@@ -19676,8 +19424,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.580371,
+          55.708073
         ]
       }
     },
@@ -19717,8 +19465,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.019091,
+          56.55326
         ]
       }
     },
@@ -19758,8 +19506,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.743447,
+          57.154755
         ]
       }
     },
@@ -19799,8 +19547,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.908293,
+          54.999608
         ]
       }
     },
@@ -19840,8 +19588,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.346584,
+          56.04732
         ]
       }
     },
@@ -19881,8 +19629,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.33887,
+          55.402224
         ]
       }
     },
@@ -19922,8 +19670,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.161323,
+          55.848361
         ]
       }
     },
@@ -19963,8 +19711,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.447938,
+          55.756658
         ]
       }
     },
@@ -20004,8 +19752,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.222854,
+          55.375629
         ]
       }
     },
@@ -20045,8 +19793,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.516501,
+          55.603943
         ]
       }
     },
@@ -20086,8 +19834,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.61357,
+          56.376661
         ]
       }
     },
@@ -20127,8 +19875,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.168288,
+          56.122954
         ]
       }
     },
@@ -20168,8 +19916,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.568681,
+          55.716096
         ]
       }
     },
@@ -20209,8 +19957,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.764551,
+          55.504317
         ]
       }
     },
@@ -20250,8 +19998,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.684099,
+          55.736388
         ]
       }
     },
@@ -20291,8 +20039,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.780599,
+          54.926362
         ]
       }
     },
@@ -20332,8 +20080,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.355358,
+          54.664218
         ]
       }
     },
@@ -20370,13 +20118,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "0,55 %",
         "Ejendomsomkostninger_vs_omsætning": "6,72 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -20414,8 +20156,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.51975,
+          55.728576
         ]
       }
     },
@@ -20455,8 +20197,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.853242,
+          54.930945
         ]
       }
     },
@@ -20496,8 +20238,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.33048,
+          56.504147
         ]
       }
     },
@@ -20537,8 +20279,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.545007,
+          55.541946
         ]
       }
     },
@@ -20578,8 +20320,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.946747,
+          56.132067
         ]
       }
     },
@@ -20619,8 +20361,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.389938,
+          55.734779
         ]
       }
     },
@@ -20660,8 +20402,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.241565,
+          56.939627
         ]
       }
     },
@@ -20698,13 +20440,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -20742,8 +20478,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.59837,
+          56.301884
         ]
       }
     },
@@ -20783,8 +20519,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.578846,
+          55.464413
         ]
       }
     },
@@ -20824,8 +20560,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.031175,
+          56.566736
         ]
       }
     },
@@ -20865,8 +20601,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.04593,
+          56.4618
         ]
       }
     },
@@ -20906,8 +20642,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.741492,
+          55.058197
         ]
       }
     },
@@ -20947,8 +20683,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.2985,
+          56.265616
         ]
       }
     },
@@ -20988,8 +20724,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.399452,
+          55.642603
         ]
       }
     },
@@ -21029,8 +20765,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.021263,
+          56.152035
         ]
       }
     },
@@ -21070,8 +20806,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.09615,
+          55.552066
         ]
       }
     },
@@ -21111,8 +20847,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.466983,
+          55.504247
         ]
       }
     },
@@ -21152,8 +20888,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.193246,
+          56.172652
         ]
       }
     },
@@ -21193,8 +20929,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.487747,
+          56.698288
         ]
       }
     },
@@ -21234,8 +20970,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.343183,
+          55.933953
         ]
       }
     },
@@ -21275,8 +21011,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.313529,
+          56.320772
         ]
       }
     },
@@ -21316,8 +21052,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.288004,
+          55.508774
         ]
       }
     },
@@ -21357,8 +21093,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.479966,
+          56.38317
         ]
       }
     },
@@ -21398,8 +21134,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.435502,
+          55.394381
         ]
       }
     },
@@ -21439,8 +21175,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.363333,
+          56.321141
         ]
       }
     },
@@ -21480,8 +21216,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.462597,
+          57.130636
         ]
       }
     },
@@ -21521,8 +21257,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.457844,
+          55.283104
         ]
       }
     },
@@ -21562,8 +21298,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.231594,
+          55.125836
         ]
       }
     },
@@ -21603,8 +21339,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.071773,
+          56.432064
         ]
       }
     },
@@ -21644,8 +21380,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.49098,
+          56.668066
         ]
       }
     },
@@ -21685,8 +21421,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.657001,
+          55.9287
         ]
       }
     },
@@ -21726,8 +21462,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.188051,
+          55.50159
         ]
       }
     },
@@ -21767,8 +21503,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.139959,
+          55.644402
         ]
       }
     },
@@ -21808,8 +21544,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.296076,
+          56.542172
         ]
       }
     },
@@ -21849,8 +21585,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.240835,
+          55.843117
         ]
       }
     },
@@ -21890,8 +21626,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.229614,
+          56.899717
         ]
       }
     },
@@ -21928,13 +21664,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -21972,8 +21702,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.895746,
+          54.91529
         ]
       }
     },
@@ -22013,8 +21743,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.66574,
+          55.922322
         ]
       }
     },
@@ -22054,8 +21784,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.528252,
+          55.701383
         ]
       }
     },
@@ -22095,8 +21825,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.398754,
+          55.403328
         ]
       }
     },
@@ -22136,8 +21866,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.149848,
+          55.969076
         ]
       }
     },
@@ -22177,8 +21907,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.84598,
+          55.862586
         ]
       }
     },
@@ -22215,13 +21945,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -22259,8 +21983,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.969463,
+          56.137307
         ]
       }
     },
@@ -22300,8 +22024,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.024605,
+          56.485285
         ]
       }
     },
@@ -22341,8 +22065,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.507819,
+          55.946025
         ]
       }
     },
@@ -22382,8 +22106,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.58089,
+          55.3566
         ]
       }
     },
@@ -22423,8 +22147,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.073645,
+          55.214286
         ]
       }
     },
@@ -22464,8 +22188,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.401798,
+          55.633692
         ]
       }
     },
@@ -22505,8 +22229,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.729152,
+          55.49871
         ]
       }
     },
@@ -22546,8 +22270,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.528252,
+          55.701383
         ]
       }
     },
@@ -22587,8 +22311,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.391212,
+          55.514275
         ]
       }
     },
@@ -22628,8 +22352,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.279245,
+          55.586605
         ]
       }
     },
@@ -22669,8 +22393,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.75299,
+          55.313349
         ]
       }
     },
@@ -22710,8 +22434,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.214183,
+          56.098107
         ]
       }
     },
@@ -22751,8 +22475,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.920048,
+          56.028221
         ]
       }
     },
@@ -22792,8 +22516,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.057815,
+          55.051698
         ]
       }
     },
@@ -22833,8 +22557,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.927477,
+          57.067868
         ]
       }
     },
@@ -22874,8 +22598,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.503415,
+          55.757583
         ]
       }
     },
@@ -22915,8 +22639,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.387003,
+          54.984212
         ]
       }
     },
@@ -22956,8 +22680,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.703166,
+          56.964091
         ]
       }
     },
@@ -22997,8 +22721,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.759242,
+          56.192321
         ]
       }
     },
@@ -23038,8 +22762,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.592343,
+          56.103604
         ]
       }
     },
@@ -23079,8 +22803,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.036045,
+          56.461484
         ]
       }
     },
@@ -23120,8 +22844,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.471971,
+          55.38469
         ]
       }
     },
@@ -23161,8 +22885,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.739934,
+          56.594924
         ]
       }
     },
@@ -23202,8 +22926,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.15992,
+          56.069448
         ]
       }
     },
@@ -23243,8 +22967,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.530589,
+          55.992646
         ]
       }
     },
@@ -23284,8 +23008,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.926637,
+          57.034752
         ]
       }
     },
@@ -23325,8 +23049,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.510017,
+          55.530097
         ]
       }
     },
@@ -23366,8 +23090,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.595833,
+          56.179208
         ]
       }
     },
@@ -23407,8 +23131,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.563335,
+          55.726387
         ]
       }
     },
@@ -23448,8 +23172,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.568942,
+          55.723547
         ]
       }
     },
@@ -23489,8 +23213,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.298977,
+          55.920594
         ]
       }
     },
@@ -23530,8 +23254,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.077321,
+          55.191711
         ]
       }
     },
@@ -23571,8 +23295,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.879925,
+          56.393931
         ]
       }
     },
@@ -23612,8 +23336,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.671916,
+          56.444046
         ]
       }
     },
@@ -23653,8 +23377,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.304244,
+          55.650449
         ]
       }
     },
@@ -23694,8 +23418,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.685378,
+          56.971003
         ]
       }
     },
@@ -23735,8 +23459,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.420952,
+          56.847594
         ]
       }
     },
@@ -23776,8 +23500,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.360012,
+          55.782394
         ]
       }
     },
@@ -23817,8 +23541,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.849376,
+          55.209232
         ]
       }
     },
@@ -23858,8 +23582,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.554076,
+          55.684985
         ]
       }
     },
@@ -23896,13 +23620,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -23940,8 +23658,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.578194,
+          55.680232
         ]
       }
     },
@@ -23981,8 +23699,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.165448,
+          56.129019
         ]
       }
     },
@@ -24022,8 +23740,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.423298,
+          55.72468
         ]
       }
     },
@@ -24063,8 +23781,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.496027,
+          57.431084
         ]
       }
     },
@@ -24101,13 +23819,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -24145,8 +23857,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.913498,
+          55.974954
         ]
       }
     },
@@ -24186,8 +23898,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.438832,
+          55.648843
         ]
       }
     },
@@ -24227,8 +23939,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.395491,
+          55.400888
         ]
       }
     },
@@ -24268,8 +23980,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.454745,
+          55.721111
         ]
       }
     },
@@ -24309,8 +24021,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.072817,
+          56.271567
         ]
       }
     },
@@ -24350,8 +24062,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.879091,
+          55.518831
         ]
       }
     },
@@ -24391,8 +24103,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.856355,
+          55.001523
         ]
       }
     },
@@ -24432,8 +24144,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.312804,
+          55.651134
         ]
       }
     },
@@ -24473,8 +24185,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.362657,
+          55.720752
         ]
       }
     },
@@ -24514,8 +24226,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.658922,
+          55.92783
         ]
       }
     },
@@ -24555,8 +24267,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.029074,
+          57.113622
         ]
       }
     },
@@ -24596,8 +24308,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.879091,
+          55.518831
         ]
       }
     },
@@ -24634,13 +24346,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "2,38 %",
         "Ejendomsomkostninger_vs_omsætning": "9,37 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -24678,8 +24384,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.077321,
+          55.191711
         ]
       }
     },
@@ -24719,8 +24425,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.298977,
+          55.920594
         ]
       }
     },
@@ -24760,8 +24466,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.551755,
+          55.880011
         ]
       }
     },
@@ -24801,8 +24507,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.908589,
+          55.001935
         ]
       }
     },
@@ -24842,8 +24548,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.854003,
+          56.967069
         ]
       }
     },
@@ -24883,8 +24589,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.251619,
+          56.094315
         ]
       }
     },
@@ -24924,8 +24630,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.374132,
+          56.083721
         ]
       }
     },
@@ -24965,8 +24671,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.524416,
+          55.695503
         ]
       }
     },
@@ -25006,8 +24712,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.373703,
+          56.433336
         ]
       }
     },
@@ -25047,8 +24753,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.408535,
+          55.983675
         ]
       }
     },
@@ -25088,8 +24794,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.146295,
+          56.14061
         ]
       }
     },
@@ -25129,8 +24835,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.993714,
+          57.27345
         ]
       }
     },
@@ -25170,8 +24876,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.022808,
+          57.114064
         ]
       }
     },
@@ -25211,8 +24917,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.582031,
+          54.922053
         ]
       }
     },
@@ -25252,8 +24958,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.061249,
+          56.264261
         ]
       }
     },
@@ -25293,8 +24999,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.227325,
+          55.835573
         ]
       }
     },
@@ -25334,8 +25040,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.001927,
+          55.295798
         ]
       }
     },
@@ -25375,8 +25081,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.985744,
+          55.118136
         ]
       }
     },
@@ -25416,8 +25122,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.606461,
+          56.359036
         ]
       }
     },
@@ -25457,8 +25163,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.432647,
+          56.289565
         ]
       }
     },
@@ -25498,8 +25204,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.442852,
+          56.276366
         ]
       }
     },
@@ -25539,8 +25245,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.06602,
+          55.836526
         ]
       }
     },
@@ -25577,13 +25283,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -25621,8 +25321,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.730542,
+          55.708479
         ]
       }
     },
@@ -25662,8 +25362,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.611541,
+          55.058126
         ]
       }
     },
@@ -25703,8 +25403,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.122997,
+          55.256933
         ]
       }
     },
@@ -25744,8 +25444,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.482091,
+          55.67321
         ]
       }
     },
@@ -25785,8 +25485,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.719403,
+          55.719654
         ]
       }
     },
@@ -25826,8 +25526,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.423298,
+          55.72468
         ]
       }
     },
@@ -25867,8 +25567,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.556173,
+          55.703995
         ]
       }
     },
@@ -25908,8 +25608,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.139959,
+          55.644402
         ]
       }
     },
@@ -25949,8 +25649,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.514624,
+          55.753964
         ]
       }
     },
@@ -25990,8 +25690,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.398754,
+          55.403328
         ]
       }
     },
@@ -26031,8 +25731,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.580371,
+          55.708073
         ]
       }
     },
@@ -26072,8 +25772,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.523613,
+          55.181907
         ]
       }
     },
@@ -26113,8 +25813,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.423298,
+          55.72468
         ]
       }
     },
@@ -26154,8 +25854,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.560276,
+          56.170709
         ]
       }
     },
@@ -26195,8 +25895,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.418662,
+          55.310928
         ]
       }
     },
@@ -26236,8 +25936,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.96567,
+          56.131387
         ]
       }
     },
@@ -26277,8 +25977,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.073678,
+          55.19245
         ]
       }
     },
@@ -26318,8 +26018,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.0606,
+          56.335595
         ]
       }
     },
@@ -26359,8 +26059,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.0606,
+          56.335595
         ]
       }
     },
@@ -26400,8 +26100,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.333211,
+          56.360698
         ]
       }
     },
@@ -26438,13 +26138,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -26482,8 +26176,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.908589,
+          55.001935
         ]
       }
     },
@@ -26523,8 +26217,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.009646,
+          55.362693
         ]
       }
     },
@@ -26564,8 +26258,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.612188,
+          55.058908
         ]
       }
     },
@@ -26605,8 +26299,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.027931,
+          57.113103
         ]
       }
     },
@@ -26646,8 +26340,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.196008,
+          56.237165
         ]
       }
     },
@@ -26687,8 +26381,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.348561,
+          55.694505
         ]
       }
     },
@@ -26725,13 +26419,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -26769,8 +26457,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.859902,
+          55.595472
         ]
       }
     },
@@ -26810,8 +26498,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.983298,
+          55.322681
         ]
       }
     },
@@ -26851,8 +26539,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.312914,
+          55.252317
         ]
       }
     },
@@ -26892,8 +26580,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.506874,
+          55.685673
         ]
       }
     },
@@ -26933,8 +26621,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.077321,
+          55.191711
         ]
       }
     },
@@ -26974,8 +26662,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.932561,
+          55.164519
         ]
       }
     },
@@ -27015,8 +26703,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.962751,
+          55.492261
         ]
       }
     },
@@ -27056,8 +26744,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.207739,
+          56.13488
         ]
       }
     },
@@ -27094,13 +26782,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -27138,8 +26820,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.886417,
+          56.413239
         ]
       }
     },
@@ -27179,8 +26861,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.80431,
+          56.086635
         ]
       }
     },
@@ -27220,8 +26902,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.162683,
+          55.973584
         ]
       }
     },
@@ -27261,8 +26943,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.014377,
+          55.462196
         ]
       }
     },
@@ -27302,8 +26984,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.492916,
+          55.528134
         ]
       }
     },
@@ -27343,8 +27025,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.074229,
+          55.928062
         ]
       }
     },
@@ -27384,8 +27066,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.62328,
+          54.897697
         ]
       }
     },
@@ -27425,8 +27107,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.564134,
+          55.723317
         ]
       }
     },
@@ -27466,8 +27148,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.678319,
+          57.025132
         ]
       }
     },
@@ -27507,8 +27189,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.044632,
+          55.281065
         ]
       }
     },
@@ -27548,8 +27230,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.464544,
+          55.669885
         ]
       }
     },
@@ -27589,8 +27271,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.386639,
+          55.557407
         ]
       }
     },
@@ -27630,8 +27312,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.523613,
+          55.181907
         ]
       }
     },
@@ -27671,8 +27353,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.771729,
+          55.326592
         ]
       }
     },
@@ -27712,8 +27394,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.041974,
+          55.946617
         ]
       }
     },
@@ -27753,8 +27435,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.266985,
+          55.63119
         ]
       }
     },
@@ -27794,8 +27476,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.959625,
+          57.351686
         ]
       }
     },
@@ -27835,8 +27517,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.288004,
+          55.508774
         ]
       }
     },
@@ -27876,8 +27558,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.213845,
+          56.792559
         ]
       }
     },
@@ -27917,8 +27599,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.423507,
+          56.284601
         ]
       }
     },
@@ -27958,8 +27640,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.018686,
+          56.553834
         ]
       }
     },
@@ -27999,8 +27681,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.622485,
+          56.364868
         ]
       }
     },
@@ -28037,13 +27719,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -28081,8 +27757,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.565992,
+          57.726039
         ]
       }
     },
@@ -28122,8 +27798,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.439854,
+          55.289292
         ]
       }
     },
@@ -28163,8 +27839,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.584912,
+          55.075521
         ]
       }
     },
@@ -28204,8 +27880,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.658922,
+          55.92783
         ]
       }
     },
@@ -28245,8 +27921,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.43064,
+          55.720212
         ]
       }
     },
@@ -28286,8 +27962,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.335917,
+          55.740973
         ]
       }
     },
@@ -28327,8 +28003,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.464048,
+          55.846114
         ]
       }
     },
@@ -28368,8 +28044,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.85777,
+          56.801172
         ]
       }
     },
@@ -28409,8 +28085,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.505428,
+          55.636532
         ]
       }
     },
@@ -28450,8 +28126,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.505428,
+          55.636532
         ]
       }
     },
@@ -28491,8 +28167,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.53008,
+          57.100991
         ]
       }
     },
@@ -28532,8 +28208,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.034835,
+          55.951522
         ]
       }
     },
@@ -28573,8 +28249,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.975307,
+          56.153543
         ]
       }
     },
@@ -28614,8 +28290,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.515375,
+          55.759741
         ]
       }
     },
@@ -28655,8 +28331,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.498142,
+          55.232836
         ]
       }
     },
@@ -28696,8 +28372,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.951575,
+          57.270017
         ]
       }
     },
@@ -28737,8 +28413,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.986902,
+          56.152363
         ]
       }
     },
@@ -28778,8 +28454,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.408232,
+          56.192525
         ]
       }
     },
@@ -28819,8 +28495,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.977114,
+          56.000544
         ]
       }
     },
@@ -28860,8 +28536,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.132078,
+          56.118444
         ]
       }
     },
@@ -28901,8 +28577,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.794435,
+          55.331765
         ]
       }
     },
@@ -28942,8 +28618,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.465705,
+          55.733489
         ]
       }
     },
@@ -28983,8 +28659,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.04593,
+          56.4618
         ]
       }
     },
@@ -29024,8 +28700,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.485243,
+          56.904531
         ]
       }
     },
@@ -29065,8 +28741,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.857818,
+          56.429908
         ]
       }
     },
@@ -29103,13 +28779,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -29147,8 +28817,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.203185,
+          56.196718
         ]
       }
     },
@@ -29188,8 +28858,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.619705,
+          56.038695
         ]
       }
     },
@@ -29226,13 +28896,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "0,8 %",
         "Ejendomsomkostninger_vs_omsætning": "15,67 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -29270,8 +28934,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.580371,
+          55.708073
         ]
       }
     },
@@ -29311,8 +28975,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.279245,
+          55.586605
         ]
       }
     },
@@ -29352,8 +29016,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.473497,
+          55.252485
         ]
       }
     },
@@ -29393,8 +29057,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.214183,
+          56.098107
         ]
       }
     },
@@ -29434,8 +29098,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.0235,
+          55.496214
         ]
       }
     },
@@ -29472,13 +29136,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,4 %",
         "Ejendomsomkostninger_vs_omsætning": "3,9 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -29513,13 +29171,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,4 %",
         "Ejendomsomkostninger_vs_omsætning": "3,9 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -29557,8 +29209,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.677857,
+          56.784884
         ]
       }
     },
@@ -29598,8 +29250,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.897166,
+          55.023128
         ]
       }
     },
@@ -29639,8 +29291,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.456509,
+          55.849082
         ]
       }
     },
@@ -29680,8 +29332,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.433484,
+          55.623357
         ]
       }
     },
@@ -29721,8 +29373,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.40813,
+          55.735174
         ]
       }
     },
@@ -29759,13 +29411,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -29803,8 +29449,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.046354,
+          56.461886
         ]
       }
     },
@@ -29844,8 +29490,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.281201,
+          55.428573
         ]
       }
     },
@@ -29885,8 +29531,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.235486,
+          56.00971
         ]
       }
     },
@@ -29926,8 +29572,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.908589,
+          55.001935
         ]
       }
     },
@@ -29967,8 +29613,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.077321,
+          55.191711
         ]
       }
     },
@@ -30008,8 +29654,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.590122,
+          55.956742
         ]
       }
     },
@@ -30049,8 +29695,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.965296,
+          55.329653
         ]
       }
     },
@@ -30090,8 +29736,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.193898,
+          54.931411
         ]
       }
     },
@@ -30131,8 +29777,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.358933,
+          56.837666
         ]
       }
     },
@@ -30172,8 +29818,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.770013,
+          56.438254
         ]
       }
     },
@@ -30213,8 +29859,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.675707,
+          57.046999
         ]
       }
     },
@@ -30254,8 +29900,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.787657,
+          57.346535
         ]
       }
     },
@@ -30295,8 +29941,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.167422,
+          56.122729
         ]
       }
     },
@@ -30336,8 +29982,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.779013,
+          56.371492
         ]
       }
     },
@@ -30377,8 +30023,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.014377,
+          55.462196
         ]
       }
     },
@@ -30418,8 +30064,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.618801,
+          56.086724
         ]
       }
     },
@@ -30459,8 +30105,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.364972,
+          55.312182
         ]
       }
     },
@@ -30500,8 +30146,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.045239,
+          55.68897
         ]
       }
     },
@@ -30541,8 +30187,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.199767,
+          56.196248
         ]
       }
     },
@@ -30582,8 +30228,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.95189,
+          54.791022
         ]
       }
     },
@@ -30623,8 +30269,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.249205,
+          56.747135
         ]
       }
     },
@@ -30664,8 +30310,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.247014,
+          56.746896
         ]
       }
     },
@@ -30705,8 +30351,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.402038,
+          54.938049
         ]
       }
     },
@@ -30746,8 +30392,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.009226,
+          56.488431
         ]
       }
     },
@@ -30787,8 +30433,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.183659,
+          55.998928
         ]
       }
     },
@@ -30828,8 +30474,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.971241,
+          56.18184
         ]
       }
     },
@@ -30869,8 +30515,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.24376,
+          55.94324
         ]
       }
     },
@@ -30910,8 +30556,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.745422,
+          55.175598
         ]
       }
     },
@@ -30951,8 +30597,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.175608,
+          55.458
         ]
       }
     },
@@ -30992,8 +30638,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.760449,
+          55.572228
         ]
       }
     },
@@ -31033,8 +30679,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.082722,
+          55.372177
         ]
       }
     },
@@ -31074,8 +30720,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.20133,
+          56.148026
         ]
       }
     },
@@ -31115,8 +30761,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.355755,
+          55.807593
         ]
       }
     },
@@ -31156,8 +30802,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.821072,
+          55.650406
         ]
       }
     },
@@ -31197,8 +30843,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.176783,
+          55.219572
         ]
       }
     },
@@ -31238,8 +30884,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.920048,
+          56.028221
         ]
       }
     },
@@ -31279,8 +30925,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.413747,
+          56.709583
         ]
       }
     },
@@ -31320,8 +30966,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.235486,
+          56.00971
         ]
       }
     },
@@ -31361,8 +31007,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.04904,
+          55.301053
         ]
       }
     },
@@ -31402,8 +31048,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.672656,
+          56.88813
         ]
       }
     },
@@ -31443,8 +31089,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.789847,
+          54.755129
         ]
       }
     },
@@ -31484,8 +31130,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.351419,
+          57.476411
         ]
       }
     },
@@ -31525,8 +31171,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.394676,
+          55.95834
         ]
       }
     },
@@ -31566,8 +31212,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.850339,
+          55.754132
         ]
       }
     },
@@ -31607,8 +31253,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.335354,
+          56.096655
         ]
       }
     },
@@ -31648,8 +31294,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.573038,
+          56.485246
         ]
       }
     },
@@ -31689,8 +31335,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.471971,
+          55.38469
         ]
       }
     },
@@ -31730,8 +31376,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.669705,
+          56.356471
         ]
       }
     },
@@ -31771,8 +31417,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.999552,
+          54.978261
         ]
       }
     },
@@ -31809,13 +31455,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,08 %",
         "Ejendomsomkostninger_vs_omsætning": "2,69 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -31853,8 +31493,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.501221,
+          55.939659
         ]
       }
     },
@@ -31894,8 +31534,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.235486,
+          56.00971
         ]
       }
     },
@@ -31935,8 +31575,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.349104,
+          55.588639
         ]
       }
     },
@@ -31976,8 +31616,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.05463,
+          55.844091
         ]
       }
     },
@@ -32017,8 +31657,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.920317,
+          55.186684
         ]
       }
     },
@@ -32058,8 +31698,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.916318,
+          55.338594
         ]
       }
     },
@@ -32099,8 +31739,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.080776,
+          55.37515
         ]
       }
     },
@@ -32140,8 +31780,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.638896,
+          56.986075
         ]
       }
     },
@@ -32181,8 +31821,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.446919,
+          55.204913
         ]
       }
     },
@@ -32222,8 +31862,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.796106,
+          54.936669
         ]
       }
     },
@@ -32263,8 +31903,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.542098,
+          55.809002
         ]
       }
     },
@@ -32304,8 +31944,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.763397,
+          55.3433015
         ]
       }
     },
@@ -32345,8 +31985,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.881582,
+          55.327585
         ]
       }
     },
@@ -32386,8 +32026,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.205817,
+          55.789944
         ]
       }
     },
@@ -32427,8 +32067,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.182238,
+          57.460667
         ]
       }
     },
@@ -32468,8 +32108,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.460052,
+          56.087059
         ]
       }
     },
@@ -32509,8 +32149,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.175608,
+          55.458
         ]
       }
     },
@@ -32550,8 +32190,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.442474,
+          55.532328
         ]
       }
     },
@@ -32591,8 +32231,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.915256,
+          56.408588
         ]
       }
     },
@@ -32632,8 +32272,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.997507,
+          55.921626
         ]
       }
     },
@@ -32673,8 +32313,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.343768,
+          55.985675
         ]
       }
     },
@@ -32714,8 +32354,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.067833,
+          56.014351
         ]
       }
     },
@@ -32755,8 +32395,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.334292,
+          56.290732
         ]
       }
     },
@@ -32796,8 +32436,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.412152,
+          57.149705
         ]
       }
     },
@@ -32834,13 +32474,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -32878,8 +32512,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.916318,
+          55.338594
         ]
       }
     },
@@ -32919,8 +32553,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.137072,
+          56.0888
         ]
       }
     },
@@ -32960,8 +32594,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.281201,
+          55.428573
         ]
       }
     },
@@ -33001,8 +32635,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.683671,
+          56.444066
         ]
       }
     },
@@ -33042,8 +32676,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.383225,
+          54.940113
         ]
       }
     },
@@ -33083,8 +32717,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.271985,
+          55.023194
         ]
       }
     },
@@ -33124,8 +32758,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.422929,
+          55.948064
         ]
       }
     },
@@ -33162,13 +32796,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "0,9 %",
         "Ejendomsomkostninger_vs_omsætning": "5,8 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -33206,8 +32834,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.135991,
+          57.424199
         ]
       }
     },
@@ -33247,8 +32875,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.661186,
+          54.953324
         ]
       }
     },
@@ -33288,8 +32916,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.868119,
+          56.15368
         ]
       }
     },
@@ -33329,8 +32957,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.490881,
+          55.933313
         ]
       }
     },
@@ -33370,8 +32998,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.086711,
+          56.154474
         ]
       }
     },
@@ -33411,8 +33039,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.335354,
+          56.096655
         ]
       }
     },
@@ -33452,8 +33080,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.335354,
+          56.096655
         ]
       }
     },
@@ -33493,8 +33121,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.166881,
+          55.534858
         ]
       }
     },
@@ -33534,8 +33162,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.539463,
+          56.179225
         ]
       }
     },
@@ -33575,8 +33203,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.451781,
+          55.303078
         ]
       }
     },
@@ -33616,8 +33244,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.483445,
+          55.307076
         ]
       }
     },
@@ -33657,8 +33285,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.570894,
+          56.621332
         ]
       }
     },
@@ -33698,8 +33326,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.734219,
+          54.930382
         ]
       }
     },
@@ -33739,8 +33367,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.735898,
+          54.652566
         ]
       }
     },
@@ -33780,8 +33408,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.309824,
+          55.247747
         ]
       }
     },
@@ -33821,8 +33449,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.743882,
+          56.211386
         ]
       }
     },
@@ -33862,8 +33490,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.442279,
+          55.803567
         ]
       }
     },
@@ -33903,8 +33531,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.120185,
+          55.946405
         ]
       }
     },
@@ -33944,8 +33572,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.307523,
+          55.247427
         ]
       }
     },
@@ -33985,8 +33613,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.881582,
+          55.327585
         ]
       }
     },
@@ -34026,8 +33654,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.339762,
+          56.462481
         ]
       }
     },
@@ -34067,8 +33695,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.51042,
+          55.996134
         ]
       }
     },
@@ -34108,8 +33736,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.153134,
+          54.896235
         ]
       }
     },
@@ -34149,8 +33777,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.716455,
+          55.564616
         ]
       }
     },
@@ -34190,8 +33818,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.6074,
+          55.635339
         ]
       }
     },
@@ -34231,8 +33859,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.420343,
+          55.537051
         ]
       }
     },
@@ -34272,8 +33900,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.502224,
+          55.945023
         ]
       }
     },
@@ -34313,8 +33941,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.014377,
+          55.462196
         ]
       }
     },
@@ -34354,8 +33982,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.014377,
+          55.462196
         ]
       }
     },
@@ -34395,8 +34023,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.737953,
+          55.217512
         ]
       }
     },
@@ -34436,8 +34064,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.167621,
+          55.362957
         ]
       }
     },
@@ -34474,13 +34102,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "0,3 %",
         "Ejendomsomkostninger_vs_omsætning": "4,82 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -34518,8 +34140,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.986413,
+          56.640757
         ]
       }
     },
@@ -34559,8 +34181,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.510462,
+          55.123498
         ]
       }
     },
@@ -34600,8 +34222,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.413394,
+          55.106829
         ]
       }
     },
@@ -34641,8 +34263,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.55606,
+          55.76715
         ]
       }
     },
@@ -34682,8 +34304,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.464214,
+          55.280523
         ]
       }
     },
@@ -34723,8 +34345,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.994407,
+          54.973639
         ]
       }
     },
@@ -34764,8 +34386,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.1436,
+          56.066961
         ]
       }
     },
@@ -34805,8 +34427,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.8907717,
+          56.0172514
         ]
       }
     },
@@ -34843,13 +34465,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -34887,8 +34503,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.7731,
+          55.325159
         ]
       }
     },
@@ -34928,8 +34544,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.8907717,
+          56.0172514
         ]
       }
     },
@@ -34969,8 +34585,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.347102,
+          56.44275
         ]
       }
     },
@@ -35010,8 +34626,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.258651,
+          55.591071
         ]
       }
     },
@@ -35048,13 +34664,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -35092,8 +34702,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.50091,
+          55.670131
         ]
       }
     },
@@ -35133,8 +34743,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.51239,
+          55.132621
         ]
       }
     },
@@ -35174,8 +34784,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.496903,
+          55.885996
         ]
       }
     },
@@ -35212,13 +34822,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "0,3 %",
         "Ejendomsomkostninger_vs_omsætning": "4,82 %"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -35256,8 +34860,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.986413,
+          56.640757
         ]
       }
     },
@@ -35297,8 +34901,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.510462,
+          55.123498
         ]
       }
     },
@@ -35338,8 +34942,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.413394,
+          55.106829
         ]
       }
     },
@@ -35379,8 +34983,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.55606,
+          55.76715
         ]
       }
     },
@@ -35420,8 +35024,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.464214,
+          55.280523
         ]
       }
     },
@@ -35461,8 +35065,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          11.994407,
+          54.973639
         ]
       }
     },
@@ -35502,8 +35106,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.1436,
+          56.066961
         ]
       }
     },
@@ -35543,8 +35147,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.8907717,
+          56.0172514
         ]
       }
     },
@@ -35581,13 +35185,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -35625,8 +35223,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.7731,
+          55.325159
         ]
       }
     },
@@ -35666,8 +35264,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          8.8907717,
+          56.0172514
         ]
       }
     },
@@ -35707,8 +35305,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.347102,
+          56.44275
         ]
       }
     },
@@ -35748,8 +35346,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.258651,
+          55.591071
         ]
       }
     },
@@ -35786,13 +35384,7 @@
         "Omkostninger_til_kompetenceudvikling_vs_omsætning": "",
         "Ejendomsomkostninger_vs_omsætning": ""
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          null,
-          null
-        ]
-      }
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -35830,8 +35422,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          12.50091,
+          55.670131
         ]
       }
     },
@@ -35871,8 +35463,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          10.51239,
+          55.132621
         ]
       }
     },
@@ -35912,8 +35504,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          null,
-          null
+          9.496903,
+          55.885996
         ]
       }
     }

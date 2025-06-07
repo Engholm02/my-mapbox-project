@@ -1,38 +1,45 @@
-// convert.js
-const csv = require('csvtojson');
-const fs  = require('fs');
+const fs = require('fs');
 const path = require('path');
+const csv = require('csvtojson');
 
-// 1. File paths
-const IN  = path.join(__dirname, 'data', '104.csv');
-const OUT = path.join(__dirname, 'data', '104.geojson');
+const files = [
+  { input: '104.csv', output: '104.geojson' },
+  { input: '105.csv', output: '105.geojson' },
+  { input: '107.csv', output: '107.geojson' },
+  { input: '108.csv', output: '108.geojson' },
+  { input: '108a.csv', output: '108a.geojson' },
+  { input: 'boliga_geocoded.csv', output: 'boliga_geocoded.geojson' },
+  { input: 'ejendomstorvet_geocoded.csv', output: 'ejendomstorvet_geocoded.geojson' }
+];
 
-(async () => {
-  // 2. Read CSV → array of objects (keys from your headers)
-  const rows = await csv().fromFile(IN);
+files.forEach(({ input, output }) => {
+  const inputPath = path.join(__dirname, 'data', input);
+  const outputPath = path.join(__dirname, 'data', output);
 
-  // 3. Build GeoJSON with ALL properties
-  const geojson = {
-    type: 'FeatureCollection',
-    features: rows.map((r, i) => {
-      const lat = parseFloat(r.latitude);
-      const lon = parseFloat(r.longitude);
-      return {
-        type: 'Feature',
-        id: i,
-        properties: { ...r },
-        geometry: {
-          type: 'Point',
-          coordinates: [
-            isNaN(lon)  ? null : lon,
-            isNaN(lat)  ? null : lat
-          ]
-        }
+  csv()
+    .fromFile(inputPath)
+    .then((jsonArray) => {
+      const features = jsonArray.map((row, index) => {
+        const lat = parseFloat(row.Latitude);
+        const lon = parseFloat(row.Longitude);
+
+        return {
+          type: 'Feature',
+          id: index,
+          properties: row,
+          geometry: (!isNaN(lat) && !isNaN(lon)) ? {
+            type: 'Point',
+            coordinates: [lon, lat]
+          } : null
+        };
+      });
+
+      const geojson = {
+        type: 'FeatureCollection',
+        features: features
       };
-    })
-  };
 
-  // 4. Write out the .geojson
-  fs.writeFileSync(OUT, JSON.stringify(geojson, null, 2));
-  console.log(`✔ Wrote ${OUT} with ${rows.length} features.`);
-})()
+      fs.writeFileSync(outputPath, JSON.stringify(geojson, null, 2));
+      console.log(`✅ ${output} created.`);
+    });
+});

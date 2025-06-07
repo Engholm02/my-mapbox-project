@@ -152,16 +152,22 @@
       });
     }
 
-    // Lyt efter postMessage events og håndter kun kommune-filter og to toggle-knapper
+    // Lyt efter postMessage events og håndter filter og toggles samlet
     window.addEventListener('message', function(event) {
       const { action, value } = event.data;
 
-      if (action === 'toggle-boliga') {
-        handleToggleClick('toggle-boliga');
-      }
+      const toggleIds = [
+        'toggle-boliga',
+        'toggle-ejendomstorvet',
+        'toggle-104',
+        'toggle-105',
+        'toggle-107',
+        'toggle-108',
+        'toggle-108a'
+      ];
 
-      if (action === 'toggle-ejendomstorvet') {
-        handleToggleClick('toggle-ejendomstorvet');
+      if (toggleIds.includes(action)) {
+        handleToggleClick(action);
       }
 
       if (action === 'filter-kommune') {
