@@ -131,6 +131,27 @@
 
   <!-- Layer toggle and kommune filter handlers -->
   <script>
+    // Funktion til at sætte samme filter på alle relevante lag
+    function applyFilterToAllLayers(property, value) {
+      const layers = [
+        'boliga_geocoded-layer',
+        'ejendomstorvet_geocoded-layer',
+        '104_geocoded-layer',
+        '105_geocoded-layer',
+        '107_geocoded-layer',
+        '108_geocoded-layer',
+        '108a_geocoded-layer'
+      ];
+
+      layers.forEach(layerId => {
+        if (value === '') {
+          map.setFilter(layerId, null);
+        } else {
+          map.setFilter(layerId, ['==', ['get', property], value]);
+        }
+      });
+    }
+
     // Lyt efter postMessage events og håndter kun kommune-filter og to toggle-knapper
     window.addEventListener('message', function(event) {
       const { action, value } = event.data;
@@ -144,19 +165,11 @@
       }
 
       if (action === 'filter-kommune') {
-        if (value === '') {
-          map.setFilter('boliga_geocoded-layer', null);
-        } else {
-          map.setFilter('boliga_geocoded-layer', ['==', ['get', 'kommune'], value]);
-        }
+        applyFilterToAllLayers('kommune', value);
       }
 
       if (action === 'filter-by') {
-        if (value === '') {
-          map.setFilter('boliga_geocoded-layer', null);
-        } else {
-          map.setFilter('boliga_geocoded-layer', ['==', ['get', 'by'], value]);
-        }
+        applyFilterToAllLayers('by', value);
       }
     });
     window.addEventListener('DOMContentLoaded', () => {
@@ -218,11 +231,7 @@
       if (kommuneDropdown) {
         kommuneDropdown.addEventListener('change', function () {
           const selectedKommune = this.value;
-          if (selectedKommune === '') {
-            map.setFilter('boliga_geocoded-layer', null);
-          } else {
-            map.setFilter('boliga_geocoded-layer', ['==', ['get', 'kommune'], selectedKommune]);
-          }
+          applyFilterToAllLayers('kommune', selectedKommune);
         });
       }
     });
@@ -485,11 +494,7 @@
           if (kommuneDropdown) {
             kommuneDropdown.addEventListener('change', function () {
               const selectedKommune = this.value;
-              if (selectedKommune === '') {
-                map.setFilter('boliga_geocoded-layer', null); // Vis alle
-              } else {
-                map.setFilter('boliga_geocoded-layer', ['==', ['get', 'kommune'], selectedKommune]);
-              }
+              applyFilterToAllLayers('kommune', selectedKommune);
             });
           }
         });
