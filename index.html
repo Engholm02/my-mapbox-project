@@ -152,6 +152,32 @@
           }
         }
       });
+
+      // Dynamisk udfyldning af kommune-dropdown efter alle pointsData er hentet
+      function populateKommuneDropdown() {
+        const dropdown = document.getElementById('filter-kommune');
+        if (!dropdown) return;
+
+        const allPoints = [pointsData, pointsData2, pointsData3, pointsData4].filter(Boolean);
+        const kommuneSet = new Set();
+
+        allPoints.forEach(source => {
+          if (!source || !source.features) return;
+          source.features.forEach(f => {
+            const k = f.properties.Kommune || f.properties.kommune;
+            if (typeof k === 'string' && k.trim() !== '') {
+              kommuneSet.add(k.trim());
+            }
+          });
+        });
+
+        const sortedKommuner = Array.from(kommuneSet).sort();
+        dropdown.innerHTML = '<option value=\"\">Alle</option>' +
+          sortedKommuner.map(k => `<option value=\"${k}\">${k}</option>`).join('');
+      }
+
+      // Kald efter vi ved dataen er klar
+      setTimeout(populateKommuneDropdown, 1000); // giver data tid til at loade
     }
 
     // Globalt lagersynligheds-objekt
