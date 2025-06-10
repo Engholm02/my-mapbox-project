@@ -473,6 +473,64 @@
       // Sørg for at heatmaps ligger øverst
       map.moveLayer('autisme_heatmap_layer');
       map.moveLayer('autisme_heatmap_unge_layer');
+
+      // Tilføj usynligt punktlag til klik for voksne
+      map.addLayer({
+        id: 'autisme_points_voksne_layer',
+        type: 'circle',
+        source: 'autisme_heatmap',
+        paint: {
+          'circle-radius': 8,
+          'circle-color': 'rgba(0,0,0,0)',
+          'circle-opacity': 0
+        }
+      });
+
+      // Tilføj usynligt punktlag til klik for unge
+      map.addLayer({
+        id: 'autisme_points_unge_layer',
+        type: 'circle',
+        source: 'autisme_heatmap_unge',
+        paint: {
+          'circle-radius': 8,
+          'circle-color': 'rgba(0,0,0,0)',
+          'circle-opacity': 0
+        }
+      });
+
+      // Popup for voksne
+      map.on('click', 'autisme_points_voksne_layer', function(e) {
+        const props = e.features[0].properties;
+        console.log('Autisme voksne properties:', props);
+        let html = '<dl>';
+        for (const key in props) {
+          html += `<dt>${key}</dt><dd>${props[key]}</dd>`;
+        }
+        html += '</dl>';
+        new mapboxgl.Popup({ offset: 15 })
+          .setLngLat(e.lngLat)
+          .setHTML(html)
+          .addTo(map);
+      });
+      map.on('mouseenter', 'autisme_points_voksne_layer', () => map.getCanvas().style.cursor = 'pointer');
+      map.on('mouseleave', 'autisme_points_voksne_layer', () => map.getCanvas().style.cursor = '');
+
+      // Popup for unge
+      map.on('click', 'autisme_points_unge_layer', function(e) {
+        const props = e.features[0].properties;
+        console.log('Autisme unge properties:', props);
+        let html = '<dl>';
+        for (const key in props) {
+          html += `<dt>${key}</dt><dd>${props[key]}</dd>`;
+        }
+        html += '</dl>';
+        new mapboxgl.Popup({ offset: 15 })
+          .setLngLat(e.lngLat)
+          .setHTML(html)
+          .addTo(map);
+      });
+      map.on('mouseenter', 'autisme_points_unge_layer', () => map.getCanvas().style.cursor = 'pointer');
+      map.on('mouseleave', 'autisme_points_unge_layer', () => map.getCanvas().style.cursor = '');
       // 3D buildings
       const layers = map.getStyle().layers;
       let labelLayerId;
