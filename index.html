@@ -16,7 +16,7 @@
     #map { position:absolute; top:0; bottom:0; width:100%; }
 
 
-    /* Top-left control container: full-width up to 980px with 24px top margin */
+    /* Top-left control container: full-width up to 980px, centered with margin */
     .mapboxgl-ctrl-top-left {
       top: 24px;
       left: 50% !important;
@@ -25,8 +25,8 @@
       max-width: 980px;
       display: flex;
       align-items: flex-start;
-      justify-content: space-between;
-      padding: 0 0px;
+      justify-content: center;
+      padding: 0 24px;
       box-sizing: border-box;
       z-index: 2;
     }
@@ -62,6 +62,8 @@
     .mapboxgl-ctrl-geocoder .suggestions {
       margin: 0;
       box-sizing: border-box;
+      max-height: 500px;
+      overflow-y: auto;
     }
 
     /* Popup styling: fixed height and scrollable content */
@@ -261,7 +263,6 @@
       pitch: 0,
       bearing: 0
     });
-    map.addControl(new mapboxgl.NavigationControl(), 'top-left');
     let pointsData;
     let pointsData2;
     let pointsData3;
@@ -271,16 +272,48 @@
     const geocoder = new MapboxGeocoder({
       accessToken: mapboxgl.accessToken,
       mapboxgl: mapboxgl,
-      placeholder: 'Search by Navn…',
+      placeholder: 'Søg i dine data…',
       marker: false,
       zoom: 12,
-      localGeocoder: query => {
-        if (!pointsData) return [];
-        const term = query.trim().toLowerCase();
-        return pointsData.features
-          .filter(f => f.properties.Navn.toLowerCase().includes(term))
-          .map(f => ({ place_name: f.properties.Navn, center: f.geometry.coordinates }));
-      }
+      localGeocoder: function (query) {
+        const matchingFeatures = [];
+
+        const allSources = [
+          { name: '104', data: pointsData },
+          { name: '105', data: pointsData2 },
+          { name: 'boliga', data: pointsData3 },
+          { name: 'ejendomstorvet', data: pointsData4 }
+        ];
+
+        const lowerQuery = (query || '').toLowerCase();
+        allSources.forEach(({ data }) => {
+          if (!data || !data.features) return;
+
+          data.features.forEach(feature => {
+            const props = feature.properties || {};
+            // Search ALL properties for a value that matches the query (case-insensitive)
+            const match = Object.entries(props).some(([_, value]) => {
+              return typeof value === 'string' && value.toLowerCase().includes(lowerQuery);
+            });
+
+            if (match && feature.geometry && Array.isArray(feature.geometry.coordinates)) {
+              matchingFeatures.push({
+                place_name: props['Navn'] || props['Adresse'] || '[Ukendt]',
+                center: feature.geometry.coordinates,
+                geometry: {
+                  type: 'Point',
+                  coordinates: feature.geometry.coordinates
+                }
+              });
+            }
+          });
+        });
+
+        console.log('Søgeresultater:', matchingFeatures);
+        return matchingFeatures;
+      },
+      types: 'local',
+      localGeocoderOnly: true
     });
     map.addControl(geocoder, 'top-left');
 
@@ -347,6 +380,9 @@
           .then(res => res.ok ? res.json() : Promise.reject(`Fejl ved hentning af ${type}`))
           .then(geojson => {
             console.log(`Loaded ${type}`, geojson);
+
+            if (type === '104') pointsData = geojson;
+            if (type === '105') pointsData2 = geojson;
           })
           .catch(err => console.error(err));
 
@@ -688,11 +724,27 @@
                 map.setFeatureState({ source: sourceId, id: highlightId }, { highlight: false });
               });
             }
-            const match = pointsData.features.find(f => f.properties.Navn === ev.result.place_name);
-            highlightId = match.id;
-            ['104_geocoded', '105_geocoded', '107_geocoded', '108_geocoded', '108a_geocoded'].forEach(sourceId => {
-              map.setFeatureState({ source: sourceId, id: highlightId }, { highlight: true });
-            });
+
+            const allPoints = [pointsData, pointsData2, pointsData3, pointsData4].filter(Boolean);
+            let match = null;
+
+            for (const dataset of allPoints) {
+              match = dataset.features.find(f =>
+                f.geometry &&
+                f.geometry.coordinates &&
+                f.geometry.coordinates[0] === ev.result.center[0] &&
+                f.geometry.coordinates[1] === ev.result.center[1]
+              );
+              if (match) break;
+            }
+
+            if (match && match.id) {
+              highlightId = match.id;
+              ['104_geocoded', '105_geocoded', '107_geocoded', '108_geocoded', '108a_geocoded'].forEach(sourceId => {
+                map.setFeatureState({ source: sourceId, id: highlightId }, { highlight: true });
+              });
+            }
+
             map.flyTo({ center: ev.result.center, zoom: 12 });
           });
 
