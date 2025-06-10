@@ -134,8 +134,6 @@
     // Funktion til at sætte samme filter på alle relevante lag
     function applyFilterToAllLayers(property, value) {
       const layers = [
-        'boliga_geocoded-layer',
-        'ejendomstorvet_geocoded-layer',
         '104_geocoded-layer',
         '105_geocoded-layer',
         '107_geocoded-layer',
@@ -144,13 +142,56 @@
       ];
 
       layers.forEach(layerId => {
-        if (value === '') {
-          map.setFilter(layerId, null);
-        } else {
-          map.setFilter(layerId, ['==', ['get', property], value]);
+        if (map.getLayer(layerId)) {
+          if (value === '') {
+            map.setFilter(layerId, null);
+          } else {
+            map.setFilter(layerId, ['==', ['get', property], value]);
+          }
         }
       });
     }
+
+    // Globalt lagersynligheds-objekt
+    window.layerVisibility = {
+      'boliga_geocoded-layer': true,
+      'ejendomstorvet_geocoded-layer': true,
+      '104_geocoded-layer': true,
+      '105_geocoded-layer': true,
+      '107_geocoded-layer': true,
+      '108_geocoded-layer': true,
+      '108a_geocoded-layer': true
+    };
+
+    // Global toggle-funktion
+    window.handleToggleClick = function(id) {
+      const idMap = {
+        'toggle-boliga': 'boliga_geocoded-layer',
+        'toggle-ejendomstorvet': 'ejendomstorvet_geocoded-layer',
+        'toggle-104': '104_geocoded-layer',
+        'toggle-105': '105_geocoded-layer',
+        'toggle-107': '107_geocoded-layer',
+        'toggle-108': '108_geocoded-layer',
+        'toggle-108a': '108a_geocoded-layer'
+      };
+      const layerId = idMap[id];
+      if (!layerId) return;
+
+      window.layerVisibility[layerId] = !window.layerVisibility[layerId];
+      if (map.getLayer(layerId)) {
+        map.setLayoutProperty(layerId, 'visibility', window.layerVisibility[layerId] ? 'visible' : 'none');
+      }
+
+      const button = document.getElementById(id);
+      if (button) {
+        const checked = button.querySelector('.checked');
+        const unchecked = button.querySelector('.unchecked');
+        if (checked && unchecked) {
+          checked.style.display = window.layerVisibility[layerId] ? 'block' : 'none';
+          unchecked.style.display = window.layerVisibility[layerId] ? 'none' : 'block';
+        }
+      }
+    };
 
     // Lyt efter postMessage events og håndter filter og toggles samlet (GAMMEL STRUKTUR med action)
     window.addEventListener('message', function(event) {
@@ -167,7 +208,7 @@
       ];
 
       if (toggleIds.includes(action)) {
-        handleToggleClick(action);
+        window.handleToggleClick(action);
       }
 
       if (action === 'filter-kommune') {
@@ -178,49 +219,13 @@
         applyFilterToAllLayers('by', value);
       }
     });
+
     window.addEventListener('DOMContentLoaded', () => {
-      const layerVisibility = {
-        'boliga_geocoded-layer': true,
-        'ejendomstorvet_geocoded-layer': true,
-        '104_geocoded-layer': true,
-        '105_geocoded-layer': true,
-        '107_geocoded-layer': true,
-        '108_geocoded-layer': true,
-        '108a_geocoded-layer': true
-      };
-
-      function handleToggleClick(id) {
-        const idMap = {
-          'toggle-boliga': 'boliga_geocoded-layer',
-          'toggle-ejendomstorvet': 'ejendomstorvet_geocoded-layer',
-          'toggle-104': '104_geocoded-layer',
-          'toggle-105': '105_geocoded-layer',
-          'toggle-107': '107_geocoded-layer',
-          'toggle-108': '108_geocoded-layer',
-          'toggle-108a': '108a_geocoded-layer'
-        };
-        const layerId = idMap[id];
-        if (!layerId) return;
-
-        layerVisibility[layerId] = !layerVisibility[layerId];
-        map.setLayoutProperty(layerId, 'visibility', layerVisibility[layerId] ? 'visible' : 'none');
-
-        const button = document.getElementById(id);
-        if (button) {
-          const checked = button.querySelector('.checked');
-          const unchecked = button.querySelector('.unchecked');
-          if (checked && unchecked) {
-            checked.style.display = layerVisibility[layerId] ? 'block' : 'none';
-            unchecked.style.display = layerVisibility[layerId] ? 'none' : 'block';
-          }
-        }
-      }
-
       // Klik-handling på knapperne
       ['toggle-boliga', 'toggle-ejendomstorvet', 'toggle-104', 'toggle-105', 'toggle-107', 'toggle-108', 'toggle-108a'].forEach((id) => {
         const btn = document.getElementById(id);
         if (btn) {
-          btn.addEventListener('click', () => handleToggleClick(id));
+          btn.addEventListener('click', () => window.handleToggleClick(id));
         }
       });
 
@@ -228,7 +233,7 @@
       document.addEventListener('click', (e) => {
         const target = e.target.closest('#toggle-boliga, #toggle-ejendomstorvet, #toggle-104, #toggle-105, #toggle-107, #toggle-108, #toggle-108a');
         if (target) {
-          handleToggleClick(target.id);
+          window.handleToggleClick(target.id);
         }
       });
 
@@ -398,6 +403,9 @@
             })
             .then(geojson => {
               console.log('Loaded boliga_geocoded.geojson', geojson);
+              // Kontrollér at geojson indeholder features og geometri
+              console.log('Boliga geojson length:', geojson.features.length);
+              console.log('Boliga first geometry:', geojson.features[0]?.geometry);
               pointsData3 = geojson;
             })
             .catch(err => console.error('Error loading boliga_geocoded.geojson:', err));
@@ -455,6 +463,9 @@
             })
             .then(geojson => {
               console.log('Loaded ejendomstorvet_geocoded.geojson', geojson);
+              // Kontrollér at geojson indeholder features og geometri
+              console.log('Ejendomstorvet geojson length:', geojson.features.length);
+              console.log('Ejendomstorvet first geometry:', geojson.features[0]?.geometry);
               pointsData4 = geojson;
             })
             .catch(err => console.error('Error loading ejendomstorvet_geocoded.geojson:', err));
@@ -488,10 +499,16 @@
           // Highlight on geocoder result
           let highlightId = null;
           geocoder.on('result', ev => {
-            if (highlightId !== null) map.setFeatureState({ source:'botilbud1_geocoded', id: highlightId }, { highlight: false });
+            if (highlightId !== null) {
+              ['104_geocoded', '105_geocoded', '107_geocoded', '108_geocoded', '108a_geocoded'].forEach(sourceId => {
+                map.setFeatureState({ source: sourceId, id: highlightId }, { highlight: false });
+              });
+            }
             const match = pointsData.features.find(f => f.properties.Navn === ev.result.place_name);
             highlightId = match.id;
-            map.setFeatureState({ source:'botilbud1_geocoded', id: highlightId }, { highlight: true });
+            ['104_geocoded', '105_geocoded', '107_geocoded', '108_geocoded', '108a_geocoded'].forEach(sourceId => {
+              map.setFeatureState({ source: sourceId, id: highlightId }, { highlight: true });
+            });
             map.flyTo({ center: ev.result.center, zoom: 12 });
           });
 
