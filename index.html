@@ -188,7 +188,9 @@
       '105_geocoded-layer': true,
       '107_geocoded-layer': true,
       '108_geocoded-layer': true,
-      '108a_geocoded-layer': true
+      '108a_geocoded-layer': true,
+      'autisme_heatmap_layer': true,
+      'autisme_heatmap_unge_layer': true
     };
 
     // Global toggle-funktion
@@ -200,13 +202,19 @@
         'toggle-105': '105_geocoded-layer',
         'toggle-107': '107_geocoded-layer',
         'toggle-108': '108_geocoded-layer',
-        'toggle-108a': '108a_geocoded-layer'
+        'toggle-108a': '108a_geocoded-layer',
+        'toggle-voksne': 'autisme_heatmap_layer',
+        'toggle-unge': 'autisme_heatmap_unge_layer'
       };
       const layerId = idMap[id];
       if (!layerId) return;
 
       window.layerVisibility[layerId] = !window.layerVisibility[layerId];
-      if (map.getLayer(layerId)) {
+      if (map.getLayer(layerId) && map.getLayer(layerId).type !== 'heatmap') {
+        map.setLayoutProperty(layerId, 'visibility', window.layerVisibility[layerId] ? 'visible' : 'none');
+      }
+      // Specialhåndtering for heatmap layers (eller hvis vi ønsker at bruge visibility direkte)
+      else if (map.getLayer(layerId)) {
         map.setLayoutProperty(layerId, 'visibility', window.layerVisibility[layerId] ? 'visible' : 'none');
       }
 
@@ -232,7 +240,9 @@
         'toggle-105',
         'toggle-107',
         'toggle-108',
-        'toggle-108a'
+        'toggle-108a',
+        'toggle-voksne',
+        'toggle-unge'
       ];
 
       if (toggleIds.includes(action)) {
@@ -250,7 +260,17 @@
 
     window.addEventListener('DOMContentLoaded', () => {
       // Klik-handling på knapperne
-      ['toggle-boliga', 'toggle-ejendomstorvet', 'toggle-104', 'toggle-105', 'toggle-107', 'toggle-108', 'toggle-108a'].forEach((id) => {
+      [
+        'toggle-boliga',
+        'toggle-ejendomstorvet',
+        'toggle-104',
+        'toggle-105',
+        'toggle-107',
+        'toggle-108',
+        'toggle-108a',
+        'toggle-voksne',
+        'toggle-unge'
+      ].forEach((id) => {
         const btn = document.getElementById(id);
         if (btn) {
           btn.addEventListener('click', () => window.handleToggleClick(id));
@@ -259,7 +279,7 @@
 
       // Event delegation fallback (in case elements were not present at load)
       document.addEventListener('click', (e) => {
-        const target = e.target.closest('#toggle-boliga, #toggle-ejendomstorvet, #toggle-104, #toggle-105, #toggle-107, #toggle-108, #toggle-108a');
+        const target = e.target.closest('#toggle-boliga, #toggle-ejendomstorvet, #toggle-104, #toggle-105, #toggle-107, #toggle-108, #toggle-108a, #toggle-voksne, #toggle-unge');
         if (target) {
           window.handleToggleClick(target.id);
         }
@@ -352,6 +372,54 @@
 
     // Once map loads, add 3D buildings and points
     map.on('load', () => {
+      // Tilføj kilde til ASF heatmap
+      map.addSource('autisme_heatmap', {
+        type: 'geojson',
+        data: 'data/andel_voksne_autister_2022.geojson'
+      });
+
+      // Tilføj heatmap-lag
+      map.addLayer({
+        id: 'autisme_heatmap_layer',
+        type: 'heatmap',
+        source: 'autisme_heatmap',
+        maxzoom: 12,
+        paint: {
+          'heatmap-weight': [
+            'interpolate',
+            ['linear'],
+            ['get', 'Andel_ASF_2022_pct'],
+            0.5, 0,
+            2.0, 1
+          ],
+          'heatmap-intensity': [
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            0, 1,
+            9, 3
+          ],
+          'heatmap-color': [
+            'interpolate',
+            ['linear'],
+            ['heatmap-density'],
+            0, 'rgba(33,102,172,0)',
+            0.2, 'rgb(103,169,207)',
+            0.4, 'rgb(209,229,240)',
+            0.6, 'rgb(253,219,199)',
+            0.8, 'rgb(239,138,98)',
+            1, 'rgb(178,24,43)'
+          ],
+          'heatmap-radius': [
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            0, 5,
+            9, 20
+          ],
+          'heatmap-opacity': 0.7
+        }
+      }, 'waterway-label');
       // 3D buildings
       const layers = map.getStyle().layers;
       let labelLayerId;

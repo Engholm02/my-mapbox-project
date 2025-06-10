@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Kommune": "Albertslund", "Andel_ASF_2022_pct": 2.0, "Longitude": 12.3636, "Latitude": 55.6562 }, "geometry": { "type": "Point", "coordinates": [ 12.3636, 55.6562 ] } },
+{ "type": "Feature", "properties": { "Kommune": "Bornholm", "Andel_ASF_2022_pct": 1.8, "Longitude": 14.922, "Latitude": 55.1604 }, "geometry": { "type": "Point", "coordinates": [ 14.922, 55.1604 ] } },
+{ "type": "Feature", "properties": { "Kommune": "Glostrup", "Andel_ASF_2022_pct": 1.7, "Longitude": 12.4035, "Latitude": 55.6664 }, "geometry": { "type": "Point", "coordinates": [ 12.4035, 55.6664 ] } },
+{ "type": "Feature", "properties": { "Kommune": "Ballerup", "Andel_ASF_2022_pct": 1.6, "Longitude": 12.3633, "Latitude": 55.7317 }, "geometry": { "type": "Point", "coordinates": [ 12.3633, 55.7317 ] } },
+{ "type": "Feature", "properties": { "Kommune": "Aalborg", "Andel_ASF_2022_pct": 1.6, "Longitude": 9.922, "Latitude": 57.0488 }, "geometry": { "type": "Point", "coordinates": [ 9.922, 57.0488 ] } },
+{ "type": "Feature", "properties": { "Kommune": "Kerteminde", "Andel_ASF_2022_pct": 0.5, "Longitude": 10.663, "Latitude": 55.4487 }, "geometry": { "type": "Point", "coordinates": [ 10.663, 55.4487 ] } },
+{ "type": "Feature", "properties": { "Kommune": "Nordfyn", "Andel_ASF_2022_pct": 0.6, "Longitude": 10.2036, "Latitude": 55.4704 }, "geometry": { "type": "Point", "coordinates": [ 10.2036, 55.4704 ] } },
+{ "type": "Feature", "properties": { "Kommune": "Dragør", "Andel_ASF_2022_pct": 0.6, "Longitude": 12.668, "Latitude": 55.5927 }, "geometry": { "type": "Point", "coordinates": [ 12.668, 55.5927 ] } },
+{ "type": "Feature", "properties": { "Kommune": "Assens", "Andel_ASF_2022_pct": 0.6, "Longitude": 9.9014, "Latitude": 55.2704 }, "geometry": { "type": "Point", "coordinates": [ 9.9014, 55.2704 ] } },
+{ "type": "Feature", "properties": { "Kommune": "Nyborg", "Andel_ASF_2022_pct": 0.6, "Longitude": 10.7925, "Latitude": 55.3113 }, "geometry": { "type": "Point", "coordinates": [ 10.7925, 55.3113 ] } }
+]
+}
