@@ -8,7 +8,7 @@ const files = [
   { input: '107.csv', output: '107.geojson' },
   { input: '108.csv', output: '108.geojson' },
   { input: '108a.csv', output: '108a.geojson' },
-  { input: 'boliga_geocoded.csv', output: 'boliga_geocoded.geojson' },
+  { input: 'Boliga_geocoded.csv', output: 'Boliga_geocoded.geojson' },
   { input: 'ejendomstorvet_geocoded.csv', output: 'ejendomstorvet_geocoded.geojson' }
 ];
 
@@ -20,8 +20,8 @@ files.forEach(({ input, output }) => {
     .fromFile(inputPath)
     .then((jsonArray) => {
       const features = jsonArray.map((row, index) => {
-        const lat = parseFloat(row.Latitude);
-        const lon = parseFloat(row.Longitude);
+        const lat = parseFloat(row.Latitude || row.latitude);
+        const lon = parseFloat(row.Longitude || row.longitude);
 
         return {
           type: 'Feature',
