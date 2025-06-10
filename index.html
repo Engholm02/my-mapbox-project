@@ -373,128 +373,312 @@
         });
       });
 
-          // Add boliga_geocoded source and layer
-          map.addSource('boliga_geocoded', {
-            type: 'geojson',
-            data: 'data/boliga_geocoded.geojson'
-          });
-          map.addLayer({
-            id: 'boliga_geocoded-layer',
-            type: 'circle',
-            source: 'boliga_geocoded',
-            paint: {
-              'circle-radius': [
-                'interpolate',
-                ['linear'],
-                ['zoom'],
-                6, 3,
-                12, 6
-              ],
-              'circle-color': '#23bb08',
-              'circle-opacity': 0.5
+          // Kontrollér at filerne findes, og giv notifikation hvis de mangler
+          function showDataFileMissingNotification(filename) {
+            // Simpel notifikation i toppen af siden
+            let div = document.getElementById('data-file-warning');
+            if (!div) {
+              div = document.createElement('div');
+              div.id = 'data-file-warning';
+              div.style.position = 'fixed';
+              div.style.top = '0';
+              div.style.left = '0';
+              div.style.right = '0';
+              div.style.background = '#ffdddd';
+              div.style.color = '#900';
+              div.style.padding = '16px';
+              div.style.zIndex = 2000;
+              div.style.fontWeight = 'bold';
+              div.style.textAlign = 'center';
+              document.body.appendChild(div);
             }
-          }, labelLayerId);
+            div.innerHTML += `<div>Filen <strong>${filename}</strong> mangler i <strong>data/</strong> mappen.</div>`;
+          }
 
-          // Load boliga data for popups/highlight
+          // Først tjek for boliga_geocoded.geojson
           fetch('data/boliga_geocoded.geojson')
-            .then(res => {
-              if (!res.ok) throw new Error(`Failed to load boliga: ${res.status}`);
-              return res.json();
-            })
-            .then(geojson => {
-              console.log('Loaded boliga_geocoded.geojson', geojson);
-              // Kontrollér at geojson indeholder features og geometri
-              console.log('Boliga geojson length:', geojson.features.length);
-              console.log('Boliga first geometry:', geojson.features[0]?.geometry);
+            .then(async res => {
+              let geojson;
+              if (!res.ok) throw new Error('missing');
+              try {
+                geojson = await res.json();
+              } catch (e) {
+                // Filen er tom eller ikke gyldig JSON
+                geojson = null;
+              }
+              // Hvis geojson ikke er korrekt, indsæt dummy-data
+              if (
+                !geojson ||
+                geojson.type !== 'FeatureCollection' ||
+                !Array.isArray(geojson.features) ||
+                geojson.features.length === 0 ||
+                !geojson.features[0].geometry
+              ) {
+                geojson = {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [10.0, 56.0]
+                      },
+                      "properties": {
+                        "Navn": "Test Boliga"
+                      }
+                    }
+                  ]
+                };
+                // Overskriv filen på serveren hvis muligt (kun hvis backend tillader det)
+                // Her kan man evt. vise en besked, men vi bruger bare dummy-data i browseren
+                showDataFileMissingNotification('boliga_geocoded.geojson (indsætter dummy-indhold)');
+              }
+              map.addSource('boliga_geocoded', {
+                type: 'geojson',
+                data: geojson
+              });
+              map.addLayer({
+                id: 'boliga_geocoded-layer',
+                type: 'circle',
+                source: 'boliga_geocoded',
+                paint: {
+                  'circle-radius': [
+                    'interpolate',
+                    ['linear'],
+                    ['zoom'],
+                    6, 3,
+                    12, 6
+                  ],
+                  'circle-color': '#23bb08',
+                  'circle-opacity': 0.5
+                }
+              }, labelLayerId);
+              // Load boliga data for popups/highlight
               pointsData3 = geojson;
+              // Cursor & popups for boliga
+              map.on('mouseenter', 'boliga_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
+              map.on('mouseleave', 'boliga_geocoded-layer', () => map.getCanvas().style.cursor = '');
+              map.on('click', 'boliga_geocoded-layer', e => {
+                const feature = e.features[0];
+                const coords = feature.geometry.coordinates.slice();
+                const props = { ...feature.properties, id: feature.id };
+                let html = '<dl style="margin:0;">';
+                for (const k in props) {
+                  let value = props[k];
+                  if (typeof value === 'object' && value !== null) {
+                    value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+                  }
+                  html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+                }
+                html += '</dl>';
+                new mapboxgl.Popup({ offset: 15 })
+                  .setLngLat(coords)
+                  .setHTML(html)
+                  .addTo(map);
+              });
+              // Move layer below labelLayerId
+              map.moveLayer('boliga_geocoded-layer', labelLayerId);
             })
-            .catch(err => console.error('Error loading boliga_geocoded.geojson:', err));
+            .catch(() => {
+              // Filen findes ikke: brug dummy-data
+              showDataFileMissingNotification('boliga_geocoded.geojson (indsætter dummy-indhold)');
+              const dummyGeojson = {
+                "type": "FeatureCollection",
+                "features": [
+                  {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [10.0, 56.0]
+                    },
+                    "properties": {
+                      "Navn": "Test Boliga"
+                    }
+                  }
+                ]
+              };
+              map.addSource('boliga_geocoded', {
+                type: 'geojson',
+                data: dummyGeojson
+              });
+              map.addLayer({
+                id: 'boliga_geocoded-layer',
+                type: 'circle',
+                source: 'boliga_geocoded',
+                paint: {
+                  'circle-radius': [
+                    'interpolate',
+                    ['linear'],
+                    ['zoom'],
+                    6, 3,
+                    12, 6
+                  ],
+                  'circle-color': '#23bb08',
+                  'circle-opacity': 0.5
+                }
+              }, labelLayerId);
+              pointsData3 = dummyGeojson;
+              map.on('mouseenter', 'boliga_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
+              map.on('mouseleave', 'boliga_geocoded-layer', () => map.getCanvas().style.cursor = '');
+              map.on('click', 'boliga_geocoded-layer', e => {
+                const feature = e.features[0];
+                const coords = feature.geometry.coordinates.slice();
+                const props = { ...feature.properties, id: feature.id };
+                let html = '<dl style="margin:0;">';
+                for (const k in props) {
+                  let value = props[k];
+                  if (typeof value === 'object' && value !== null) {
+                    value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+                  }
+                  html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+                }
+                html += '</dl>';
+                new mapboxgl.Popup({ offset: 15 })
+                  .setLngLat(coords)
+                  .setHTML(html)
+                  .addTo(map);
+              });
+              map.moveLayer('boliga_geocoded-layer', labelLayerId);
+            });
 
-          // Cursor & popups for boliga
-          map.on('mouseenter', 'boliga_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
-          map.on('mouseleave', 'boliga_geocoded-layer', () => map.getCanvas().style.cursor = '');
-          map.on('click', 'boliga_geocoded-layer', e => {
-            const feature = e.features[0];
-            const coords = feature.geometry.coordinates.slice();
-            const props = { ...feature.properties, id: feature.id };
-            let html = '<dl style="margin:0;">';
-            for (const k in props) {
-              let value = props[k];
-              if (typeof value === 'object' && value !== null) {
-                value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
-              }
-              html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
-            }
-            html += '</dl>';
-            new mapboxgl.Popup({ offset: 15 })
-              .setLngLat(coords)
-              .setHTML(html)
-              .addTo(map);
-          });
-
-
-          // Add ejendomstorvet_geocoded source and layer (topmost)
-          map.addSource('ejendomstorvet_geocoded', {
-            type: 'geojson',
-            data: 'data/ejendomstorvet_geocoded.geojson'
-          });
-          map.addLayer({
-            id: 'ejendomstorvet_geocoded-layer',
-            type: 'circle',
-            source: 'ejendomstorvet_geocoded',
-            paint: {
-              'circle-radius': [
-                'interpolate',
-                ['linear'],
-                ['zoom'],
-                6, 3,
-                12, 6
-              ],
-              'circle-color': '#ff9d25',
-              'circle-opacity': 0.5
-            }
-          }, labelLayerId);
-
-          // Load ejendomstorvet data for popups/highlight
+          // Dernæst tjek for ejendomstorvet_geocoded.geojson
           fetch('data/ejendomstorvet_geocoded.geojson')
-            .then(res => {
-              if (!res.ok) throw new Error(`Failed to load ejendomstorvet: ${res.status}`);
-              return res.json();
-            })
-            .then(geojson => {
-              console.log('Loaded ejendomstorvet_geocoded.geojson', geojson);
-              // Kontrollér at geojson indeholder features og geometri
-              console.log('Ejendomstorvet geojson length:', geojson.features.length);
-              console.log('Ejendomstorvet first geometry:', geojson.features[0]?.geometry);
-              pointsData4 = geojson;
-            })
-            .catch(err => console.error('Error loading ejendomstorvet_geocoded.geojson:', err));
-
-          // Cursor & popups for ejendomstorvet
-          map.on('mouseenter', 'ejendomstorvet_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
-          map.on('mouseleave', 'ejendomstorvet_geocoded-layer', () => map.getCanvas().style.cursor = '');
-          map.on('click', 'ejendomstorvet_geocoded-layer', e => {
-            const feature = e.features[0];
-            const coords = feature.geometry.coordinates.slice();
-            const props = { ...feature.properties, id: feature.id };
-            let html = '<dl style="margin:0;">';
-            for (const k in props) {
-              let value = props[k];
-              if (typeof value === 'object' && value !== null) {
-                value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+            .then(async res => {
+              let geojson;
+              if (!res.ok) throw new Error('missing');
+              try {
+                geojson = await res.json();
+              } catch (e) {
+                geojson = null;
               }
-              html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
-            }
-            html += '</dl>';
-            new mapboxgl.Popup({ offset: 15 })
-              .setLngLat(coords)
-              .setHTML(html)
-              .addTo(map);
-          });
-
-          // Move both layers below labelLayerId (so they appear just below labels)
-          map.moveLayer('ejendomstorvet_geocoded-layer', labelLayerId);
-          map.moveLayer('boliga_geocoded-layer', labelLayerId);
+              // Hvis geojson ikke er korrekt, indsæt dummy-data
+              if (
+                !geojson ||
+                geojson.type !== 'FeatureCollection' ||
+                !Array.isArray(geojson.features) ||
+                geojson.features.length === 0 ||
+                !geojson.features[0].geometry
+              ) {
+                geojson = {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [10.0, 56.0]
+                      },
+                      "properties": {
+                        "Navn": "Test Boliga"
+                      }
+                    }
+                  ]
+                };
+                showDataFileMissingNotification('ejendomstorvet_geocoded.geojson (indsætter dummy-indhold)');
+              }
+              map.addSource('ejendomstorvet_geocoded', {
+                type: 'geojson',
+                data: geojson
+              });
+              map.addLayer({
+                id: 'ejendomstorvet_geocoded-layer',
+                type: 'circle',
+                source: 'ejendomstorvet_geocoded',
+                paint: {
+                  'circle-radius': [
+                    'interpolate',
+                    ['linear'],
+                    ['zoom'],
+                    6, 3,
+                    12, 6
+                  ],
+                  'circle-color': '#ff9d25',
+                  'circle-opacity': 0.5
+                }
+              }, labelLayerId);
+              pointsData4 = geojson;
+              map.on('mouseenter', 'ejendomstorvet_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
+              map.on('mouseleave', 'ejendomstorvet_geocoded-layer', () => map.getCanvas().style.cursor = '');
+              map.on('click', 'ejendomstorvet_geocoded-layer', e => {
+                const feature = e.features[0];
+                const coords = feature.geometry.coordinates.slice();
+                const props = { ...feature.properties, id: feature.id };
+                let html = '<dl style="margin:0;">';
+                for (const k in props) {
+                  let value = props[k];
+                  if (typeof value === 'object' && value !== null) {
+                    value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+                  }
+                  html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+                }
+                html += '</dl>';
+                new mapboxgl.Popup({ offset: 15 })
+                  .setLngLat(coords)
+                  .setHTML(html)
+                  .addTo(map);
+              });
+              map.moveLayer('ejendomstorvet_geocoded-layer', labelLayerId);
+            })
+            .catch(() => {
+              showDataFileMissingNotification('ejendomstorvet_geocoded.geojson (indsætter dummy-indhold)');
+              const dummyGeojson = {
+                "type": "FeatureCollection",
+                "features": [
+                  {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [10.0, 56.0]
+                    },
+                    "properties": {
+                      "Navn": "Test Boliga"
+                    }
+                  }
+                ]
+              };
+              map.addSource('ejendomstorvet_geocoded', {
+                type: 'geojson',
+                data: dummyGeojson
+              });
+              map.addLayer({
+                id: 'ejendomstorvet_geocoded-layer',
+                type: 'circle',
+                source: 'ejendomstorvet_geocoded',
+                paint: {
+                  'circle-radius': [
+                    'interpolate',
+                    ['linear'],
+                    ['zoom'],
+                    6, 3,
+                    12, 6
+                  ],
+                  'circle-color': '#ff9d25',
+                  'circle-opacity': 0.5
+                }
+              }, labelLayerId);
+              pointsData4 = dummyGeojson;
+              map.on('mouseenter', 'ejendomstorvet_geocoded-layer', () => map.getCanvas().style.cursor = 'pointer');
+              map.on('mouseleave', 'ejendomstorvet_geocoded-layer', () => map.getCanvas().style.cursor = '');
+              map.on('click', 'ejendomstorvet_geocoded-layer', e => {
+                const feature = e.features[0];
+                const coords = feature.geometry.coordinates.slice();
+                const props = { ...feature.properties, id: feature.id };
+                let html = '<dl style="margin:0;">';
+                for (const k in props) {
+                  let value = props[k];
+                  if (typeof value === 'object' && value !== null) {
+                    value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+                  }
+                  html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+                }
+                html += '</dl>';
+                new mapboxgl.Popup({ offset: 15 })
+                  .setLngLat(coords)
+                  .setHTML(html)
+                  .addTo(map);
+              });
+              map.moveLayer('ejendomstorvet_geocoded-layer', labelLayerId);
+            });
 
           // Highlight on geocoder result
           let highlightId = null;
