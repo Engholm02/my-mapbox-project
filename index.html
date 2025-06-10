@@ -293,6 +293,8 @@
     let pointsData2;
     let pointsData3;
     let pointsData4;
+    let pointsData5;
+    let pointsData6;
 
     // Add geocoder control in same top-left container
     const geocoder = new MapboxGeocoder({
@@ -308,7 +310,9 @@
           { name: '104', data: pointsData },
           { name: '105', data: pointsData2 },
           { name: 'boliga', data: pointsData3 },
-          { name: 'ejendomstorvet', data: pointsData4 }
+          { name: 'ejendomstorvet', data: pointsData4 },
+          { name: '108', data: pointsData5 },
+          { name: '108a', data: pointsData6 }
         ];
 
         const lowerQuery = (query || '').toLowerCase();
@@ -409,6 +413,8 @@
 
             if (type === '104') pointsData = geojson;
             if (type === '105') pointsData2 = geojson;
+            if (type === '108') pointsData5 = geojson;
+            if (type === '108a') pointsData6 = geojson;
           })
           .catch(err => console.error(err));
 
