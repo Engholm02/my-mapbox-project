@@ -293,7 +293,9 @@
 
       // Event delegation fallback (in case elements were not present at load)
       document.addEventListener('click', (e) => {
-        const target = e.target.closest('#toggle-boliga, #toggle-ejendomstorvet, #toggle-104, #toggle-105, #toggle-107, #toggle-108, #toggle-108s, #toggle-108a, #toggle-voksne, #toggle-unge');
+        const target = e.target.closest(
+          '#toggle-boliga, #toggle-ejendomstorvet, #toggle-104, #toggle-105, #toggle-107, #toggle-108, #toggle-108s, #toggle-108a, #toggle-voksne, #toggle-unge'
+        );
         if (target) {
           window.handleToggleClick(target.id);
         }
