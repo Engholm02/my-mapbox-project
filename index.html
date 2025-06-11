@@ -78,12 +78,20 @@
       padding: 12px;
       box-sizing: border-box;
       font-family: sans-serif;
-
-
     }
     .mapboxgl-popup-content dl { margin:0; }
     .mapboxgl-popup-content dt { font-weight:bold; margin-top:6px; }
     .mapboxgl-popup-content dd { margin:0 0 16px 0px; }
+
+    /* --- Added for popup sections --- */
+    .popup-section {
+      margin-bottom: 16px;
+    }
+    .popup-section h4 {
+      font-size: 14px;
+      margin-bottom: 4px;
+      color: #333;
+    }
 
     /* Centered modal-style popup override */
     .mapboxgl-popup.central-popup {
@@ -95,6 +103,7 @@
       max-width: 90vw !important;
       max-height: 400px;
       z-index: 1000;
+      pointer-events: auto !important;
     }
 
     /* Fixed-position left popup list for multiple features */
@@ -182,11 +191,6 @@
       font-size: 24px;
     }
 
-    /* Override unwanted Mapbox anchor-top transform */
-    .mapboxgl-popup.mapboxgl-popup-anchor-top {
-      transform: translate(-50%, -50%) !important;
-      max-width: 400px !important;
-    }
   </style>
 </head>
 <body>
@@ -392,6 +396,8 @@
       pitch: 0,
       bearing: 0
     });
+    // Global popup variable for central popups
+    let currentPopup = null;
     let pointsData;
     let pointsData2;
     let pointsData3;
@@ -717,7 +723,7 @@
               return `<div class="popup-item" data-idx="${idx}" style="cursor:pointer; margin-bottom:6px; color:#0066cc;">${navn}</div>`;
             }).join('');
 
-            // Fjern tidligere popup hvis den findes
+            // Fjern tidligere popup hvis den findes (keep this only for multi-point case)
             document.querySelectorAll('.popup-list-left').forEach(el => el.remove());
 
             // Opret ny popup-liste til venstre
@@ -753,28 +759,36 @@
                   const f = features[idx];
                   const coords = f.geometry.coordinates.slice();
                   const props = { ...f.properties };
+                  // --- Sectioned popup ---
                   let html = '<dl style="margin:0;">';
                   for (const k in props) {
                     let value = props[k];
                     if (typeof value === 'object' && value !== null) {
                       value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
                     }
-                    html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+                    const label = k.replace(/_/g, ' ');
+                    const capitalizedLabel = label.charAt(0).toUpperCase() + label.slice(1).toLowerCase();
+                    if (capitalizedLabel.toLowerCase().includes('latitude') || capitalizedLabel.toLowerCase().includes('longitude')) continue;
+                    html += `<dt style="font-weight:bold;">${capitalizedLabel}</dt><dd>${value}</dd>`;
                   }
                   html += '</dl>';
-                  new mapboxgl.Popup({ offset: 15 })
-                    .setLngLat(coords)
+                  // Use global popup logic
+                  if (currentPopup) currentPopup.remove();
+                  currentPopup = new mapboxgl.Popup({ offset: 0, closeOnClick: false, anchor: 'center' })
+                    .setLngLat(map.getCenter())
                     .setHTML(html)
-                    .addTo(map)
-                    .getElement().classList.add('central-popup');
+                    .addTo(map);
+                  currentPopup.getElement().classList.add('central-popup');
                   // Highlight point
                   map.setFeatureState({ source: `${f.layer.source}`, id: f.id }, { highlight: true });
+                  // Do NOT remove the left popup list here!
+                  // document.querySelectorAll('.popup-list-left').forEach(el => el.remove());
                 });
               });
             }, 100);
           } else if (features.length === 1) {
-            // Fjern tidligere popup-liste hvis den findes
-            document.querySelectorAll('.popup-list-left').forEach(el => el.remove());
+            // Do NOT remove the left popup-list here! (leave it if present)
+            // document.querySelectorAll('.popup-list-left').forEach(el => el.remove());
             const feature = features[0];
             const coords = feature.geometry.coordinates.slice();
             const props = { ...feature.properties };
@@ -784,14 +798,19 @@
               if (typeof value === 'object' && value !== null) {
                 value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
               }
-              html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+              const label = k.replace(/_/g, ' ');
+              const capitalizedLabel = label.charAt(0).toUpperCase() + label.slice(1).toLowerCase();
+              if (capitalizedLabel.toLowerCase().includes('latitude') || capitalizedLabel.toLowerCase().includes('longitude')) continue;
+              html += `<dt style="font-weight:bold;">${capitalizedLabel}</dt><dd>${value}</dd>`;
             }
             html += '</dl>';
-            new mapboxgl.Popup({ offset: 15 })
-              .setLngLat(coords)
+            // Use global popup logic
+            if (currentPopup) currentPopup.remove();
+            currentPopup = new mapboxgl.Popup({ offset: 0, closeOnClick: false, anchor: 'center' })
+              .setLngLat(map.getCenter())
               .setHTML(html)
-              .addTo(map)
-              .getElement().classList.add('central-popup');
+              .addTo(map);
+            currentPopup.getElement().classList.add('central-popup');
             // Highlight point
             map.setFeatureState({ source: `${feature.layer.source}`, id: feature.id }, { highlight: true });
           }
@@ -1156,29 +1175,33 @@
                     listContainer.remove();
                   });
                   const items = document.querySelectorAll('.popup-list-left .popup-item');
-                  items.forEach((item, idx) => {
-                    item.addEventListener('click', () => {
-                      const f = matching[idx];
-                      const coords = f.geometry.coordinates.slice();
-                      const props = { ...f.properties };
-                      let html = '<dl style="margin:0;">';
-                      for (const k in props) {
-                        let value = props[k];
-                        if (typeof value === 'object' && value !== null) {
-                          value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
-                        }
-                        html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
-                      }
-                      html += '</dl>';
-                      new mapboxgl.Popup({ offset: 15 })
-                        .setLngLat(coords)
-                        .setHTML(html)
-                        .addTo(map)
-                        .getElement().classList.add('central-popup');
-                      // Highlight point
-                      map.setFeatureState({ source: `${f.layer.source}`, id: f.id }, { highlight: true });
-                    });
-                  });
+              items.forEach((item, idx) => {
+                item.addEventListener('click', () => {
+                  const f = matching[idx];
+                  const props = { ...f.properties };
+                  let html = '<dl style="margin:0;">';
+                  for (const k in props) {
+                    let value = props[k];
+                    if (typeof value === 'object' && value !== null) {
+                      value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+                    }
+                    const label = k.replace(/_/g, ' ');
+                    const capitalizedLabel = label.charAt(0).toUpperCase() + label.slice(1).toLowerCase();
+                    if (capitalizedLabel.toLowerCase().includes('latitude') || capitalizedLabel.toLowerCase().includes('longitude')) continue;
+                    html += `<dt style="font-weight:bold;">${capitalizedLabel}</dt><dd>${value}</dd>`;
+                  }
+                  html += '</dl>';
+                  // Use global popup logic
+                  if (currentPopup) currentPopup.remove();
+                  currentPopup = new mapboxgl.Popup({ offset: 0, closeOnClick: false, anchor: 'center' })
+                    .setLngLat(map.getCenter())
+                    .setHTML(html)
+                    .addTo(map);
+                  currentPopup.getElement().classList.add('central-popup');
+                  // Highlight point
+                  map.setFeatureState({ source: `${f.layer.source}`, id: f.id }, { highlight: true });
+                });
+              });
                 }, 100);
               } else {
                 // Ingen tilbud fundet i kommunen
