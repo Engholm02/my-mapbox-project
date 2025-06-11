@@ -87,7 +87,7 @@
     .mapboxgl-popup-content dd { margin:0 0 16px 0px; }
 
     /* Centered modal-style popup override */
-    .mapboxgl-popup {
+    .mapboxgl-popup.central-popup {
       position: fixed !important;
       top: 50% !important;
       left: 50% !important;
@@ -95,6 +95,35 @@
       width: 400px !important;
       max-width: 90vw !important;
       z-index: 1000;
+    }
+
+    /* Fixed-position left popup list for multiple features */
+    .popup-list-left {
+      position: fixed;
+      top: 80px;
+      left: 24px;
+      width: 300px;
+      max-height: 80vh;
+      overflow-y: auto;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 12px;
+      font-family: sans-serif;
+      font-size: 14px;
+      z-index: 999;
+    }
+
+    .popup-list-left .popup-list-close {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #333;
     }
 
     .mapboxgl-popup-content {
@@ -642,22 +671,77 @@
         map.on('mouseenter', layerId, () => map.getCanvas().style.cursor = 'pointer');
         map.on('mouseleave', layerId, () => map.getCanvas().style.cursor = '');
         map.on('click', layerId, e => {
-          const feature = e.features[0];
-          const coords = feature.geometry.coordinates.slice();
-          const props = { ...feature.properties };
-          let html = '<dl style="margin:0;">';
-          for (const k in props) {
-            let value = props[k];
-            if (typeof value === 'object' && value !== null) {
-              value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+          const features = map.queryRenderedFeatures(e.point, { layers: [layerId] });
+
+          if (features.length > 1) {
+            const htmlList = features.map((feature, idx) => {
+              const navn = feature.properties?.Navn || `Ukendt ${idx+1}`;
+              return `<div class="popup-item" data-idx="${idx}" style="cursor:pointer; margin-bottom:6px; color:#0066cc;">${navn}</div>`;
+            }).join('');
+
+            // Fjern tidligere popup hvis den findes
+            document.querySelectorAll('.popup-list-left').forEach(el => el.remove());
+
+            // Opret ny popup-liste til venstre
+            const listContainer = document.createElement('div');
+            listContainer.className = 'popup-list-left';
+            listContainer.innerHTML = `
+              <button class="popup-list-close" aria-label="Luk popup">×</button>
+              <strong style="display:block; margin-bottom:10px;">Flere tilbud her:</strong>
+              ${htmlList}`;
+            document.body.appendChild(listContainer);
+
+            // Tilføj click handlers til listen
+            setTimeout(() => {
+              // Close button click handler
+              listContainer.querySelector('.popup-list-close').addEventListener('click', () => {
+                listContainer.remove();
+              });
+              const items = document.querySelectorAll('.popup-list-left .popup-item');
+              items.forEach(item => {
+                item.addEventListener('click', () => {
+                  const idx = parseInt(item.getAttribute('data-idx'));
+                  const f = features[idx];
+                  const coords = f.geometry.coordinates.slice();
+                  const props = { ...f.properties };
+                  let html = '<dl style="margin:0;">';
+                  for (const k in props) {
+                    let value = props[k];
+                    if (typeof value === 'object' && value !== null) {
+                      value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+                    }
+                    html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+                  }
+                  html += '</dl>';
+                  new mapboxgl.Popup({ offset: 15 })
+                    .setLngLat(coords)
+                    .setHTML(html)
+                    .addTo(map)
+                    .getElement().classList.add('central-popup');
+                });
+              });
+            }, 100);
+          } else if (features.length === 1) {
+            // Fjern tidligere popup-liste hvis den findes
+            document.querySelectorAll('.popup-list-left').forEach(el => el.remove());
+            const feature = features[0];
+            const coords = feature.geometry.coordinates.slice();
+            const props = { ...feature.properties };
+            let html = '<dl style="margin:0;">';
+            for (const k in props) {
+              let value = props[k];
+              if (typeof value === 'object' && value !== null) {
+                value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+              }
+              html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
             }
-            html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+            html += '</dl>';
+            new mapboxgl.Popup({ offset: 15 })
+              .setLngLat(coords)
+              .setHTML(html)
+              .addTo(map)
+              .getElement().classList.add('central-popup');
           }
-          html += '</dl>';
-          new mapboxgl.Popup({ offset: 15 })
-            .setLngLat(coords)
-            .setHTML(html)
-            .addTo(map);
         });
       });
 
@@ -973,6 +1057,65 @@
             const result = ev.result;
             if (result.properties && result.properties.filterType === 'kommune') {
               applyFilterToAllLayers('Kommune', result.place_name);
+
+              // --- Inserted logic: show popup list of all tilbud in selected kommune ---
+              document.querySelectorAll('.popup-list-left').forEach(el => el.remove());
+
+              const sources = [pointsData, pointsData2, pointsData5, pointsData6, pointsData7];
+              const kommuneName = result.place_name;
+              let matching = [];
+
+              sources.forEach(source => {
+                if (!source || !source.features) return;
+                source.features.forEach((feature, idx) => {
+                  const kommune = feature.properties?.Kommune;
+                  if (kommune === kommuneName) matching.push(feature);
+                });
+              });
+
+              if (matching.length > 0) {
+                const htmlList = matching.map((feature, idx) => {
+                  const navn = feature.properties?.Navn || `Ukendt ${idx+1}`;
+                  return `<div class="popup-item" data-idx="${idx}" style="cursor:pointer; margin-bottom:6px; color:#0066cc;">${navn}</div>`;
+                }).join('');
+
+                const listContainer = document.createElement('div');
+                listContainer.className = 'popup-list-left';
+                listContainer.innerHTML = `
+                  <button class="popup-list-close" aria-label="Luk popup">×</button>
+                  <strong style="display:block; margin-bottom:10px;">Tilbud i ${kommuneName}:</strong>
+                  ${htmlList}`;
+                document.body.appendChild(listContainer);
+
+                setTimeout(() => {
+                  listContainer.querySelector('.popup-list-close').addEventListener('click', () => {
+                    listContainer.remove();
+                  });
+                  const items = document.querySelectorAll('.popup-list-left .popup-item');
+                  items.forEach((item, idx) => {
+                    item.addEventListener('click', () => {
+                      const f = matching[idx];
+                      const coords = f.geometry.coordinates.slice();
+                      const props = { ...f.properties };
+                      let html = '<dl style="margin:0;">';
+                      for (const k in props) {
+                        let value = props[k];
+                        if (typeof value === 'object' && value !== null) {
+                          value = JSON.stringify(value, null, 2).replace(/\n/g, '<br>');
+                        }
+                        html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
+                      }
+                      html += '</dl>';
+                      new mapboxgl.Popup({ offset: 15 })
+                        .setLngLat(coords)
+                        .setHTML(html)
+                        .addTo(map)
+                        .getElement().classList.add('central-popup');
+                    });
+                  });
+                }, 100);
+              }
+              // --- end inserted logic ---
             }
             if (result.properties && result.properties.filterType === 'botilbud') {
               map.flyTo({ center: result.center, zoom: 14 });
