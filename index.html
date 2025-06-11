@@ -100,7 +100,7 @@
     /* Fixed-position left popup list for multiple features */
     .popup-list-left {
       position: fixed;
-      top: 80px;
+      top: 120px;
       left: 24px;
       width: 300px;
       max-height: 80vh;
@@ -112,6 +112,28 @@
       font-family: sans-serif;
       font-size: 14px;
       z-index: 999;
+      transition: opacity 0.3s ease;
+      opacity: 1;
+    }
+    .popup-list-filter {
+      margin-bottom: 10px;
+      padding: 6px;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .popup-list-left {
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: 40vh;
+        max-height: none;
+        border-radius: 12px 12px 0 0;
+      }
     }
 
     .popup-list-left .popup-list-close {
@@ -686,10 +708,21 @@
             const listContainer = document.createElement('div');
             listContainer.className = 'popup-list-left';
             listContainer.innerHTML = `
+              <input class="popup-list-filter" placeholder="Filtrér…" />
               <button class="popup-list-close" aria-label="Luk popup">×</button>
               <strong style="display:block; margin-bottom:10px;">Flere tilbud her:</strong>
               ${htmlList}`;
             document.body.appendChild(listContainer);
+
+            // Tilføj filterfunktionalitet
+            const filterInput = listContainer.querySelector('.popup-list-filter');
+            filterInput.addEventListener('input', e => {
+              const q = e.target.value.toLowerCase();
+              listContainer.querySelectorAll('.popup-item').forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(q) ? 'block' : 'none';
+              });
+            });
 
             // Tilføj click handlers til listen
             setTimeout(() => {
@@ -718,6 +751,8 @@
                     .setHTML(html)
                     .addTo(map)
                     .getElement().classList.add('central-popup');
+                  // Highlight point
+                  map.setFeatureState({ source: `${f.layer.source}`, id: f.id }, { highlight: true });
                 });
               });
             }, 100);
@@ -736,11 +771,13 @@
               html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
             }
             html += '</dl>';
-            new mapboxgl.Popup({ offset: 15 })
-              .setLngLat(coords)
-              .setHTML(html)
-              .addTo(map)
-              .getElement().classList.add('central-popup');
+              new mapboxgl.Popup({ offset: 15 })
+                .setLngLat(coords)
+                .setHTML(html)
+                .addTo(map)
+                .getElement().classList.add('central-popup');
+              // Highlight point
+              map.setFeatureState({ source: `${feature.layer.source}`, id: feature.id }, { highlight: true });
           }
         });
       });
@@ -1082,10 +1119,21 @@
                 const listContainer = document.createElement('div');
                 listContainer.className = 'popup-list-left';
                 listContainer.innerHTML = `
+                  <input class="popup-list-filter" placeholder="Filtrér…" />
                   <button class="popup-list-close" aria-label="Luk popup">×</button>
                   <strong style="display:block; margin-bottom:10px;">Tilbud i ${kommuneName}:</strong>
                   ${htmlList}`;
                 document.body.appendChild(listContainer);
+
+                // Tilføj filterfunktionalitet
+                const filterInput = listContainer.querySelector('.popup-list-filter');
+                filterInput.addEventListener('input', e => {
+                  const q = e.target.value.toLowerCase();
+                  listContainer.querySelectorAll('.popup-item').forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    item.style.display = text.includes(q) ? 'block' : 'none';
+                  });
+                });
 
                 setTimeout(() => {
                   listContainer.querySelector('.popup-list-close').addEventListener('click', () => {
@@ -1111,8 +1159,21 @@
                         .setHTML(html)
                         .addTo(map)
                         .getElement().classList.add('central-popup');
+                      // Highlight point
+                      map.setFeatureState({ source: `${f.layer.source}`, id: f.id }, { highlight: true });
                     });
                   });
+                }, 100);
+              } else {
+                // Ingen tilbud fundet i kommunen
+                const info = document.createElement('div');
+                info.className = 'popup-list-left';
+                info.innerHTML = `
+                  <button class="popup-list-close" aria-label="Luk popup">×</button>
+                  <div>Ingen tilbud fundet i <strong>${kommuneName}</strong>.</div>`;
+                document.body.appendChild(info);
+                setTimeout(() => {
+                  info.querySelector('.popup-list-close').addEventListener('click', () => info.remove());
                 }, 100);
               }
               // --- end inserted logic ---
