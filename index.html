@@ -199,6 +199,7 @@
       '107_geocoded-layer': true,
       '108_geocoded-layer': true,
       '108a_geocoded-layer': true,
+      '108s_geocoded-layer': true,
       'autisme_heatmap_layer': true,
       'autisme_heatmap_unge_layer': true
     };
@@ -213,6 +214,7 @@
         'toggle-107': '107_geocoded-layer',
         'toggle-108': '108_geocoded-layer',
         'toggle-108a': '108a_geocoded-layer',
+        'toggle-108s': '108s_geocoded-layer',
         'toggle-voksne': 'autisme_heatmap_layer',
         'toggle-unge': 'autisme_heatmap_unge_layer'
       };
@@ -251,6 +253,7 @@
         'toggle-107',
         'toggle-108',
         'toggle-108a',
+        'toggle-108s',
         'toggle-voksne',
         'toggle-unge'
       ];
@@ -278,6 +281,7 @@
         'toggle-107',
         'toggle-108',
         'toggle-108a',
+        'toggle-108s',
         'toggle-voksne',
         'toggle-unge'
       ].forEach((id) => {
@@ -290,7 +294,7 @@
       // Event delegation fallback (in case elements were not present at load)
       document.addEventListener('click', (e) => {
         const target = e.target.closest(
-          '#toggle-boliga, #toggle-ejendomstorvet, #toggle-104, #toggle-105, #toggle-107, #toggle-108, #toggle-108a, #toggle-voksne, #toggle-unge'
+          '#toggle-boliga, #toggle-ejendomstorvet, #toggle-104, #toggle-105, #toggle-107, #toggle-108, #toggle-108a, #toggle-108s, #toggle-voksne, #toggle-unge'
         );
         if (target) {
           window.handleToggleClick(target.id);
@@ -327,6 +331,7 @@
     let pointsData4;
     let pointsData5;
     let pointsData6;
+    let pointsData7;
 
     // Add geocoder control in same top-left container
     const geocoder = new MapboxGeocoder({
@@ -344,7 +349,8 @@
           { name: 'boliga', data: pointsData3 },
           { name: 'ejendomstorvet', data: pointsData4 },
           { name: '108', data: pointsData5 },
-          { name: '108a', data: pointsData6 }
+          { name: '108a', data: pointsData6 },
+          { name: '108s', data: pointsData7 }
         ];
         const lowerQuery = (query || '').toLowerCase();
 
@@ -595,7 +601,8 @@
      '105': 'rgb(69, 160, 252)',
      '107': 'rgb(183, 76, 255)',
      '108': '#9b278b',
-     '108a': 'rgb(255, 68, 68)'
+     '108a': 'rgb(255, 68, 68)',
+     '108s': '#ffc144'
    };
 
       Object.entries(tilbudstyper).forEach(([type, color]) => {
@@ -627,6 +634,7 @@
             if (type === '105') pointsData2 = geojson;
             if (type === '108') pointsData5 = geojson;
             if (type === '108a') pointsData6 = geojson;
+            if (type === '108s') pointsData7 = geojson;
           })
           .catch(err => console.error(err));
 
