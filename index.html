@@ -133,7 +133,7 @@
 
   <!-- Layer toggle and kommune filter handlers -->
   <script>
-    // Funktion til at sætte samme filter på alle relevante lag
+    // Funktion til at sætte samme filter på alle relevante lag, med forsinkelse og lag-tjek
     function applyFilterToAllLayers(property, value) {
       const layers = [
         '104_geocoded-layer',
@@ -143,15 +143,25 @@
         '108a_geocoded-layer'
       ];
 
-      layers.forEach(layerId => {
-        if (map.getLayer(layerId)) {
+      const actualProperty = property === 'kommune' ? 'Kommune' : property;
+
+      // Forsinket udførelse for at sikre at lag er indlæst
+      setTimeout(() => {
+        layers.forEach(layerId => {
+          const layer = map.getLayer(layerId);
+          if (!layer) {
+            console.warn(`Lag ikke fundet endnu: ${layerId}`);
+            return;
+          }
+
           if (value === '') {
             map.setFilter(layerId, null);
           } else {
-            map.setFilter(layerId, ['==', ['get', property], value]);
+            console.log(`Anvender filter på ${layerId}: ${actualProperty} = ${value}`);
+            map.setFilter(layerId, ['==', ['get', actualProperty], value]);
           }
-        }
-      });
+        });
+      }, 500); // Vent 500 ms for at sikre at lagene er klar
 
       // Dynamisk udfyldning af kommune-dropdown efter alle pointsData er hentet
       function populateKommuneDropdown() {
@@ -250,7 +260,7 @@
       }
 
       if (action === 'filter-kommune') {
-        applyFilterToAllLayers('kommune', value);
+        applyFilterToAllLayers('Kommune', value);
       }
 
       if (action === 'filter-by') {
@@ -290,7 +300,7 @@
       if (kommuneDropdown) {
         kommuneDropdown.addEventListener('change', function () {
           const selectedKommune = this.value;
-          applyFilterToAllLayers('kommune', selectedKommune);
+          applyFilterToAllLayers('Kommune', selectedKommune);
         });
       }
     });
@@ -325,7 +335,7 @@
       zoom: 12,
       localGeocoder: function (query) {
         const matchingFeatures = [];
-
+        const seenKommuner = new Set();
         const allSources = [
           { name: '104', data: pointsData },
           { name: '105', data: pointsData2 },
@@ -334,21 +344,41 @@
           { name: '108', data: pointsData5 },
           { name: '108a', data: pointsData6 }
         ];
-
         const lowerQuery = (query || '').toLowerCase();
+
         allSources.forEach(({ data }) => {
           if (!data || !data.features) return;
 
           data.features.forEach(feature => {
             const props = feature.properties || {};
-            // Search ALL properties for a value that matches the query (case-insensitive)
-            const match = Object.entries(props).some(([_, value]) => {
-              return typeof value === 'string' && value.toLowerCase().includes(lowerQuery);
-            });
+            const kommune = props['Kommune'] || '[Ukendt Kommune]';
+            const navn = props['Navn'] || '[Ukendt Navn]';
+            const match = Object.entries(props).some(([_, value]) =>
+              typeof value === 'string' && value.toLowerCase().includes(lowerQuery)
+            );
 
             if (match && feature.geometry && Array.isArray(feature.geometry.coordinates)) {
+              // Tilføj kommune-søgning én gang per kommune
+              const kommuneKey = kommune.toLowerCase().trim();
+              if (!seenKommuner.has(kommuneKey) && kommuneKey.includes(lowerQuery)) {
+                seenKommuner.add(kommuneKey);
+                matchingFeatures.push({
+                  place_name: kommune,
+                  center: feature.geometry.coordinates,
+                  geometry: {
+                    type: 'Point',
+                    coordinates: feature.geometry.coordinates
+                  },
+                  properties: {
+                    filterType: 'kommune'
+                  }
+                });
+              }
+
+              // Tilføj ALLE botilbud med navn – men uden at trigge kommune-filtrering
+              const label = `${navn} – ${kommune}`;
               matchingFeatures.push({
-                place_name: props['Navn'] || props['Adresse'] || '[Ukendt]',
+                place_name: label,
                 center: feature.geometry.coordinates,
                 geometry: {
                   type: 'Point',
@@ -359,7 +389,6 @@
           });
         });
 
-        console.log('Søgeresultater:', matchingFeatures);
         return matchingFeatures;
       },
       types: 'local',
@@ -927,36 +956,35 @@
               map.moveLayer('ejendomstorvet_geocoded-layer', labelLayerId);
             });
 
-          // Highlight on geocoder result
-          let highlightId = null;
+          // Ny geocoder result logik: find og filtrer på kommune, flyt kortet (mere robust match)
           geocoder.on('result', ev => {
-            if (highlightId !== null) {
-              ['104_geocoded', '105_geocoded', '107_geocoded', '108_geocoded', '108a_geocoded'].forEach(sourceId => {
-                map.setFeatureState({ source: sourceId, id: highlightId }, { highlight: false });
+            const result = ev.result;
+            if (result.properties && result.properties.filterType === 'kommune') {
+              applyFilterToAllLayers('Kommune', result.place_name);
+            }
+            // Flyt kortet til center
+            if (result.center && Array.isArray(result.center)) {
+              map.flyTo({ center: result.center, zoom: 10 });
+            }
+            // Lyt på ændringer i geocoder søgefeltet og nulstil filter hvis feltet bliver tomt
+            const inputField = document.querySelector('.mapboxgl-ctrl-geocoder input');
+            if (inputField) {
+              inputField.addEventListener('input', function () {
+                if (this.value.trim() === '') {
+                  console.log('Søgefelt er tomt – nulstiller kommune-filter');
+                  applyFilterToAllLayers('Kommune', '');
+                }
               });
             }
-
-            const allPoints = [pointsData, pointsData2, pointsData3, pointsData4].filter(Boolean);
-            let match = null;
-
-            for (const dataset of allPoints) {
-              match = dataset.features.find(f =>
-                f.geometry &&
-                f.geometry.coordinates &&
-                f.geometry.coordinates[0] === ev.result.center[0] &&
-                f.geometry.coordinates[1] === ev.result.center[1]
-              );
-              if (match) break;
-            }
-
-            if (match && match.id) {
-              highlightId = match.id;
-              ['104_geocoded', '105_geocoded', '107_geocoded', '108_geocoded', '108a_geocoded'].forEach(sourceId => {
-                map.setFeatureState({ source: sourceId, id: highlightId }, { highlight: true });
+            // Lyt efter klik på Clear-knappen for at nulstille kommune-filter og flyt kortet til default
+            const clearButton = document.querySelector('.mapboxgl-ctrl-geocoder--button');
+            if (clearButton) {
+              clearButton.addEventListener('click', () => {
+                console.log('Clear-knap trykket – nulstiller kommune-filter og zoomer ud');
+                applyFilterToAllLayers('Kommune', '');
+                map.flyTo({ center: [10.0, 56.0], zoom: 6 });
               });
             }
-
-            map.flyTo({ center: ev.result.center, zoom: 12 });
           });
 
         // (moved kommuneDropdown and event handlers to DOMContentLoaded above)
