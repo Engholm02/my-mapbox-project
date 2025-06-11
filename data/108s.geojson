@@ -1,0 +1,743 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "Latitude": "54.66156",
+        "Longitude": "11.35035",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Syltholm (Kofoedsminde)",
+        "Takster": "Fra 8.512 - 8.512 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "8 - Sikret botilbud, § 108",
+        "Adresse": "Kastanie Allé 2\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            8 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.35035,
+          54.66156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Dragsminde (Kofoedsminde)",
+        "Takster": "Fra 8.512 - 8.512 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "7 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            7 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Højbo 1 (Kofoedsminde)",
+        "Takster": "Fra 8.512 - 8.512 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "4 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            4 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "Latitude": "55.266806",
+        "Longitude": "12.408542",
+        "Kommune": "Stevns Kommune",
+        "Navn": "Uranus (Kofoedsminde)",
+        "Takster": "Fra 11.209 - 11.209 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "7 - Sikret botilbud, § 108",
+        "Adresse": "Korsnæbsvej 63\n    \n\n    4673 Rødvig Stevns",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            7 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.408542,
+          55.266806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Højbo 2 (Kofoedsminde)",
+        "Takster": "Fra 8.512 - 8.512 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "4 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            4 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Højbo 3 (Kofoedsminde)",
+        "Takster": "Fra 8.512 - 8.512 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "4 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            4 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Højbo 4 (Kofoedsminde)",
+        "Takster": "Fra 8.512 - 8.512 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "4 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            4 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Jupiter (Kofoedsminde)",
+        "Takster": "Fra 8.512 - 8.512 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "5 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            5 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "properties": {
+        "Latitude": "54.66156",
+        "Longitude": "11.35035",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Luna (Kofoedsminde)",
+        "Takster": "Fra 27.610 - 27.610 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "1 - Sikret botilbud, § 108",
+        "Adresse": "Kastanie Allé 2\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            1 pladser -\n            ingen ledige\n        \n    \n\n    \n        \n            Tilbudstypen omfatter skærmede pladser\n        \n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.35035,
+          54.66156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Mars (Kofoedsminde)",
+        "Takster": "Fra 8.512 - 8.512 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "5 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            5 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Merkur (Kofoedsminde)",
+        "Takster": "Fra 8.512 - 8.512 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "10 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            10 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "properties": {
+        "Latitude": "55.266806",
+        "Longitude": "12.408542",
+        "Kommune": "Stevns Kommune",
+        "Navn": "Neptun (Kofoedsminde)",
+        "Takster": "Fra 11.209 - 11.209 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "7 - Sikret botilbud, § 108",
+        "Adresse": "Korsnæbsvej 63\n    \n\n    4673 Rødvig Stevns",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            7 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.408542,
+          55.266806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Pluto (Kofoedsminde)",
+        "Takster": "Fra 8.512 - 8.512 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "10 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            10 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Saturn (Kofoedsminde)",
+        "Takster": "Fra 27.610 - 27.610 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "1 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            1 pladser -\n            ingen ledige\n        \n    \n\n    \n        \n            Tilbudstypen omfatter skærmede pladser\n        \n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Skovbo (Kofoedsminde)",
+        "Takster": "Fra 8.512 - 8.512 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "6 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            6 pladser -\n            ingen ledige\n        \n    \n\n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "properties": {
+        "Latitude": "54.66156",
+        "Longitude": "11.35035",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Venus (Kofoedsminde)",
+        "Takster": "Fra 27.610 - 27.610 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "1 - Sikret botilbud, § 108",
+        "Adresse": "Kastanie Allé 2\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            1 pladser -\n            ingen ledige\n        \n    \n\n    \n        \n            Tilbudstypen omfatter skærmede pladser\n        \n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.35035,
+          54.66156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Satellitten (Kofoedsminde)",
+        "Takster": "Fra 26.222 - 27.610 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "1 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            1 pladser -\n            ingen ledige\n        \n    \n\n    \n        \n            Tilbudstypen omfatter skærmede pladser\n        \n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "properties": {
+        "Latitude": "54.661676",
+        "Longitude": "11.351877",
+        "Kommune": "Lolland Kommune",
+        "Navn": "Sputnik (Kofoedsminde)",
+        "Takster": "Fra 27.610 - 27.610 kr.",
+        "Tilbudstyper": "Sikret botilbud, § 108",
+        "Pladser_på_tilbudstypen": "2 - Sikret botilbud, § 108",
+        "Adresse": "Højbovej 9\n    \n\n    4970 Rødby",
+        "Kontaktperson": "Tina Krintéll\n\n                tikrin@regionsjaelland.dk\n                \n                    Telefon: 54610801",
+        "Pladser": "Sikret botilbud, § 108\n    \n    \n        \n            2 pladser -\n            ingen ledige\n        \n    \n\n    \n        \n            Tilbudstypen omfatter skærmede pladser\n        \n    \n\n    \n        \n            Særlige forhold\n\n            Alle Kofoedsmindes sikrede afdelinger er objektivt finansieret, da udviklingshæmmede personer kun kan blive anbragt på Kofoedsminde hvis de har en dom dertil.",
+        "Leder": "Tina Krintéll\n    \n\n    tikrin@regionsjaelland.dk\n    \n        Telefon: 54610801",
+        "Driftsherre": "Tilbuddet selv",
+        "Virksomhedens_navn": "Region Sjælland",
+        "Virksomhedsform": "Region",
+        "CVR": "29190658",
+        "Tilsynsførende_myndighed": "EAN-nummer\n    \n        5798001865296",
+        "Årsomsætning": "342.493.965 kr.",
+        "Soliditetsgrad": "",
+        "Overskud": "8.461.998 kr.",
+        "Overskud_vs_omsætning": "2,47 %",
+        "Løn_leder": "1.373.981 kr.",
+        "Løn_personale": "190.140.717 kr.",
+        "Løn_administration": "19.857.174 kr.",
+        "Omkostninger_eksternt": "51.480.068 kr.",
+        "Bestyrelseshonorarer": "0 kr.",
+        "Løn_vs_omsætning": "79,81 %",
+        "Omkostninger_til_kompetenceudvikling_vs_omsætning": "1,04 %",
+        "Ejendomsomkostninger_vs_omsætning": "4,04 %"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.351877,
+          54.661676
+        ]
+      }
+    }
+  ]
+}

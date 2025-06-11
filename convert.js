@@ -8,6 +8,7 @@ const files = [
   { input: '107.csv', output: '107.geojson' },
   { input: '108.csv', output: '108.geojson' },
   { input: '108a.csv', output: '108a.geojson' },
+  { input: '108s.csv', output: '108s.geojson' },
   { input: 'Boliga_geocoded.csv', output: 'Boliga_geocoded.geojson' },
   { input: 'ejendomstorvet_geocoded.csv', output: 'ejendomstorvet_geocoded.geojson' }
 ];
