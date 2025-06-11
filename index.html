@@ -93,6 +93,7 @@
       transform: translate(-50%, -50%) !important;
       width: 400px !important;
       max-width: 90vw !important;
+      max-height: 400px;
       z-index: 1000;
     }
 
@@ -786,13 +787,13 @@
               html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
             }
             html += '</dl>';
-              new mapboxgl.Popup({ offset: 15 })
-                .setLngLat(coords)
-                .setHTML(html)
-                .addTo(map)
-                .getElement().classList.add('central-popup');
-              // Highlight point
-              map.setFeatureState({ source: `${feature.layer.source}`, id: feature.id }, { highlight: true });
+            new mapboxgl.Popup({ offset: 15 })
+              .setLngLat(coords)
+              .setHTML(html)
+              .addTo(map)
+              .getElement().classList.add('central-popup');
+            // Highlight point
+            map.setFeatureState({ source: `${feature.layer.source}`, id: feature.id }, { highlight: true });
           }
         });
       });
