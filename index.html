@@ -316,16 +316,16 @@
 
     // Globalt lagersynligheds-objekt
     window.layerVisibility = {
-      'boliga_geocoded-layer': true,
-      'ejendomstorvet_geocoded-layer': true,
+      'boliga_geocoded-layer': false,
+      'ejendomstorvet_geocoded-layer': false,
       '104_geocoded-layer': true,
       '105_geocoded-layer': true,
       '107_geocoded-layer': true,
       '108_geocoded-layer': true,
       '108a_geocoded-layer': true,
       '108s_geocoded-layer': true,
-      'autisme_heatmap_layer': true,
-      'autisme_heatmap_unge_layer': true
+      'autisme_heatmap_layer': false,
+      'autisme_heatmap_unge_layer': false
     };
 
     // Global toggle-funktion
@@ -552,6 +552,7 @@
       // Tilføj heatmap-lag
       map.addLayer({
         id: 'autisme_heatmap_layer',
+        layout: { visibility: 'none' },
         type: 'heatmap',
         source: 'autisme_heatmap',
         maxzoom: 12,
@@ -596,6 +597,7 @@
       // Tilføj heatmap-lag for unge
       map.addLayer({
         id: 'autisme_heatmap_unge_layer',
+        layout: { visibility: 'none' },
         type: 'heatmap',
         source: 'autisme_heatmap_unge',
         maxzoom: 12,
@@ -986,6 +988,7 @@
                 id: 'boliga_geocoded-layer',
                 type: 'circle',
                 source: 'boliga_geocoded',
+                layout: { visibility: 'none' },
                 paint: {
                   'circle-radius': [
                     'interpolate',
@@ -1050,6 +1053,7 @@
                 id: 'boliga_geocoded-layer',
                 type: 'circle',
                 source: 'boliga_geocoded',
+                layout: { visibility: 'none' },
                 paint: {
                   'circle-radius': [
                     'interpolate',
@@ -1129,6 +1133,7 @@
                 id: 'ejendomstorvet_geocoded-layer',
                 type: 'circle',
                 source: 'ejendomstorvet_geocoded',
+                layout: { visibility: 'none' },
                 paint: {
                   'circle-radius': [
                     'interpolate',
@@ -1189,6 +1194,7 @@
                 id: 'ejendomstorvet_geocoded-layer',
                 type: 'circle',
                 source: 'ejendomstorvet_geocoded',
+                layout: { visibility: 'none' },
                 paint: {
                   'circle-radius': [
                     'interpolate',
