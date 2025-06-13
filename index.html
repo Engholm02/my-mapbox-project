@@ -203,7 +203,7 @@
         bottom: 0;
         width: 100%;
         height: auto;
-        max-height: 60vh;
+        max-height: 100vh;
         touch-action: pan-y;
         border-radius: 12px 12px 0 0;
         padding-bottom: 62px !important;
@@ -308,6 +308,25 @@
         border: none;
         color: #666;
         z-index: 2;
+      }
+    }
+
+    /* Mobile (<768px) popup width overrides */
+    @media (max-width: 767px) {
+      /* Central and anchor-center popups */
+      .mapboxgl-popup.central-popup,
+      .mapboxgl-popup.mapboxgl-popup-anchor-center {
+        width: 180px !important;
+      }
+
+      /* Popup content max width */
+      .mapboxgl-popup-content {
+        max-width: 180px !important;
+      }
+
+      /* Left-side list panel */
+      .popup-list-left {
+        max-width: 180px !important;
       }
     }
 
