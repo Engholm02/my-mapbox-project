@@ -73,7 +73,8 @@
       box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 40px 0px;
     }
     .mapboxgl-popup-content {
-      max-height: 200px;  /* adjust as needed */
+      background-color: #f7f5ef;
+      max-height: 100%;
       overflow-y: auto;
       padding: 24px;
       box-sizing: border-box;
@@ -96,37 +97,83 @@
     /* Centered modal-style popup override */
     .mapboxgl-popup.central-popup {
       position: fixed !important;
-      top: 50% !important;
-      left: 50% !important;
-      transform: translate(-50%, -50%) !important;
-      width: 400px !important;
-      max-width: 90vw !important;
-      max-height: 400px;
-      z-index: 1000;
+      top: 0 !important;
+      left: auto !important;
+      right: 0 !important;
+      width: 350px !important;
+      height: 100vh !important;
+      max-width: none !important;
+      max-height: none !important;
+      transform: none !important;
       pointer-events: auto !important;
+      z-index: 1000;
+      border-radius: 0 !important;
+    }
+
+    /* Override for popups with both mapboxgl-popup-anchor-center and central-popup */
+    .mapboxgl-popup.mapboxgl-popup-anchor-center.central-popup {
+      transform: none !important;
+      max-width: none !important;
+      left: auto !important;
+      right: 0 !important;
+      top: 0 !important;
+      width: 350px !important;
+      height: 100vh !important;
+    }
+
+    /*
+    .mapboxgl-popup.mapboxgl-popup-anchor-center {
+      transform: translate(-50%, -50%) translate(490px, 411px);
+    }
+    */
+    /* Override center-anchor popups to right sidebar */
+    .mapboxgl-popup.mapboxgl-popup-anchor-center {
+      position: fixed !important;
+      top: 0 !important;
+      right: 0 !important;
+      left: auto !important;
+      transform: none !important;
+      width: 350px !important;
+      height: 100vh !important;
+      max-width: none !important;
+      max-height: none !important;
+      pointer-events: auto !important;
+      z-index: 1000;
     }
 
     /* Fixed-position left popup list for multiple features */
     .popup-list-left {
       position: fixed;
-      top: 120px;
-      left: 24px;
-      max-height: 350px;
-      max-width: 180px;
-      overflow-y: scroll;
+      top: 0 !important;
+      left: 0 !important;
+      width: auto !important;
+      max-width: 200px !important;
+      height: 100vh !important;
+      overflow-y: auto;
       -webkit-overflow-scrolling: touch;
-      background: white;
-      border-radius: 4px;
+      background-color: #f7f5ef;
+      border-radius: 0 !important;
       box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 40px 0px;
       padding: 24px;
+      box-sizing: border-box;
       font-family: sans-serif;
       font-size: 12px;
-      z-index: 999;
-      transition: opacity 0.3s ease;
-      opacity: 1;
-      gap: 12px;
+      z-index: 1000;
       display: flex;
       flex-direction: column;
+      gap: 12px;
+      -ms-overflow-style: none;    /* IE and Edge */
+      scrollbar-width: none;       /* Firefox */
+    }
+
+    /* Hide scrollbar in left-side popup list */
+    .popup-list-left::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Remove border radius on popup content for central popups */
+    .mapboxgl-popup.central-popup .mapboxgl-popup-content {
+      border-radius: 0 !important;
     }
     .popup-list-filter {
       margin-bottom: 10px;
@@ -159,6 +206,15 @@
         border-radius: 12px 12px 0 0;
       }
     }
+
+    /* Hide scrollbars in popup content */
+    .mapboxgl-popup-content {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none;    /* Firefox */
+    }
+    .mapboxgl-popup-content::-webkit-scrollbar {
+      display: none;           /* Chrome, Safari, Opera */
+    }
     /* Hover preview popup styling */
     .mapboxgl-popup.hover-popup {
       pointer-events: none;
@@ -166,9 +222,8 @@
       box-shadow: none;
     }
     .mapboxgl-popup.hover-popup .mapboxgl-popup-content {
-      background: white;
+      background-color: #f7f5ef;
       padding: 6px 8px;
-      border-radius: 4px;
       box-shadow: rgba(0, 0, 0, 0.1) 0 2px 8px;
     }
     .mapboxgl-popup.hover-popup .mapboxgl-popup-tip {
@@ -189,9 +244,16 @@
       line-height: 1;
     }
 
+    /* Position close button in left popup list */
+    .popup-list-left .mapboxgl-popup-close-button {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+
 
     .mapboxgl-popup-content {
-      max-height: 400px;
+      max-height: 100%;
       overflow-y: auto;
       padding: 24px;
     }
@@ -825,9 +887,9 @@
             const listContainer = document.createElement('div');
             listContainer.className = 'popup-list-left';
             listContainer.innerHTML = `
-              <input class="popup-list-filter" placeholder="Filtrér…" />
-              <button class="popup-list-close" aria-label="Luk popup">×</button>
+              <button class="mapboxgl-popup-close-button" type="button" aria-label="Close popup" aria-hidden="true">×</button>
               <strong style="display:block; margin-bottom:10px;">Flere tilbud her:</strong>
+              <input class="popup-list-filter" placeholder="Filtrér…" style="margin-top:24px;" />
               ${htmlList}`;
             document.body.appendChild(listContainer);
 
@@ -844,7 +906,7 @@
             // Tilføj click handlers til listen
             setTimeout(() => {
               // Close button click handler
-              listContainer.querySelector('.popup-list-close').addEventListener('click', () => {
+              listContainer.querySelector('.mapboxgl-popup-close-button').addEventListener('click', () => {
                 listContainer.remove();
               });
               const items = document.querySelectorAll('.popup-list-left .popup-item');
@@ -1008,7 +1070,6 @@
               map.on('mouseleave', 'boliga_geocoded-layer', () => map.getCanvas().style.cursor = '');
               map.on('click', 'boliga_geocoded-layer', e => {
                 const feature = e.features[0];
-                const coords = feature.geometry.coordinates.slice();
                 const props = { ...feature.properties, id: feature.id };
                 let html = '<dl style="margin:0;">';
                 for (const k in props) {
@@ -1019,10 +1080,18 @@
                   html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
                 }
                 html += '</dl>';
-                new mapboxgl.Popup({ offset: 15 })
-                  .setLngLat(coords)
+                if (currentPopup) {
+                  currentPopup.remove();
+                  document.body.classList.remove('popup-open');
+                }
+                currentPopup = new mapboxgl.Popup({ offset: 0, closeOnClick: false, anchor: 'center' })
+                  .setLngLat(map.getCenter())
                   .setHTML(html)
                   .addTo(map);
+                const popupEl = currentPopup.getElement();
+                popupEl.removeAttribute('style');
+                popupEl.classList.add('central-popup');
+                document.body.classList.add('popup-open');
               });
               // Move layer below labelLayerId
               map.moveLayer('boliga_geocoded-layer', labelLayerId);
@@ -1071,7 +1140,6 @@
               map.on('mouseleave', 'boliga_geocoded-layer', () => map.getCanvas().style.cursor = '');
               map.on('click', 'boliga_geocoded-layer', e => {
                 const feature = e.features[0];
-                const coords = feature.geometry.coordinates.slice();
                 const props = { ...feature.properties, id: feature.id };
                 let html = '<dl style="margin:0;">';
                 for (const k in props) {
@@ -1082,10 +1150,18 @@
                   html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
                 }
                 html += '</dl>';
-                new mapboxgl.Popup({ offset: 15 })
-                  .setLngLat(coords)
+                if (currentPopup) {
+                  currentPopup.remove();
+                  document.body.classList.remove('popup-open');
+                }
+                currentPopup = new mapboxgl.Popup({ offset: 0, closeOnClick: false, anchor: 'center' })
+                  .setLngLat(map.getCenter())
                   .setHTML(html)
                   .addTo(map);
+                const popupEl = currentPopup.getElement();
+                popupEl.removeAttribute('style');
+                popupEl.classList.add('central-popup');
+                document.body.classList.add('popup-open');
               });
               map.moveLayer('boliga_geocoded-layer', labelLayerId);
             });
@@ -1151,7 +1227,6 @@
               map.on('mouseleave', 'ejendomstorvet_geocoded-layer', () => map.getCanvas().style.cursor = '');
               map.on('click', 'ejendomstorvet_geocoded-layer', e => {
                 const feature = e.features[0];
-                const coords = feature.geometry.coordinates.slice();
                 const props = { ...feature.properties, id: feature.id };
                 let html = '<dl style="margin:0;">';
                 for (const k in props) {
@@ -1162,10 +1237,18 @@
                   html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
                 }
                 html += '</dl>';
-                new mapboxgl.Popup({ offset: 15 })
-                  .setLngLat(coords)
+                if (currentPopup) {
+                  currentPopup.remove();
+                  document.body.classList.remove('popup-open');
+                }
+                currentPopup = new mapboxgl.Popup({ offset: 0, closeOnClick: false, anchor: 'center' })
+                  .setLngLat(map.getCenter())
                   .setHTML(html)
                   .addTo(map);
+                const popupEl = currentPopup.getElement();
+                popupEl.removeAttribute('style');
+                popupEl.classList.add('central-popup');
+                document.body.classList.add('popup-open');
               });
               map.moveLayer('ejendomstorvet_geocoded-layer', labelLayerId);
             })
@@ -1212,7 +1295,6 @@
               map.on('mouseleave', 'ejendomstorvet_geocoded-layer', () => map.getCanvas().style.cursor = '');
               map.on('click', 'ejendomstorvet_geocoded-layer', e => {
                 const feature = e.features[0];
-                const coords = feature.geometry.coordinates.slice();
                 const props = { ...feature.properties, id: feature.id };
                 let html = '<dl style="margin:0;">';
                 for (const k in props) {
@@ -1223,10 +1305,18 @@
                   html += `<dt style="font-weight:bold;">${k}</dt><dd>${value}</dd>`;
                 }
                 html += '</dl>';
-                new mapboxgl.Popup({ offset: 15 })
-                  .setLngLat(coords)
+                if (currentPopup) {
+                  currentPopup.remove();
+                  document.body.classList.remove('popup-open');
+                }
+                currentPopup = new mapboxgl.Popup({ offset: 0, closeOnClick: false, anchor: 'center' })
+                  .setLngLat(map.getCenter())
                   .setHTML(html)
                   .addTo(map);
+                const popupEl = currentPopup.getElement();
+                popupEl.removeAttribute('style');
+                popupEl.classList.add('central-popup');
+                document.body.classList.add('popup-open');
               });
               map.moveLayer('ejendomstorvet_geocoded-layer', labelLayerId);
             });
@@ -1237,52 +1327,53 @@
             if (result.properties && result.properties.filterType === 'kommune') {
               applyFilterToAllLayers('Kommune', result.place_name);
 
-              // --- Inserted logic: show popup list of all tilbud in selected kommune ---
+              // --- Show left-side popup list for kommune ---
+              // Clear existing list
               document.querySelectorAll('.popup-list-left').forEach(el => el.remove());
 
+              // Build list of matching features
               const sources = [pointsData, pointsData2, pointsData5, pointsData6, pointsData7];
               const kommuneName = result.place_name;
               let matching = [];
-
               sources.forEach(source => {
                 if (!source || !source.features) return;
-                source.features.forEach((feature, idx) => {
+                source.features.forEach((feature) => {
                   const kommune = feature.properties?.Kommune;
                   if (kommune === kommuneName) matching.push(feature);
                 });
               });
+              const htmlList = matching.map((feature, idx) => {
+                const navn = feature.properties?.Navn || `Ukendt ${idx+1}`;
+                return `<div class="popup-item" data-idx="${idx}" style="cursor:pointer; margin-bottom:6px; color:#0066cc;">${navn}</div>`;
+              }).join('');
 
-              if (matching.length > 0) {
-                const htmlList = matching.map((feature, idx) => {
-                  const navn = feature.properties?.Navn || `Ukendt ${idx+1}`;
-                  return `<div class="popup-item" data-idx="${idx}" style="cursor:pointer; margin-bottom:6px; color:#0066cc;">${navn}</div>`;
-                }).join('');
+              // Create left panel
+              const listContainer = document.createElement('div');
+              listContainer.className = 'popup-list-left';
+              listContainer.innerHTML = `
+                <button class="mapboxgl-popup-close-button" type="button" aria-label="Close popup" aria-hidden="true">×</button>
+                <strong style="display:block; margin-bottom:10px;">Tilbud i ${kommuneName}:</strong>
+                <input class="popup-list-filter" placeholder="Filtrér…" style="margin-top:24px;" />
+                ${htmlList}`;
+              document.body.appendChild(listContainer);
 
-                const listContainer = document.createElement('div');
-                listContainer.className = 'popup-list-left';
-                listContainer.innerHTML = `
-                  <input class="popup-list-filter" placeholder="Filtrér…" />
-                  <button class="popup-list-close" aria-label="Luk popup">×</button>
-                  <strong style="display:block; margin-bottom:10px;">Tilbud i ${kommuneName}:</strong>
-                  ${htmlList}`;
-                document.body.appendChild(listContainer);
-
-                // Tilføj filterfunktionalitet
-                const filterInput = listContainer.querySelector('.popup-list-filter');
-                filterInput.addEventListener('input', e => {
-                  const q = e.target.value.toLowerCase();
-                  listContainer.querySelectorAll('.popup-item').forEach(item => {
-                    const text = item.textContent.toLowerCase();
-                    item.style.display = text.includes(q) ? 'block' : 'none';
-                  });
+              // Filter functionality
+              const filterInput = listContainer.querySelector('.popup-list-filter');
+              filterInput.addEventListener('input', e => {
+                const q = e.target.value.toLowerCase();
+                listContainer.querySelectorAll('.popup-item').forEach(item => {
+                  const text = item.textContent.toLowerCase();
+                  item.style.display = text.includes(q) ? 'block' : 'none';
                 });
+              });
 
-                setTimeout(() => {
-                  listContainer.querySelector('.popup-list-close').addEventListener('click', () => {
-                    listContainer.remove();
-                  });
-                  const items = document.querySelectorAll('.popup-list-left .popup-item');
-              items.forEach((item, idx) => {
+              // Close button handler
+              listContainer.querySelector('.mapboxgl-popup-close-button').addEventListener('click', () => {
+                listContainer.remove();
+              });
+
+              // Item click handlers
+              listContainer.querySelectorAll('.popup-item').forEach((item, idx) => {
                 item.addEventListener('click', () => {
                   const f = matching[idx];
                   const props = { ...f.properties };
@@ -1298,7 +1389,7 @@
                     html += `<dt style="font-weight:bold;">${capitalizedLabel}</dt><dd>${value}</dd>`;
                   }
                   html += '</dl>';
-                  // Use global popup logic
+                  // Show central popup for item details
                   if (currentPopup) {
                     currentPopup.remove();
                     document.body.classList.remove('popup-open');
@@ -1309,24 +1400,8 @@
                     .addTo(map);
                   document.body.classList.add('popup-open');
                   currentPopup.getElement().classList.add('central-popup');
-                  // Highlight point
-                  map.setFeatureState({ source: `${f.layer.source}`, id: f.id }, { highlight: true });
                 });
               });
-                }, 100);
-              } else {
-                // Ingen tilbud fundet i kommunen
-                const info = document.createElement('div');
-                info.className = 'popup-list-left';
-                info.innerHTML = `
-                  <button class="popup-list-close" aria-label="Luk popup">×</button>
-                  <div>Ingen tilbud fundet i <strong>${kommuneName}</strong>.</div>`;
-                document.body.appendChild(info);
-                setTimeout(() => {
-                  info.querySelector('.popup-list-close').addEventListener('click', () => info.remove());
-                }, 100);
-              }
-              // --- end inserted logic ---
             }
             if (result.properties && result.properties.filterType === 'botilbud') {
               map.flyTo({ center: result.center, zoom: 14 });
