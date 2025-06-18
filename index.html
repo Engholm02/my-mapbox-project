@@ -53,30 +53,48 @@
     }
 
 
-    /* Fixed height for geocoder container */
+    /* Style the geocoder container as the custom search bar */
     .mapboxgl-ctrl-geocoder {
-      flex: 1;
-      height: 40px;
-      box-sizing: border-box;
+      display: flex !important;
+      height: 40px !important;
+      padding-right: 16px !important;
+      padding-bottom: 1px !important;
+      padding-left: 38px !important;
+      justify-content: flex-start !important;
+      align-items: center !important;
+      gap: 10px !important;
+      border-radius: 4px !important;
+      background-color: rgba(247, 245, 239, 0.8) !important;
+      backdrop-filter: blur(20px) !important;
+      -webkit-backdrop-filter: blur(20px) !important;
+      box-shadow: none !important;
     }
 
 
-    /* Input spans full height */
+    /* Style the geocoder input to match paragraph.size-14 */
     .mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--input {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      box-sizing: border-box;
+      font-size: 14px !important;
+      line-height: 20px !important;
+      letter-spacing: -0.006em !important;
+      font-weight: 500 !important;
+      color: #1b2f2a !important;
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    /* Style the placeholder text in geocoder input */
+    .mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--input::placeholder {
+      font-size: 14px !important;
+      line-height: 20px !important;
+      letter-spacing: -0.006em !important;
+      color: #1b2f2a !important;
+      opacity: 0.6;
+    }
 
 
-    }
-    /* Suggestions box */
-    .mapboxgl-ctrl-geocoder .suggestions {
-      margin: 0;
-      box-sizing: border-box;
-      max-height: 500px;
-      overflow-y: auto;
-    }
 
     /* Popup styling: fixed height and scrollable content */
     .mapboxgl-popup {
@@ -84,6 +102,8 @@
       overflow: hidden; /* Hide Scrollbars */
       box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 40px 0px;
     }
+
+
     .mapboxgl-popup-content {
       background-color: #f7f5ef;
       max-height: 100%;
@@ -101,6 +121,8 @@
     .popup-section {
       margin-bottom: 16px;
     }
+
+
     .popup-section h4 {
       font-size: 14px;
       margin-bottom: 4px;
@@ -356,6 +378,125 @@
         padding-bottom: 200px !important;
       }
     }
+
+
+
+
+    /* Suggestion dropdown container styling */
+    .mapboxgl-ctrl-geocoder .suggestions {
+      background-color: rgba(247, 245, 239) !important;
+      border-radius: 4px !important;
+      margin: 4px 0 0 0 !important;
+      padding: 8px 12px !important;
+      box-sizing: border-box !important;
+      max-height: 200px !important;
+      overflow-y: auto !important;
+    }
+
+
+    .mapboxgl-ctrl-geocoder .suggestions > li > a {
+    cursor: default;
+    display: block;
+    padding: 0px;
+    
+    }
+
+
+    .mapboxgl-ctrl-geocoder--suggestion-title {
+    font-weight: 500;
+}
+
+    .mapboxgl-ctrl-geocoder .suggestions > .active > a, .mapboxgl-ctrl-geocoder .suggestions > li > a:hover {
+    color: #1b2f2a;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+    /* Suggestion list item styling */
+    .mapboxgl-ctrl-geocoder .suggestions li {
+      list-style: none !important;
+      padding: 4px 0 !important;
+    }
+
+    /* Suggestion text styling */
+    .mapboxgl-ctrl-geocoder .suggestion {
+      font-family: 'Inter', sans-serif !important;
+      font-size: 12px !important;
+      line-height: 17px !important;
+      letter-spacing: 0em !important;
+      font-weight: 500 !important;
+      color: #1b2f2a !important;
+    }
+
+    /* Underline on hover or active */
+    .mapboxgl-ctrl-geocoder .suggestion:hover,
+    .mapboxgl-ctrl-geocoder .suggestion.mapboxgl-ctrl-geocoder--active {
+      text-decoration: underline !important;
+      background-color: transparent !important;
+    }
+
+    /* Remove extra margins on the search icon and ensure it's centered */
+    .mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--icon-search {
+      margin: 0 !important;
+      top: 9px;
+    }
+
+    @media screen and (min-width: 640px) {
+    .mapboxgl-ctrl-geocoder--icon-search {
+        left: 10px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+    @media screen and (min-width: 640px) {
+    .mapboxgl-ctrl-geocoder--icon-close {
+        width: 16px;
+        height: 16px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+}
+
+    /* Use default search icon, colored like text */
+    .mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--icon {
+      color: #1b2f2a !important;
+    }
+    /* Ensure SVG inside uses currentColor */
+    .mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--icon-search svg {
+      fill: currentColor !important;
+    }
+
+    /* Make the input fill remaining space and align center */
+    .mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--input {
+      flex: 1 !important;
+      height: 100% !important;
+      line-height: 36px !important;
+    }
+
+    .mapboxgl-ctrl-geocoder--input:focus {
+    color: #404040;
+    color: rgba(0, 0, 0, 0.75);
+    outline: 0;
+    box-shadow: none;
+    outline: none;
+}
+
+    .mapboxgl-ctrl-geocoder--button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background: none;
+    line-height: 1;
+}
+
+.mapboxgl-ctrl button:not(:disabled):hover {
+    background-color: rgb(0 0 0/0%);
+}
 
 </style>
   <style>
