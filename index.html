@@ -10,6 +10,18 @@
   <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" />
 
   <style>
+    body, html, button, input, textarea, select, .mapboxgl-popup-content, .popup-list-left, .paragraph {
+      color: #1b2f2a !important;
+    }
+
+    body, html, button, input, textarea, select, .mapboxgl-popup-content, .popup-list-left {
+      font-family: 'Inter', sans-serif !important;
+    }
+
+    /* Ensure all bold text uses font-weight 500 */
+    b, strong, dt {
+      font-weight: 500 !important;
+    }
 
     /* Fullscreen map */
     body, html { margin:0; padding:0; height:100%; }
@@ -252,8 +264,8 @@
     /* Position close button in left popup list */
     .popup-list-left .mapboxgl-popup-close-button {
       position: absolute;
-      top: 16px;
-      right: 16px;
+      top: 24px;
+      right: 24px;
     }
 
 
@@ -275,11 +287,22 @@
       touch-action: none;
     }
 
-    /* Larger close button */
+    /* Larger close button replaced with SVG-based close button (smaller 12x12px icon) */
     .mapboxgl-popup-close-button {
-      width: 24px;
-      height: 24px;
-      font-size: 24px;
+      background: url('https://cdn.prod.website-files.com/67b6f4c819199d354fe25886/68526fb2fa9e0e63966f0ee4_Close.svg') no-repeat center center;
+      background-size: contain;
+      width: 12px;
+      height: 12px;
+      min-width: 12px;
+      min-height: 12px;
+      max-width: 12px;
+      max-height: 12px;
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      border: none;
+      cursor: pointer;
+      font-size: 0;
     }
 
     @media (max-width: 600px) {
@@ -334,7 +357,23 @@
       }
     }
 
+</style>
+  <style>
+    .paragraph.size-12 {
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: 0em;
+    }
+
+    .paragraph.size-14 {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.006em;
+    }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Map container -->
