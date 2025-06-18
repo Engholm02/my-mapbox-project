@@ -1003,6 +1003,7 @@
      '108s': '#ffc144'
    };
 
+      let previousHighlight = { source: null, id: null };
       Object.entries(tilbudstyper).forEach(([type, color]) => {
         const sourceId = `${type}_geocoded`;
         const layerId = `${type}_geocoded-layer`;
@@ -1018,7 +1019,10 @@
           source: sourceId,
           paint: {
             'circle-radius': ['case', ['boolean', ['feature-state','highlight'], false], 12, 6],
-            'circle-color': color
+            'circle-color': color,
+            'circle-stroke-color': 'white',
+            'circle-stroke-width': ['case', ['boolean', ['feature-state', 'highlight'], false], 2, 0],
+            'circle-stroke-opacity': ['case', ['boolean', ['feature-state', 'highlight'], false], 1, 0]
           }
         });
 
@@ -1149,7 +1153,11 @@
                   document.body.classList.add('popup-open');
                   currentPopup.getElement().classList.add('central-popup');
                   // Highlight point
+                  if (previousHighlight.source) {
+                    map.setFeatureState({ source: previousHighlight.source, id: previousHighlight.id }, { highlight: false });
+                  }
                   map.setFeatureState({ source: `${f.layer.source}`, id: f.id }, { highlight: true });
+                  previousHighlight = { source: f.layer.source, id: f.id };
                   // Do NOT remove the left popup list here!
                   // document.querySelectorAll('.popup-list-left').forEach(el => el.remove());
                 });
@@ -1185,7 +1193,11 @@
             document.body.classList.add('popup-open');
             currentPopup.getElement().classList.add('central-popup');
             // Highlight point
+            if (previousHighlight.source) {
+              map.setFeatureState({ source: previousHighlight.source, id: previousHighlight.id }, { highlight: false });
+            }
             map.setFeatureState({ source: `${feature.layer.source}`, id: feature.id }, { highlight: true });
+            previousHighlight = { source: feature.layer.source, id: feature.id };
           }
         });
       });
@@ -1268,7 +1280,10 @@
                     12, 6
                   ],
                   'circle-color': '#23bb08',
-                  'circle-opacity': 0.5
+                  'circle-opacity': 0.5,
+                  'circle-stroke-color': 'white',
+                  'circle-stroke-width': ['case', ['boolean', ['feature-state', 'highlight'], false], 2, 0],
+                  'circle-stroke-opacity': ['case', ['boolean', ['feature-state', 'highlight'], false], 1, 0]
                 }
               }, labelLayerId);
               // Load boliga data for popups/highlight
@@ -1278,6 +1293,13 @@
               map.on('mouseleave', 'boliga_geocoded-layer', () => map.getCanvas().style.cursor = '');
               map.on('click', 'boliga_geocoded-layer', e => {
                 const feature = e.features[0];
+                // Clear previous highlight
+                if (previousHighlight.source) {
+                  map.setFeatureState({ source: previousHighlight.source, id: previousHighlight.id }, { highlight: false });
+                }
+                // Set new highlight
+                map.setFeatureState({ source: 'boliga_geocoded', id: feature.id }, { highlight: true });
+                previousHighlight = { source: 'boliga_geocoded', id: feature.id };
                 const props = { ...feature.properties, id: feature.id };
                 let html = '<dl style="margin:0;">';
                 for (const k in props) {
@@ -1340,7 +1362,10 @@
                     12, 6
                   ],
                   'circle-color': '#23bb08',
-                  'circle-opacity': 0.5
+                  'circle-opacity': 0.5,
+                  'circle-stroke-color': 'white',
+                  'circle-stroke-width': ['case', ['boolean', ['feature-state', 'highlight'], false], 2, 0],
+                  'circle-stroke-opacity': ['case', ['boolean', ['feature-state', 'highlight'], false], 1, 0]
                 }
               }, labelLayerId);
               pointsData3 = dummyGeojson;
@@ -1348,6 +1373,13 @@
               map.on('mouseleave', 'boliga_geocoded-layer', () => map.getCanvas().style.cursor = '');
               map.on('click', 'boliga_geocoded-layer', e => {
                 const feature = e.features[0];
+                // Clear previous highlight
+                if (previousHighlight.source) {
+                  map.setFeatureState({ source: previousHighlight.source, id: previousHighlight.id }, { highlight: false });
+                }
+                // Set new highlight
+                map.setFeatureState({ source: 'boliga_geocoded', id: feature.id }, { highlight: true });
+                previousHighlight = { source: 'boliga_geocoded', id: feature.id };
                 const props = { ...feature.properties, id: feature.id };
                 let html = '<dl style="margin:0;">';
                 for (const k in props) {
@@ -1427,7 +1459,10 @@
                     12, 6
                   ],
                   'circle-color': '#ff9d25',
-                  'circle-opacity': 0.5
+                  'circle-opacity': 0.5,
+                  'circle-stroke-color': 'white',
+                  'circle-stroke-width': ['case', ['boolean', ['feature-state', 'highlight'], false], 2, 0],
+                  'circle-stroke-opacity': ['case', ['boolean', ['feature-state', 'highlight'], false], 1, 0]
                 }
               }, labelLayerId);
               pointsData4 = geojson;
@@ -1435,6 +1470,13 @@
               map.on('mouseleave', 'ejendomstorvet_geocoded-layer', () => map.getCanvas().style.cursor = '');
               map.on('click', 'ejendomstorvet_geocoded-layer', e => {
                 const feature = e.features[0];
+                // Clear previous highlight
+                if (previousHighlight.source) {
+                  map.setFeatureState({ source: previousHighlight.source, id: previousHighlight.id }, { highlight: false });
+                }
+                // Set new highlight
+                map.setFeatureState({ source: 'ejendomstorvet_geocoded', id: feature.id }, { highlight: true });
+                previousHighlight = { source: 'ejendomstorvet_geocoded', id: feature.id };
                 const props = { ...feature.properties, id: feature.id };
                 let html = '<dl style="margin:0;">';
                 for (const k in props) {
@@ -1495,7 +1537,10 @@
                     12, 6
                   ],
                   'circle-color': '#ff9d25',
-                  'circle-opacity': 0.5
+                  'circle-opacity': 0.5,
+                  'circle-stroke-color': 'white',
+                  'circle-stroke-width': ['case', ['boolean', ['feature-state', 'highlight'], false], 2, 0],
+                  'circle-stroke-opacity': ['case', ['boolean', ['feature-state', 'highlight'], false], 1, 0]
                 }
               }, labelLayerId);
               pointsData4 = dummyGeojson;
@@ -1503,6 +1548,13 @@
               map.on('mouseleave', 'ejendomstorvet_geocoded-layer', () => map.getCanvas().style.cursor = '');
               map.on('click', 'ejendomstorvet_geocoded-layer', e => {
                 const feature = e.features[0];
+                // Clear previous highlight
+                if (previousHighlight.source) {
+                  map.setFeatureState({ source: previousHighlight.source, id: previousHighlight.id }, { highlight: false });
+                }
+                // Set new highlight
+                map.setFeatureState({ source: 'ejendomstorvet_geocoded', id: feature.id }, { highlight: true });
+                previousHighlight = { source: 'ejendomstorvet_geocoded', id: feature.id };
                 const props = { ...feature.properties, id: feature.id };
                 let html = '<dl style="margin:0;">';
                 for (const k in props) {
